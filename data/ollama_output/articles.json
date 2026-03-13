@@ -2,6 +2,81 @@
   {
     "article_id": "article_0001",
     "source": {
+      "name": "ComputerWeekly.com",
+      "url": "https://www.computerweekly.com/microscope/news/366640020/North-America-drives-growth-at-Computacenter",
+      "publisher_type": "news_website"
+    },
+    "title": "North America drives growth at Computacenter",
+    "author": "Simon Quicke",
+    "published_at": "2026-03-12T08:45:00Z",
+    "collected_at": "2026-03-13T08:49:05Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "North America drives growth at Computacenter Channel player shares numbers for the 2025 financial year, with the UK and Germany solid – but there is higher growth coming from other regions Computacenters strategy to expand the business on the other side of the Atlantic over the past few years has been highlighted as a wise one, with the region delivering an outstanding year for the cha…",
+      "word_count": 66
+    },
+    "ai_output": {
+      "summary": "Computacenter's North American business drove growth for the company, with higher expansion coming from the region. The UK and Germany had solid years, but North America led the way. The company's strategy to expand in North America has been deemed successful. The region's performance was highlighted as outstanding for the company. The financial year in question is 2025.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1"
+    }
+  },
+  {
+    "article_id": "article_0002",
+    "source": {
+      "name": "Digitimes",
+      "url": "https://www.digitimes.com/news/a20260310PD249/2025-revenue-expansion-profit-business.html",
+      "publisher_type": "news_website"
+    },
+    "title": "Asustek posts record NT$44.6 billion profit in 2025, server revenue to double in 1Q26",
+    "author": "Eifeh Strom",
+    "published_at": "2026-03-12T08:43:51Z",
+    "collected_at": "2026-03-13T08:49:05Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "Asustek posts record NT$44.6 billion profit in 2025, server revenue to double in 1Q26 Benefiting from the continued expansion of its artificial intelligence (AI) server business, Asustek Computer reported a record full-year net profit after tax of NT$44.56 billion (approx. US$1.40 billion) for 2025, up 42% year over year. Looking ahead to the … Save my User ID and Password Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function…",
+      "word_count": 90
+    },
+    "ai_output": {
+      "summary": "Asustek Computer reported a record full-year net profit of NT$44.56 billion (approximately US$1.40 billion) for 2025, a 42% year-over-year increase. The company's profit was driven by its artificial intelligence (AI) server business. Asustek's server revenue is expected to double in the first quarter of 2026. The company's financial results benefit from the growing demand for AI servers. Asustek's profit is a new record for the company.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1"
+    }
+  },
+  {
+    "article_id": "article_0003",
+    "source": {
+      "name": "Israelnationalnews.com",
+      "url": "https://www.israelnationalnews.com/news/423808",
+      "publisher_type": "news_website"
+    },
+    "title": "IDF Spokesman: 'Your AI is as stupid as you are'",
+    "author": "Israel National News",
+    "published_at": "2026-03-12T08:38:52Z",
+    "collected_at": "2026-03-13T08:49:05Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "IDF Spokesman: 'Your AI is as stupid as you are' IDF Arabic spokesman Avichay Adraee denounced a Hezbollah video of a missile strike in Israel as a digital forgery. The IDFs Arabic-language spokesperson, Avichay Adraee, said that a viral video shared online claiming to show an Iranian missile striking central Tel Aviv is actually a digitally manipulated clip. T…",
+      "word_count": 59
+    },
+    "ai_output": {
+      "summary": "IDF Arabic spokesperson Avichay Adraee has denounced a Hezbollah video of a missile strike in Israel as a digital forgery. The video claimed to show an Iranian missile striking central Tel Aviv, but Adraee says it is a manipulated clip. Adraee also made a personal attack on Hezbollah, calling their AI \"as stupid as you are\". The Israeli military is accusing Hezbollah of spreading false information. The authenticity of the video is being disputed.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1"
+    }
+  },
+  {
+    "article_id": "article_0004",
+    "source": {
       "name": "Digitimes",
       "url": "https://www.digitimes.com/news/a20260312VL208/umc-photonics-data-startup-transmission.html",
       "publisher_type": "news_website"
@@ -9,7 +84,7 @@
     "title": "UMC, HyperLight to mass-produce TFLN photonics chiplets for AI data centers",
     "author": "DIGITIMES",
     "published_at": "2026-03-12T08:37:43Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "collected_at": "2026-03-13T08:49:05Z",
     "language": "en",
     "region": "Global",
     "category": [],
@@ -19,13 +94,13 @@
       "word_count": 77
     },
     "ai_output": {
-      "summary": "UMC and HyperLight have partnered to mass-produce TFLN photonics chiplets. The goal is to improve data transmission speeds in AI computing clusters and data centers. Thin-film lithium niobate (TFLN) technology is used to achieve this. The partnership aims to enhance data transmission efficiency. This technology is expected to benefit AI computing applications.",
+      "summary": "UMC and HyperLight are partnering to mass-produce TFLN photonics chiplets. The goal is to improve data transmission speeds in AI computing clusters and data centers. Thin-film lithium niobate (TFLN) chiplets are a key technology in this partnership. The partnership aims to address the growing demand for faster data transmission in data centers. The TFLN photonics chiplets are expected to improve data transmission speeds.",
       "summary_model": "llama3.1:8b",
       "summary_prompt_version": "v1"
     }
   },
   {
-    "article_id": "article_0002",
+    "article_id": "article_0005",
     "source": {
       "name": "Livemint",
       "url": "https://www.livemint.com/opinion/online-views/digital-access-learning-outcomes-india-edtech-viksit-bharat-education-learning-capital-gains-11773230581359.html",
@@ -34,7 +109,7 @@
     "title": "From digital access to learning outcomes: India’s edtech emphasis needs to evolve",
     "author": "Amitabh Kant, Gouri Gupta",
     "published_at": "2026-03-12T08:30:18Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "collected_at": "2026-03-13T08:49:05Z",
     "language": "en",
     "region": "Global",
     "category": [],
@@ -44,13 +119,13 @@
       "word_count": 83
     },
     "ai_output": {
-      "summary": "A survey in India has found that digital access to education is now widespread, but understanding of technology in education is limited. The focus of education technology (edtech) should shift from just providing access to improving learning outcomes. This is necessary for India to achieve human capital gains, which are essential for sustained economic growth. Economic growth also relies on workforce productivity. The government needs to prioritize improving learning outcomes.",
+      "summary": "The Bharat Survey for EdTech has found that digital access is widespread in India, but technology understanding is lacking. The focus of edtech needs to shift from access to improving learning outcomes. Economic growth in India depends on workforce productivity, which relies on human capital. To achieve this, India must ensure that education is structured to deliver better outcomes. The current emphasis on access must evolve to prioritize learning outcomes.",
       "summary_model": "llama3.1:8b",
       "summary_prompt_version": "v1"
     }
   },
   {
-    "article_id": "article_0003",
+    "article_id": "article_0006",
     "source": {
       "name": "DW (English)",
       "url": "https://www.dw.com/en/elon-musk-unveiled-the-tesla-experiment-when-unchecked-ambition-costs-lives/a-76307889",
@@ -59,7 +134,7 @@
     "title": "'Elon Musk Unveiled: The Tesla Experiment': When unchecked ambition costs lives",
     "author": "Elizabeth Grenier",
     "published_at": "2026-03-12T08:27:00Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "collected_at": "2026-03-13T08:49:05Z",
     "language": "en",
     "region": "Global",
     "category": [],
@@ -69,13 +144,13 @@
       "word_count": 90
     },
     "ai_output": {
-      "summary": "A documentary titled \"Elon Musk Unveiled: The Tesla Experiment\" explores how Tesla drivers are used as unpaid beta testers for the company's self-driving cars. The drivers are not being paid to test the cars, which can put their lives at risk. Meanwhile, Elon Musk is focused on his long-term goal of colonizing Mars. He has topped Forbes' Billionaires list for the second year in a row. Musk is on track to become the world's first trillionaire, according to Forbes. His extreme wealth and ambitious goals are the subject of the documentary.",
+      "summary": "A documentary examines how Tesla drivers are essentially unpaid beta testers for the company's self-driving cars. Elon Musk's focus on long-term goals, including colonizing Mars, has raised concerns about the safety of the cars. Musk has topped Forbes' Billionaires list for the second year in a row. He is on track to become the world's first trillionaire. His wealth and ambition have led to criticism about the risks of his business practices.",
       "summary_model": "llama3.1:8b",
       "summary_prompt_version": "v1"
     }
   },
   {
-    "article_id": "article_0004",
+    "article_id": "article_0007",
     "source": {
       "name": "DW (English)",
       "url": "https://www.dw.com/en/elon-musks-tesla-experiment-unchecked-ambition-costs-lives/a-76307889",
@@ -84,7 +159,7 @@
     "title": "Elon Musk's Tesla experiment: Unchecked ambition costs lives",
     "author": "Elizabeth Grenier",
     "published_at": "2026-03-12T08:27:00Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "collected_at": "2026-03-13T08:49:05Z",
     "language": "en",
     "region": "Global",
     "category": [],
@@ -94,13 +169,13 @@
       "word_count": 71
     },
     "ai_output": {
-      "summary": "A documentary critiques Elon Musk's approach to testing Tesla's self-driving cars, calling it an \"unchecked ambition\" that costs lives. Drivers of Tesla vehicles are essentially unpaid beta testers, allowing the company to gather data for its autonomous vehicles. The documentary questions whether the pursuit of innovation is worth the risks to human life. Elon Musk's focus on colonizing Mars is highlighted as an example of his long-term vision. Musk's wealth is noted as a key factor in his ability to pursue such ambitious goals.",
+      "summary": "A documentary criticizes Tesla's approach to self-driving cars, suggesting that drivers are acting as unpaid beta testers while the company focuses on its long-term goals. The film argues that this unchecked ambition has led to accidents and lost lives. Tesla drivers are essentially testing the company's technology, putting themselves and others at risk. Elon Musk's focus on colonizing Mars has led to concerns about the company's priorities. Musk's wealth and ambitions are said to be unmatched, with him set to become the world's first trillionaire.",
       "summary_model": "llama3.1:8b",
       "summary_prompt_version": "v1"
     }
   },
   {
-    "article_id": "article_0005",
+    "article_id": "article_0008",
     "source": {
       "name": "Business Insider",
       "url": "https://www.businessinsider.com/social-giants-build-ai-future-creators-less-power-2026-3",
@@ -109,7 +184,7 @@
     "title": "Social media giants have grand plans for AI. Creators fear they'll be left out.",
     "author": "Sydney Bradley,Dan Whateley",
     "published_at": "2026-03-12T08:25:01Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "collected_at": "2026-03-13T08:49:05Z",
     "language": "en",
     "region": "Global",
     "category": [],
@@ -119,13 +194,13 @@
       "word_count": 62
     },
     "ai_output": {
-      "summary": "Social media companies such as Instagram and TikTok are investing heavily in AI technology. This has raised concerns among content creators that they will be left behind. Influencers are now worried about the impact of AI on their livelihoods. The increased focus on AI has created a sense of uncertainty among creators who fear they will no longer be needed.",
+      "summary": "Social media platforms like Instagram and TikTok are prioritizing AI development, leaving some creators feeling overlooked. Influencers are concerned about being replaced by AI-generated content. The shift towards AI has sparked worries among creators that they will be left behind. Social media platforms are investing heavily in AI, which is set to change the way content is created and shared. Creators are unsure what the future holds for them. This new development has created uncertainty among influencers and social media creators.",
       "summary_model": "llama3.1:8b",
       "summary_prompt_version": "v1"
     }
   },
   {
-    "article_id": "article_0006",
+    "article_id": "article_0009",
     "source": {
       "name": "Lifesciencesworld.com",
       "url": "https://www.lifesciencesworld.com/do-ferrets-wash-themselves/",
@@ -134,7 +209,7 @@
     "title": "Do ferrets wash themselves?",
     "author": "Ava Reynolds",
     "published_at": "2026-03-12T08:22:40Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "collected_at": "2026-03-13T08:49:05Z",
     "language": "en",
     "region": "Global",
     "category": [],
@@ -144,13 +219,13 @@
       "word_count": 69
     },
     "ai_output": {
-      "summary": "Ferrets engage in some self-grooming, but they do not completely wash themselves like cats. They require assistance with bathing and other hygiene practices from their owners. Ferrets do not have the ability to completely clean themselves like some other animals. As a result, owners must take on a role in keeping their ferrets clean. This includes bathing and other hygiene practices.",
+      "summary": "Ferrets engage in some self-grooming, but they do not completely wash themselves like cats. They require assistance from their owners for bathing and other hygiene practices. Ferrets do not have the ability to fully clean themselves like some other animals. Their owners must intervene to keep them clean. Self-grooming is a part of a ferret's routine, but it's not enough on its own.",
       "summary_model": "llama3.1:8b",
       "summary_prompt_version": "v1"
     }
   },
   {
-    "article_id": "article_0007",
+    "article_id": "article_0010",
     "source": {
       "name": "Digitimes",
       "url": "https://www.digitimes.com/news/a20260312PD229/semco-tesla-chips-samsung-production.html",
@@ -159,7 +234,7 @@
     "title": "Semco seen supplying ABF substrates for Tesla AI chips via Samsung foundry",
     "author": "DIGITIMES",
     "published_at": "2026-03-12T08:20:59Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "collected_at": "2026-03-13T08:49:05Z",
     "language": "en",
     "region": "Global",
     "category": [],
@@ -169,13 +244,13 @@
       "word_count": 83
     },
     "ai_output": {
-      "summary": "Here is a summary of the article in 4-6 sentences:\n\nSemco is expected to supply ABF substrates for Tesla's next-generation AI chips. Samsung Electronics will manufacture the chips at its foundry in Taylor, Texas. Semco, a Samsung affiliate, will provide the necessary substrates for the chips. This marks a collaboration between Semco and Samsung to support Tesla's AI chip development. The partnership highlights the growing demand for advanced semiconductor components in the AI industry.",
+      "summary": "Here is a summary of the article in 4 sentences:\n\nSamsung Electro-Mechanics (Semco) is reportedly set to supply ABF substrates for Tesla's next-generation AI chips. These chips will be manufactured by Samsung Electronics at its foundry in Taylor, Texas. The production is part of Tesla's plans to upgrade its AI technology. Semco's substrates will play a key role in this project, according to Korean media reports.",
       "summary_model": "llama3.1:8b",
       "summary_prompt_version": "v1"
     }
   },
   {
-    "article_id": "article_0008",
+    "article_id": "article_0011",
     "source": {
       "name": "Onefootball.com",
       "url": "https://onefootball.com/en/news/headlines-valverdes-performance-something-to-remember-42544488",
@@ -184,7 +259,7 @@
     "title": "️ Headlines: Valverde’s performance, something to remember",
     "author": "OneFootball",
     "published_at": "2026-03-12T08:19:00Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "collected_at": "2026-03-13T08:49:05Z",
     "language": "en",
     "region": "Global",
     "category": [],
@@ -194,13 +269,13 @@
       "word_count": 57
     },
     "ai_output": {
-      "summary": "The article discusses Federico Valverde's impressive performance in a match. He was involved in various aspects of the game, including delivering balls and breaking lines. Valverde also scored goals, showcasing his attacking skills. Additionally, he acted as a leader on the field. His overall performance was notable and something to remember.",
+      "summary": "The article highlights Federico Valverde's impressive performance, showcasing his skills in various aspects of the game. He demonstrated his ability to deliver balls effectively and break through defensive lines. Valverde also proved himself to be a goal-scoring threat. Additionally, the article mentions that he has been acting as a leader on the field. Overall, Valverde's performance is something to remember.",
       "summary_model": "llama3.1:8b",
       "summary_prompt_version": "v1"
     }
   },
   {
-    "article_id": "article_0009",
+    "article_id": "article_0012",
     "source": {
       "name": "Onefootball.com",
       "url": "https://onefootball.com/en/news/top-wednesday-champions-league-goals-kvara-named-mvp-42544485",
@@ -209,7 +284,7 @@
     "title": "☕️ Top Wednesday Champions League goals, Kvara named MVP",
     "author": "OneFootball",
     "published_at": "2026-03-12T08:17:00Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "collected_at": "2026-03-13T08:49:05Z",
     "language": "en",
     "region": "Global",
     "category": [],
@@ -219,57 +294,7 @@
       "word_count": 69
     },
     "ai_output": {
-      "summary": "The UEFA Champions League has compiled the top goals from Wednesday's matches. Two goals from Paris Saint-Germain players were highlighted. Khvicha Kvaratskhelia scored a goal for Paris Saint-Germain, coming on as a substitute. Kvaratskhelia was named the MVP for his performance.",
-      "summary_model": "llama3.1:8b",
-      "summary_prompt_version": "v1"
-    }
-  },
-  {
-    "article_id": "article_0010",
-    "source": {
-      "name": "The Punch",
-      "url": "https://punchng.com/monopoly-fears-rise-as-dangote-controls-n14-4tn-petrol-market/",
-      "publisher_type": "news_website"
-    },
-    "title": "Monopoly fears rise as Dangote controls N14.4tn petrol market",
-    "author": "Punch Newspapers",
-    "published_at": "2026-03-12T08:14:39Z",
-    "collected_at": "2026-03-13T08:38:04Z",
-    "language": "en",
-    "region": "Global",
-    "category": [],
-    "keywords": [],
-    "content": {
-      "full_text": "Monopoly fears rise as Dangote controls N14.4tn petrol market Experts raise alarms over monopoly risks as the Dangote refinery dominates Nigeria’s N14.4tn petrol market, urging price regulation and competition. Read More: https://punchng.com/monopoly-fears-rise-as-dangote-controls-n14-4tn-petrol-market/ Stakeholders, including energy experts, economists, and Nigerian workers, have raised alarm over the suspension of petrol imports by the Federal Government, urging urgent price regulation as Dangote …",
-      "word_count": 60
-    },
-    "ai_output": {
-      "summary": "Nigeria's petrol market, valued at N14.4tn, has raised concerns about monopoly control by Dangote's refinery. Experts are urging the government to regulate prices and promote competition. The suspension of petrol imports by the government has heightened these concerns. Stakeholders, including energy experts and economists, are calling for urgent action. The dominant market position of Dangote's refinery has sparked fears of a monopoly.",
-      "summary_model": "llama3.1:8b",
-      "summary_prompt_version": "v1"
-    }
-  },
-  {
-    "article_id": "article_0011",
-    "source": {
-      "name": "Livemint",
-      "url": "https://www.livemint.com/companies/early-ai-trend-outcome-global-it-firms-hire-more-india-cognizant-epam-capgemini-tcs-infosys-wipro-11773287038664.html",
-      "publisher_type": "news_website"
-    },
-    "title": "Early, contrarian AI trend has global IT firms hiring more in India to deliver growth, improve margins",
-    "author": "Jas Bardia, Varun Sood",
-    "published_at": "2026-03-12T08:12:52Z",
-    "collected_at": "2026-03-13T08:38:04Z",
-    "language": "en",
-    "region": "Global",
-    "category": [],
-    "keywords": [],
-    "content": {
-      "full_text": "Early, contrarian AI trend has global IT firms hiring more in India to deliver growth, improve margins Capgemini, Cognizant, and EPAM are increasing India headcount to leverage local talent as demand for tech workers rises due to AI integration. This trend, driven by a need to protect margins, contrasts with some Indian peers reducing workforce. Read the trend… Analysts see this as the beginning of a new trend as artificial intelligence (AI)-based technologies increasingly become part of IT services workflows and give rise to demand for tech workers to moni…",
-      "word_count": 90
-    },
-    "ai_output": {
-      "summary": "Several global IT firms, including Capgemini, Cognizant, and EPAM, are increasing their headcount in India to take advantage of local talent and growing demand for tech workers. This trend is driven by the integration of artificial intelligence (AI) technologies into IT services workflows. Analysts believe this is a new trend that will continue as AI becomes more prevalent. The move is also aimed at protecting margins as companies adapt to changing market conditions. Some Indian peers are reducing their workforce, but these global firms are bucking this trend.",
+      "summary": "UEFA has compiled a list of the top goals from the Champions League on Wednesday. The list includes two players from Paris Saint-Germain. Khvicha Kvaratskhelia made a notable appearance, coming on at the hour mark. Another Paris Saint-Germain player was also highlighted in the compilation. However, the names of the two players are not specified beyond Kvaratskhelia.",
       "summary_model": "llama3.1:8b",
       "summary_prompt_version": "v1"
     }

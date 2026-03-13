@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+.env
+.ipynb_checkpoints/
+*.ipynb_checkpoints*
+data/articles.json
+data/articles.csv
 
 # Environment variables
 .env
@@ -13,3 +18,5 @@ data/articles.csv
 
 # macOS
 .DS_Store
+
+

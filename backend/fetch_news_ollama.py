@@ -9,7 +9,6 @@ from typing import Any
 
 import requests
 from dotenv import load_dotenv
-from openai import OpenAI
 
 
 QUERY = (
@@ -18,27 +17,27 @@ QUERY = (
 )
 NEWS_API_URL = "https://newsapi.org/v2/everything"
 DEFAULT_ARTICLE_LIMIT = 12
-DEFAULT_SUMMARY_MODEL = "gpt-4.1-mini"
+DEFAULT_SUMMARY_MODEL = "llama3.1:8b"
 SUMMARY_PROMPT_VERSION = "v1"
 MIN_TEXT_LENGTH = 120
+OLLAMA_URL = "http://localhost:11434/api/chat"
+
 
 # LOAD ENVIRONMENT VARIABLES
-def load_environment() -> tuple[str, str, str]:
+def load_environment() -> tuple[str, str]:
     project_root = Path(__file__).resolve().parent.parent
     load_dotenv(project_root / ".env")
     load_dotenv()
 
     news_api_key = os.getenv("NEWS_API_KEY")
-    print(news_api_key)
-    openai_api_key = os.getenv("OPENAI_API_KEY")
-    summary_model = os.getenv("OPENAI_SUMMARY_MODEL", DEFAULT_SUMMARY_MODEL)
+    # print(news_api_key)
+    summary_model = os.getenv("OLLAMA_SUMMARY_MODEL", DEFAULT_SUMMARY_MODEL)
 
     if not news_api_key:
         raise ValueError("Missing NEWS_API_KEY. Add it to your .env file.")
-    if not openai_api_key:
-        raise ValueError("Missing OPENAI_API_KEY. Add it to your .env file.")
 
-    return news_api_key, openai_api_key, summary_model
+    return news_api_key, summary_model
+
 
 # FETCH NEWS FROM NEWSAPI
 def fetch_news(news_api_key: str, page_size: int = DEFAULT_ARTICLE_LIMIT) -> list[dict[str, Any]]:
@@ -60,6 +59,7 @@ def fetch_news(news_api_key: str, page_size: int = DEFAULT_ARTICLE_LIMIT) -> lis
 
     return payload.get("articles", [])
 
+
 # CLEAN TEXT
 def clean_text(value: str | None) -> str:
     if not value:
@@ -68,6 +68,7 @@ def clean_text(value: str | None) -> str:
     text = re.sub(r"\[\+\d+\s+chars\]$", "", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
+
 
 # BUILD ARTICLE TEXT
 def build_article_text(article: dict[str, Any]) -> str:
@@ -78,13 +79,14 @@ def build_article_text(article: dict[str, Any]) -> str:
     ]
     return " ".join(part for part in parts if part).strip()
 
+
 # WORD COUNT
 def word_count(text: str) -> int:
     return len(text.split()) if text else 0
 
-# SUMMARISE ARTICLE
+
+# SUMMARISE ARTICLE WITH OLLAMA
 def summarise_article(
-    client: OpenAI,
     raw_article: dict[str, Any],
     article: dict[str, Any],
     summary_model: str,
@@ -101,24 +103,34 @@ def summarise_article(
     if not article_text:
         return "Summary unavailable because the article text was empty."
 
+    payload = {
+        "model": summary_model,
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "You summarise news articles. Use only the article text provided. "
+                    "Do not add outside facts. Keep the summary concise in 4 to 6 sentences."
+                ),
+            },
+            {
+                "role": "user",
+                "content": f"Article text:\n{article_text}",
+            },
+        ],
+        "stream": False,
+    }
+
     try:
-        response = client.responses.create(
-            model=summary_model,
-            input=[
-                {
-                    "role": "system",
-                    "content": (
-                        "You summarise news articles. Use only the article text provided. "
-                        "Do not add outside facts. Keep the summary concise in 2 to 4 sentences."
-                    ),
-                },
-                {
-                    "role": "user",
-                    "content": f"Article text:\n{article_text}",
-                },
-            ],
+        response = requests.post(OLLAMA_URL, json=payload, timeout=180)
+        response.raise_for_status()
+
+        data = response.json()
+        summary = (
+            data.get("message", {}).get("content", "").strip()
+            if isinstance(data, dict)
+            else ""
         )
-        summary = response.output_text.strip()
         return summary or "Summary unavailable because the model returned no text."
     except Exception as exc:
         print(f"Warning: failed to summarise '{article.get('title', 'Untitled')}': {exc}")
@@ -212,15 +224,17 @@ def save_csv(path: Path, articles: list[dict[str, Any]]) -> None:
 
 def main() -> int:
     try:
-        news_api_key, openai_api_key, summary_model = load_environment()
+        print("Loading Environment...")
+        news_api_key, summary_model = load_environment()
     except ValueError as exc:
         print(f"Error: {exc}")
         return 1
 
-    data_dir = Path(__file__).resolve().parent.parent / "data"
+    data_dir = Path(__file__).resolve().parent.parent / "data" / "ollama_output"
     data_dir.mkdir(parents=True, exist_ok=True)
 
     try:
+        print("Fetching Articles...")
         raw_articles = fetch_news(news_api_key)
     except requests.RequestException as exc:
         print(f"Error: failed to fetch articles from NewsAPI: {exc}")
@@ -234,18 +248,22 @@ def main() -> int:
         return 0
 
     collected_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-    client = OpenAI(api_key=openai_api_key)
     articles: list[dict[str, Any]] = []
 
+    print("Normalizing Articles...")
     for index, raw_article in enumerate(raw_articles, start=1):
         article = normalise_article(raw_article, index, collected_at, summary_model)
         article["ai_output"]["summary"] = summarise_article(
-            client, raw_article, article, summary_model
+            raw_article, article, summary_model
         )
         articles.append(article)
+    print("Article Summarization Complete")
 
+    print("Saving Article JSON...")
     json_path = data_dir / "articles.json"
     sample_json_path = data_dir / "articles_sample.json"
+
+    print("Saving Article CSV...")
     csv_path = data_dir / "articles.csv"
     save_json(json_path, articles)
     save_json(sample_json_path, articles)
