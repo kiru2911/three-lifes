@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Generated data
+data/articles.json
+data/articles.csv
+
+# macOS
+.DS_Store
