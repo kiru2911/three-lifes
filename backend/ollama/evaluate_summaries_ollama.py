@@ -119,7 +119,7 @@ SCORE_FIELDS = [
 
 def load_environment() -> str:
     """Load environment variables and return the Ollama model name."""
-    project_root = Path(__file__).resolve().parent.parent
+    project_root = Path(__file__).resolve().parent.parent.parent
     load_dotenv(project_root / ".env")
     load_dotenv()
 
@@ -321,8 +321,8 @@ def main() -> int:
         print(f"Error: {exc}")
         return 1
 
-    project_root = Path(__file__).resolve().parent.parent
-    data_dir = project_root / "data"
+    project_root = Path(__file__).resolve().parent.parent.parent
+    data_dir = project_root / "data" / "ollama_output"
 
     input_path = data_dir / "articles_with_v2.json"
     json_output_path = data_dir / "evaluation_results_v2.json"

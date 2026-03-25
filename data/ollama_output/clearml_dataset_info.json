@@ -1,0 +1,119 @@
+{
+  "dataset_name": "ollama-output-dataset",
+  "dataset_version": "1.0.0",
+  "dataset_project": "three-lifes/datasets",
+  "dataset_id": "e9161cc9723a456491dceae20e8d9708",
+  "file_count": 3,
+  "total_row_count": 36,
+  "source": "NewsAPI article collection pipeline with Ollama summarisation/evaluation outputs",
+  "files": [
+    {
+      "file_name": "articles.csv",
+      "format": "csv",
+      "row_count": 12,
+      "column_count": 15,
+      "fields": [
+        "article_id",
+        "source_name",
+        "source_url",
+        "publisher_type",
+        "title",
+        "author",
+        "published_at",
+        "collected_at",
+        "language",
+        "region",
+        "full_text",
+        "word_count",
+        "summary",
+        "summary_model",
+        "summary_prompt_version"
+      ],
+      "schema": {
+        "article_id": "object",
+        "source_name": "object",
+        "source_url": "object",
+        "publisher_type": "object",
+        "title": "object",
+        "author": "object",
+        "published_at": "object",
+        "collected_at": "object",
+        "language": "object",
+        "region": "object",
+        "full_text": "object",
+        "word_count": "int64",
+        "summary": "object",
+        "summary_model": "object",
+        "summary_prompt_version": "object"
+      }
+    },
+    {
+      "file_name": "articles_with_v2.csv",
+      "format": "csv",
+      "row_count": 12,
+      "column_count": 8,
+      "fields": [
+        "article_id",
+        "article_title",
+        "summary_v1",
+        "summary_v2",
+        "model_v1",
+        "model_v2",
+        "prompt_version_v1",
+        "prompt_version_v2"
+      ],
+      "schema": {
+        "article_id": "object",
+        "article_title": "object",
+        "summary_v1": "object",
+        "summary_v2": "object",
+        "model_v1": "object",
+        "model_v2": "object",
+        "prompt_version_v1": "object",
+        "prompt_version_v2": "object"
+      }
+    },
+    {
+      "file_name": "evaluation_results_v2.csv",
+      "format": "csv",
+      "row_count": 12,
+      "column_count": 16,
+      "fields": [
+        "article_id",
+        "article_title",
+        "model",
+        "prompt_version",
+        "summary",
+        "relevance",
+        "faithfulness",
+        "conciseness",
+        "coherence",
+        "usefulness",
+        "overall_score",
+        "relevance_explanation",
+        "faithfulness_explanation",
+        "conciseness_explanation",
+        "coherence_explanation",
+        "usefulness_explanation"
+      ],
+      "schema": {
+        "article_id": "object",
+        "article_title": "object",
+        "model": "object",
+        "prompt_version": "object",
+        "summary": "object",
+        "relevance": "int64",
+        "faithfulness": "int64",
+        "conciseness": "int64",
+        "coherence": "int64",
+        "usefulness": "int64",
+        "overall_score": "float64",
+        "relevance_explanation": "object",
+        "faithfulness_explanation": "object",
+        "conciseness_explanation": "object",
+        "coherence_explanation": "object",
+        "usefulness_explanation": "object"
+      }
+    }
+  ]
+}

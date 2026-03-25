@@ -1,0 +1,43 @@
+{
+  "dataset_name": "articles-dataset",
+  "dataset_version": "1.0.0",
+  "dataset_project": "three-lifes/datasets",
+  "dataset_id": "50144c78b80241458fd2b9f40ecb2d88",
+  "row_count": 12,
+  "column_count": 15,
+  "source": "NewsAPI article collection pipeline",
+  "schema": {
+    "article_id": "object",
+    "source_name": "object",
+    "source_url": "object",
+    "publisher_type": "object",
+    "title": "object",
+    "author": "object",
+    "published_at": "object",
+    "collected_at": "object",
+    "language": "object",
+    "region": "object",
+    "full_text": "object",
+    "word_count": "int64",
+    "summary": "object",
+    "summary_model": "object",
+    "summary_prompt_version": "object"
+  },
+  "fields": [
+    "article_id",
+    "source_name",
+    "source_url",
+    "publisher_type",
+    "title",
+    "author",
+    "published_at",
+    "collected_at",
+    "language",
+    "region",
+    "full_text",
+    "word_count",
+    "summary",
+    "summary_model",
+    "summary_prompt_version"
+  ]
+}
