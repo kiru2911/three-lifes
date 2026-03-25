@@ -242,7 +242,7 @@ def main() -> int:
         article["ai_output"]["summary"] = summarise_article(
             client, raw_article, article, summary_model
         )
-        articles.append(article)
+        articles.append(article) 
 
     json_path = data_dir / "articles.json"
     sample_json_path = data_dir / "articles_sample.json"
