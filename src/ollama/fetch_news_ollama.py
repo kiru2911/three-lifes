@@ -10,6 +10,14 @@ from typing import Any
 import requests
 from dotenv import load_dotenv
 
+from clearml import Task
+
+task = Task.init(
+    project_name="three-lifes",
+    task_name="fetch-news-ollama",
+    task_type=Task.TaskTypes.data_processing,
+)
+
 
 QUERY = (
     "artificial intelligence OR generative AI OR machine learning "

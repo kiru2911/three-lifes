@@ -2,7 +2,7 @@
   "dataset_name": "ollama-output-dataset",
   "dataset_version": "1.0.0",
   "dataset_project": "three-lifes/datasets",
-  "dataset_id": "e9161cc9723a456491dceae20e8d9708",
+  "dataset_id": "ced26e09675d4d63bf000173ff764fb2",
   "file_count": 3,
   "total_row_count": 36,
   "source": "NewsAPI article collection pipeline with Ollama summarisation/evaluation outputs",

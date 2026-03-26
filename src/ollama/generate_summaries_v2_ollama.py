@@ -17,6 +17,14 @@ from typing import Any
 import requests
 from dotenv import load_dotenv
 
+from clearml import Task
+
+task = Task.init(
+    project_name="three-lifes",
+    task_name="generate-summaries-v2-ollama",
+    task_type=Task.TaskTypes.data_processing,
+)
+
 
 DEFAULT_SUMMARY_MODEL = "llama3.1:8b"
 SUMMARY_V2_PROMPT_VERSION = "v2"

@@ -16,6 +16,14 @@ from typing import Any
 import requests
 from dotenv import load_dotenv
 
+from clearml import Task
+
+task = Task.init(
+    project_name="three-lifes",
+    task_name="evaluate-summaries-ollama",
+    task_type=Task.TaskTypes.data_processing,
+)
+
 
 SUMMARY_PROMPT_VERSION = 'v1'
 DEFAULT_EVALUATION_MODEL = "llama3.1:8b"
@@ -321,7 +329,8 @@ def main() -> int:
         print(f"Error: {exc}")
         return 1
 
-    project_root = Path(__file__).resolve().parent.parent.parent
+    project_root = Path(__file__).resolve().parent.parent
+    print("PROJECT ROOT: ", project_root)
     data_dir = project_root / "data" / "ollama_output"
 
     input_path = data_dir / "articles_with_v2.json"

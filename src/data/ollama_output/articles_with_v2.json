@@ -1,0 +1,338 @@
+[
+  {
+    "article_id": "article_0001",
+    "source": {
+      "name": "Financial Post",
+      "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/sherweb-secures-125-million-investment-to-accelerate-global-expansion",
+      "publisher_type": "news_website"
+    },
+    "title": "Sherweb Secures $125 Million Investment to Accelerate Global Expansion",
+    "author": "Business Wire",
+    "published_at": "2026-03-25T12:10:50Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "Sherweb Secures $125 Million Investment to Accelerate Global Expansion MONTRÉAL — Sherweb, an award-winning cloud distributor, today announced the successful closing of a $125 million minority equity investment from Investissement Québec, of which $49.9 million was provided by the Government of Québec’s Fonds pour la croissance … MONTRÉAL Sherweb, an award-winning cloud distributor, today announced the successful closing of a $125 million minority equity investment from Investissement Québec, of which $49.9 million was provid…",
+      "word_count": 74
+    },
+    "ai_output": {
+      "summary": "Sherweb, a cloud distributor, has secured a $125 million minority equity investment from Investissement Québec. The funding includes $49.9 million provided by the Government of Québec's Fonds pour la croissance. This investment aims to support Sherweb's global expansion efforts. With this new capital, Sherweb plans to accelerate its growth worldwide. The company has previously received awards for its cloud distribution services.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "Sherweb, a cloud distributor, has secured a $125 million minority equity investment from Investissement Québec to fuel its global expansion plans. The funding comes with a significant $49.9 million contribution from the Government of Québec's Fonds pour la croissance. This major investment is expected to propel Sherweb's growth and enhance its presence in the cloud computing market.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  },
+  {
+    "article_id": "article_0002",
+    "source": {
+      "name": "Financial Post",
+      "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/slb-industrializes-ai-for-the-energy-industry-with-nvidia",
+      "publisher_type": "news_website"
+    },
+    "title": "SLB Industrializes AI for the Energy Industry with NVIDIA",
+    "author": "Business Wire",
+    "published_at": "2026-03-25T12:10:34Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "SLB Industrializes AI for the Energy Industry with NVIDIA Companies will develop modular data center infrastructure and generative AI models for large-scale deployments HOUSTON — Global energy technology company SLB (NYSE: SLB) today announced an expansion of its technology collaboration with NVIDIA to design and de… Companies will develop modular data center infrastructure and generative AI models for large-scale deployments THIS CONTENT IS RESERVED FOR SUBSCRIBERS ONLY Subscribe now to read the latest news in…",
+      "word_count": 75
+    },
+    "ai_output": {
+      "summary": "SLB, a global energy technology company, has expanded its partnership with NVIDIA. The companies will work together to develop modular data center infrastructure and generative AI models. These advancements are intended for large-scale deployments in the energy industry. No further details on the project's specifics are available due to subscription restrictions.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "SLB, a global energy technology company, has partnered with NVIDIA to develop modular data center infrastructure and generative AI models for large-scale use in the energy industry. The collaboration aims to industrialize AI applications for energy companies. This partnership will enable SLB and NVIDIA to create scalable and efficient solutions for complex energy-related tasks.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  },
+  {
+    "article_id": "article_0003",
+    "source": {
+      "name": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/east/2026/03/25/863341.htm",
+      "publisher_type": "news_website"
+    },
+    "title": "Baltimore Sues Elon Musk’s xAI Over Grok Sexual ‘Deepfakes’",
+    "author": "Admin",
+    "published_at": "2026-03-25T12:09:40Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "Baltimore Sues Elon Musk’s xAI Over Grok Sexual ‘Deepfakes’ The city of Baltimore sued Elon Musk’s xAI on Tuesday, claiming its Grok chatbot illegally generates nonconsensual sexually explicit images, including of children. Baltimore, with a population of about 568,000, is the largest city to sue xAI over “deepfakes” … The city of Baltimore sued Elon Musk’s xAI on Tuesday, claiming its Grok chatbot illegally generates nonconsensual sexually explicit images, including of children. Baltimore, with a population of ab…",
+      "word_count": 78
+    },
+    "ai_output": {
+      "summary": "The city of Baltimore has filed a lawsuit against Elon Musk's company xAI over the use of its Grok chatbot to create \"deepfakes\", or non-consensual sexually explicit images. The images allegedly include those of children. This is the largest city to sue xAI over this issue. The city claims that the chatbot generates these images illegally. The lawsuit was filed on Tuesday.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "Baltimore has sued Elon Musk's AI company xAI, alleging that its chatbot Grok creates nonconsensual and sexually explicit \"deepfakes\", including those featuring minors. The city claims these images are generated without users' consent. This is the largest city to take action against xAI over such concerns.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  },
+  {
+    "article_id": "article_0004",
+    "source": {
+      "name": "CNBC",
+      "url": "https://www.cnbc.com/2026/03/25/5-things-to-know-before-the-market-opens.html",
+      "publisher_type": "news_website"
+    },
+    "title": "U.S.-Iran negotiations, Meta trial verdict, OpenAI shuts Sora and more in Morning Squawk",
+    "author": "Alex Harring",
+    "published_at": "2026-03-25T12:06:14Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "U.S.-Iran negotiations, Meta trial verdict, OpenAI shuts Sora and more in Morning Squawk Here are five key things investors need to know to start the trading day. This is CNBC's Morning Squawk newsletter. Subscribe here to receive future editions in your inbox. Happy Wednesday. I spent yesterday evening at a market technicals event and then went to watch the …",
+      "word_count": 60
+    },
+    "ai_output": {
+      "summary": "There is no summary to be provided as the article does not contain any actual news or information. It appears to be an introduction to a newsletter, inviting readers to subscribe for future editions.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "Meta faces a trial verdict, while US-Iran negotiations continue with no clear outcome announced yet. OpenAI has also shut down its Sora project. The news highlights ongoing developments in global tech markets and diplomacy efforts.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  },
+  {
+    "article_id": "article_0005",
+    "source": {
+      "name": "Pypi.org",
+      "url": "https://pypi.org/project/pyautomationio/2.1.0/",
+      "publisher_type": "news_website"
+    },
+    "title": "PyAutomationIO 2.1.0",
+    "author": "dev.know.ai@gmail.com",
+    "published_at": "2026-03-25T12:05:05Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "PyAutomationIO 2.1.0 A python framework to develop automation industrial processes applications and Artificial Intelligence applications for the industrial field A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe…",
+      "word_count": 53
+    },
+    "ai_output": {
+      "summary": "Here is a concise summary of the article text:\n\nA new version (2.1.0) of PyAutomationIO has been released. It's a Python framework for developing automation and AI applications in the industrial field. The tool aims to support various processes and tasks for industries. However, an error occurred on this webpage, which may be caused by browser extensions or network issues.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "PyAutomationIO 2.1.0 has been released, providing a Python framework for developing industrial process automation and Artificial Intelligence applications in the industrial field. The update aims to improve performance and functionality of the software. This release is significant for industries relying on automation and AI to optimize production processes.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  },
+  {
+    "article_id": "article_0006",
+    "source": {
+      "name": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/03/25/3262156/0/en/New-Energy-New-York-Announces-Ten-Companies-to-Join-ChargeUp-Battery-Accelerator-Program-for-2026.html",
+      "publisher_type": "news_website"
+    },
+    "title": "New Energy New York Announces Ten Companies to Join ChargeUp Battery Accelerator Program for 2026",
+    "author": "New Energy New York",
+    "published_at": "2026-03-25T12:03:00Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "New Energy New York Announces Ten Companies to Join ChargeUp Battery Accelerator Program for 2026 Ten companies selected to participate in the biggest cohort yet of ChargeUp Accelerator, the nation’s premier accelerator advancing U.S. battery innovation BINGHAMTON, N.Y., March 25, 2026 (GLOBE NEWSWIRE) -- Binghamton University, the Koffman Southern Tier Incubator, and New Energy New York (NENY) have announced the ten companies that were selected to …",
+      "word_count": 67
+    },
+    "ai_output": {
+      "summary": "New Energy New York has chosen 10 companies to participate in its ChargeUp Battery Accelerator Program for 2026. The selection marks the largest cohort yet of the program, which aims to advance U.S. battery innovation. The companies will work with Binghamton University and the Koffman Southern Tier Incubator through the accelerator program. Details about the selected companies have not been provided in the announcement. The ChargeUp Accelerator is considered a premier program for advancing U.S. battery innovation.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "Ten companies have been chosen to participate in the ChargeUp Battery Accelerator Program for 2026. This is the largest cohort yet of the nation's premier accelerator advancing U.S. battery innovation. The program aims to drive advancements in American battery technology. The selected companies will begin participating in the program immediately, with the goal of launching new products and technologies.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  },
+  {
+    "article_id": "article_0007",
+    "source": {
+      "name": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/03/25/3262153/0/en/Safe-Pro-Appoints-Former-Anduril-Executive-and-U-S-Army-Contracting-Officer-Brian-Mack-to-its-Strategic-Advisory-Board.html",
+      "publisher_type": "news_website"
+    },
+    "title": "Safe Pro Appoints Former Anduril Executive and U.S. Army Contracting Officer Brian Mack to its Strategic Advisory Board",
+    "author": "Safe Pro Group Inc.",
+    "published_at": "2026-03-25T12:02:00Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "Safe Pro Appoints Former Anduril Executive and U.S. Army Contracting Officer Brian Mack to its Strategic Advisory Board Safe Pro Appoints Former Anduril Executive and U.S. Army Contracting Officer Brian Mack to its Strategic Advisory Board... AVENTURA, Fla., March 25, 2026 (GLOBE NEWSWIRE) -- Safe Pro Group Inc. (Nasdaq: SPAI) (Safe Pro or the Company), a developer of artificial intelligence (AI)-enabled defense, security, and situational…",
+      "word_count": 65
+    },
+    "ai_output": {
+      "summary": "Here is a concise summary of the article in 4-6 sentences:\n\nSafe Pro Group Inc. has appointed Brian Mack to its Strategic Advisory Board. Mack is a former executive at Anduril and a U.S. Army contracting officer. This appointment was made public on March 25, 2026. Safe Pro is a company that develops AI-enabled defense, security, and situational awareness technologies.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "Brian Mack, former Anduril executive and U.S. Army contracting officer, has been appointed to Safe Pro's Strategic Advisory Board. This appointment was made on March 25, 2026. As part of his role, Mack will provide strategic guidance to the company in its development of AI-enabled defense and security solutions.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  },
+  {
+    "article_id": "article_0008",
+    "source": {
+      "name": "Researchbuzz.me",
+      "url": "https://researchbuzz.me/2026/03/25/ireland-stained-glass-kalshi-reddit-more-wednesday-researchbuzz-march-25-2026/",
+      "publisher_type": "news_website"
+    },
+    "title": "Ireland Stained Glass, Kalshi, Reddit, More: Wednesday ResearchBuzz, March 25, 2026",
+    "author": "ResearchBuzz",
+    "published_at": "2026-03-25T12:01:32Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "Ireland Stained Glass, Kalshi, Reddit, More: Wednesday ResearchBuzz, March 25, 2026 NEW RESOURCES Clare County Council: Launch of ‘Clare’s Stained Glass’ Archive. “Created by Clare-based researcher and photographer John Glynn, this archive brings together more than five years of research into stained-glass windows […] NEW RESOURCES Clare County Council: Launch of Clares Stained Glass Archive. “Created by Clare-based researcher and photographer John Glynn, this archive brings together more than five years of rese…",
+      "word_count": 73
+    },
+    "ai_output": {
+      "summary": "Ireland's Clare County Council has launched two new resources. The \"Clare's Stained Glass\" archive was created by local researcher and photographer John Glynn. It showcases over 5 years of research into stained-glass windows in the area. A link to the resource is not provided, but it can be found on the council's website. The project brings together a large collection of data and images.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "Clare County Council in Ireland has launched the \"Clare's Stained Glass\" Archive, a collection of over 5 years' worth of research into stained-glass windows. The archive was created by local researcher and photographer John Glynn. This new resource is now available online for public access.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  },
+  {
+    "article_id": "article_0009",
+    "source": {
+      "name": "Commercial Observer",
+      "url": "http://commercialobserver.com/2026/03/student-housing-public-private-partnerships/",
+      "publisher_type": "news_website"
+    },
+    "title": "Student Housing Is Changing Fast. Public-Private Partnerships Are Key.",
+    "author": "Tom Acitelli",
+    "published_at": "2026-03-25T12:00:34Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "Student Housing Is Changing Fast. Public-Private Partnerships Are Key. The ritual of dropping off a child at college for the first time follows a familiar script: Parents fill the car with too many belongings, drive to a freshman residence hall, make the bed one last time, and hope the randomly assigned roommate lives up to expe… The ritual of dropping off a child at college for the first time follows a familiar script: Parents fill the car with too many belongings, drive to a freshman residence hall, make the bed one last ti…",
+      "word_count": 93
+    },
+    "ai_output": {
+      "summary": "The traditional experience of sending a child off to college is changing rapidly. Public-private partnerships are becoming key players in student housing. These collaborations aim to provide high-quality accommodations and amenities for students, while also addressing issues such as affordability and sustainability. Traditional on-campus residence halls may not be able to meet the evolving needs of students and families. The partnership model offers a potential solution to these challenges.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "Student housing is undergoing significant changes due to growing demand and rising costs. Public-private partnerships are becoming key in addressing this issue, as universities partner with private companies to develop and manage on-campus student housing facilities. This shift aims to provide more efficient and cost-effective solutions for students, while also enhancing the overall residential experience.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  },
+  {
+    "article_id": "article_0010",
+    "source": {
+      "name": "The Times of India",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/adani-eyes-partnerships-with-meta-google-amid-data-centre-boom/articleshow/129800733.cms",
+      "publisher_type": "news_website"
+    },
+    "title": "Adani eyes partnerships with Meta, Google amid data centre boom",
+    "author": "P R Sanjai and Saikat Das",
+    "published_at": "2026-03-25T12:00:28Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "Adani eyes partnerships with Meta, Google amid data centre boom Indian billionaire Gautam Adani is in talks with American technology giants including Meta Platforms Inc. and Google for partnerships in his fast-expanding data centre business, according to people familiar with the matter. Indian billionaire Gautam Adani is in talks with American technology giants including Meta Platforms Inc. and Google for partnerships in his fast-expanding data centre business, according to people f…",
+      "word_count": 71
+    },
+    "ai_output": {
+      "summary": "Indian billionaire Gautam Adani is in talks with tech giants Meta and Google about potential partnerships for his growing data centre business. The talks suggest a surge in demand for data centres amid India's rapid digital growth. No further details on the proposed collaborations have been disclosed. Sources close to the matter claim that Adani is expanding quickly, driven by increasing demand. This comes as India experiences rapid digitalisation.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "Adani Group is in talks with Meta and Google to form partnerships for its growing data centre business. The potential deals come amid a boom in the global data centre industry. Adani's company is expanding rapidly, and these collaborations could give it access to cutting-edge technology from major players like Meta and Google.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  },
+  {
+    "article_id": "article_0011",
+    "source": {
+      "name": "Financial Post",
+      "url": "https://financialpost.com/news/canadians-unknowingly-committing-insurance-fraud",
+      "publisher_type": "news_website"
+    },
+    "title": "Posthaste: Many Canadians could be committing insurance fraud — and don’t even know it",
+    "author": "Ben Cousins",
+    "published_at": "2026-03-25T12:00:11Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "Posthaste: Many Canadians could be committing insurance fraud — and don’t even know it Less than 60 per cent of Canadians were able to recognize several real-world scenarios that can be deemed insurance fraud. Read more THIS CONTENT IS RESERVED FOR SUBSCRIBERS ONLY Subscribe now to read the latest news in your city and across Canada. <ul><li>Exclusive articles from Barbara Shecter, Joe O'Connor, Gabriel Friedman, …",
+      "word_count": 66
+    },
+    "ai_output": {
+      "summary": "A survey suggests many Canadians may be unknowingly committing insurance fraud. Less than 60% of respondents could identify real-world scenarios that would be considered fraudulent. The exact nature of these scenarios was not specified in the article text provided. Further information is only available to subscribers. The article implies widespread ignorance about what constitutes insurance fraud among Canadians.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "A recent survey found that less than 60% of Canadians can recognize common scenarios that may be considered insurance fraud, raising concerns about widespread unwitting participation in the practice. The survey did not specify which specific scenarios were used to gauge awareness. Insurance fraud is a significant issue, with billions of dollars lost annually in Canada.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  },
+  {
+    "article_id": "article_0012",
+    "source": {
+      "name": "Hurriyet Daily News",
+      "url": "https://www.hurriyetdailynews.com/top-wto-official-sounds-fertilizer-warning-over-war-220313",
+      "publisher_type": "news_website"
+    },
+    "title": "Top WTO official sounds fertilizer warning over war",
+    "author": "hurriyetdailynews.com",
+    "published_at": "2026-03-25T12:00:05Z",
+    "collected_at": "2026-03-26T12:12:58Z",
+    "language": "en",
+    "region": "Global",
+    "category": [],
+    "keywords": [],
+    "content": {
+      "full_text": "Top WTO official sounds fertilizer warning over war Disruptions to fertilizer supplies caused by the Middle East war pose a double threat to global food security through scarcity and high prices, a top World Trade Organization official has warned. YAOUNDE Disruptions to fertilizer supplies caused by the Middle East war pose a double threat to global food security through scarcity and high prices, a top World Trade Organization official has wa…",
+      "word_count": 71
+    },
+    "ai_output": {
+      "summary": "A top World Trade Organization official has warned that disruptions to fertilizer supplies due to the Middle East war threaten global food security. The shortages could lead to both scarcity and higher prices of fertilizers. This double threat is expected to impact food availability worldwide. Fertilizer scarcity can limit crop yields, exacerbating the issue. The warning highlights the potential consequences of the conflict on global food supply chains.",
+      "summary_model": "llama3.1:8b",
+      "summary_prompt_version": "v1",
+      "summary_v2": "WTO Official Warns of Global Food Security Threat: Disruptions to fertilizer supplies caused by the Middle East war could lead to both scarcity and high prices, threatening global food security. According to WTO estimates, global fertilizer prices have already surged 20% since the start of the conflict, raising concerns about the impact on crop yields. This warning comes as the world grapples with existing food shortages.",
+      "summary_v2_model": "llama3.1:8b",
+      "summary_v2_prompt_version": "v2"
+    }
+  }
+]

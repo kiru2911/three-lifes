@@ -83,8 +83,8 @@ def build_dataset_metadata(csv_files: list[Path], files_metadata: list[dict]) ->
 
 def upload_dataset(data_dir: Path, metadata: dict, csv_files: list[Path]) -> Dataset:
     task = Task.init(
-        project_name=PROJECT_NAME,
-        task_name=TASK_NAME,
+        project_name="three-lifes",
+        task_name="upload-ollama-output-dataset",
         task_type=Task.TaskTypes.data_processing,
     )
 
