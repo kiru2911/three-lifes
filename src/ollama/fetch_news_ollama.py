@@ -18,7 +18,6 @@ task = Task.init(
     task_type=Task.TaskTypes.data_processing,
 )
 
-
 QUERY = (
     "artificial intelligence OR generative AI OR machine learning "
     "OR AI startups OR technology"
@@ -31,14 +30,17 @@ MIN_TEXT_LENGTH = 120
 OLLAMA_URL = "http://localhost:11434/api/chat"
 
 
+def get_project_root() -> Path:
+    return Path(__file__).resolve().parent.parent
+
+
 # LOAD ENVIRONMENT VARIABLES
 def load_environment() -> tuple[str, str]:
-    project_root = Path(__file__).resolve().parent.parent
+    project_root = get_project_root()
     load_dotenv(project_root / ".env")
     load_dotenv()
 
     news_api_key = os.getenv("NEWS_API_KEY")
-    # print(news_api_key)
     summary_model = os.getenv("OLLAMA_SUMMARY_MODEL", DEFAULT_SUMMARY_MODEL)
 
     if not news_api_key:
@@ -238,7 +240,7 @@ def main() -> int:
         print(f"Error: {exc}")
         return 1
 
-    data_dir = Path(__file__).resolve().parent.parent / "data" / "ollama_output"
+    data_dir = get_project_root() / "data" / "ollama_output"
     data_dir.mkdir(parents=True, exist_ok=True)
 
     try:
