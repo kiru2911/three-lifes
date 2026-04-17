@@ -14,7 +14,8 @@ from openai import OpenAI
 
 QUERY = (
     "artificial intelligence OR generative AI OR machine learning "
-    "OR AI startups OR technology"
+    "OR large language model OR LLM OR AI chips OR OpenAI OR Anthropic "
+    "OR Google DeepMind OR AI research OR neural network"
 )
 NEWS_API_URL = "https://newsapi.org/v2/everything"
 DEFAULT_ARTICLE_LIMIT = 12
@@ -47,6 +48,10 @@ def fetch_news(news_api_key: str, page_size: int = DEFAULT_ARTICLE_LIMIT) -> lis
         "sortBy": "publishedAt",
         "pageSize": page_size,
         "apiKey": news_api_key,
+        "domains": (
+            "techcrunch.com,theverge.com,wired.com,arstechnica.com,"
+            "venturebeat.com,thenextweb.com,zdnet.com,engadget.com"
+        )
     }
 
     response = requests.get(NEWS_API_URL, params=params, timeout=30)

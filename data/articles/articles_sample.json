@@ -2,275 +2,200 @@
   {
     "article_id": "article_0001",
     "source": {
-      "name": "Digitimes",
-      "url": "https://www.digitimes.com/news/a20260312VL208/umc-photonics-data-startup-transmission.html",
+      "name": "The Verge",
+      "url": "https://www.theverge.com/podcast/910443/can-puck-reinvent-the-news-business-for-the-influencer-age",
       "publisher_type": "news_website"
     },
-    "title": "UMC, HyperLight to mass-produce TFLN photonics chiplets for AI data centers",
-    "author": "DIGITIMES",
-    "published_at": "2026-03-12T08:37:43Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "title": "Can Puck reinvent the news business for the influencer age?",
+    "author": "Nilay Patel",
+    "published_at": "2026-04-13T13:08:38Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "UMC, HyperLight to mass-produce TFLN photonics chiplets for AI data centers United Microelectronics Corporation (UMC) has partnered with startup HyperLight to mass-produce thin-film lithium niobate (TFLN) chiplets, aiming to improve data transmission speeds in artificial intelligence computing clusters and data centers. Save my User ID and Password Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function…",
-      "word_count": 77
+      "full_text": "Can Puck reinvent the news business for the influencer age? Today, I’m talking with Sarah Personette, CEO of Puck, which is a fancy new media company that’s been around for just about five years now. Puck hires big stars and gives them newsletters that are all mostly part of a subscription bundle. These newsletters ar… <ul><li></li><li></li><li></li></ul> CEO Sarah Personettes big bet on the place where influencers and reporters might meet by Nilay PatelClose Posts from this author will be added to your daily e…",
+      "word_count": 84
     },
     "ai_output": {
-      "summary": "UMC and HyperLight have partnered to mass-produce TFLN photonics chiplets. The goal is to improve data transmission speeds in AI computing clusters and data centers. Thin-film lithium niobate (TFLN) technology is used to achieve this. The partnership aims to enhance data transmission efficiency. This technology is expected to benefit AI computing applications.",
-      "summary_model": "llama3.1:8b",
+      "summary": "Puck is a media company founded about five years ago that focuses on hiring prominent figures to create newsletters, primarily offered through a subscription bundle. CEO Sarah Personette aims to blend the worlds of influencers and traditional reporters through this model. The article explores whether Puck can reinvent the news business for the influencer era.",
+      "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
   },
   {
     "article_id": "article_0002",
     "source": {
-      "name": "Livemint",
-      "url": "https://www.livemint.com/opinion/online-views/digital-access-learning-outcomes-india-edtech-viksit-bharat-education-learning-capital-gains-11773230581359.html",
+      "name": "The Verge",
+      "url": "https://www.theverge.com/tech/910834/neuralink-bcis-bet",
       "publisher_type": "news_website"
     },
-    "title": "From digital access to learning outcomes: India’s edtech emphasis needs to evolve",
-    "author": "Amitabh Kant, Gouri Gupta",
-    "published_at": "2026-03-12T08:30:18Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "title": "Did Neuralink make the wrong bet?",
+    "author": "Elissa Welle",
+    "published_at": "2026-04-13T00:25:56Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "From digital access to learning outcomes: India’s edtech emphasis needs to evolve The Bharat Survey for EdTech shows that digital access is now widespread in India, but technologies aren’t fully understood. The focus of edtech must shift from access to structured learning and improving outcomes to deliver the human capital gains we need fo… This ambition rests on human capital. Sustained economic growth will depend not only on infrastructure and innovation, but on workforce productivity. At its foundation, this means ensuring that ever…",
-      "word_count": 83
+      "full_text": "Did Neuralink make the wrong bet? Elon Musk promised Neuralink would bring superhuman abilities and minds merged with AI. Then he fueled a runaway hype train for his brain implant technology, which ended up with a grisly record for implants in monkeys and some success with human subjects. But… <ul><li></li><li></li></ul> The field of brain-computer interfaces is moving away from mind-controlled computer cursors to restoring speech. by Elissa WelleClose Posts from this author will be ad…",
+      "word_count": 75
     },
     "ai_output": {
-      "summary": "A survey in India has found that digital access to education is now widespread, but understanding of technology in education is limited. The focus of education technology (edtech) should shift from just providing access to improving learning outcomes. This is necessary for India to achieve human capital gains, which are essential for sustained economic growth. Economic growth also relies on workforce productivity. The government needs to prioritize improving learning outcomes.",
-      "summary_model": "llama3.1:8b",
+      "summary": "Elon Musk's Neuralink initially promised superhuman abilities and AI-enhanced minds but has faced criticism for a poor track record with monkey implants despite some human progress. Meanwhile, the brain-computer interface field is shifting focus from mind-controlled cursors toward restoring speech functions.",
+      "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
   },
   {
     "article_id": "article_0003",
     "source": {
-      "name": "DW (English)",
-      "url": "https://www.dw.com/en/elon-musk-unveiled-the-tesla-experiment-when-unchecked-ambition-costs-lives/a-76307889",
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/dario-amodei-london-united-kingdom/",
       "publisher_type": "news_website"
     },
-    "title": "'Elon Musk Unveiled: The Tesla Experiment': When unchecked ambition costs lives",
-    "author": "Elizabeth Grenier",
-    "published_at": "2026-03-12T08:27:00Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "title": "Anthropic brings Claude into Microsoft Word, and legal contract review leads its use cases",
+    "author": "Cristian Dina",
+    "published_at": "2026-04-12T15:35:28Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "'Elon Musk Unveiled: The Tesla Experiment': When unchecked ambition costs lives A documentary explores how Tesla drivers serve as unpaid beta testers of the company's self-driving cars, while Elon Musk focuses on his long-term goal: colonizing Mars. Elon Musk, who has topped for the second year in a row Forbes' Billionaires list publishe… Elon Musk, who has topped for the second year in a row Forbes' Billionaires list published on March 10, is on course to become the world's first trillionaire. On top of his extreme wealth, Musk is b…",
-      "word_count": 90
+      "full_text": "Anthropic brings Claude into Microsoft Word, and legal contract review leads its use cases In short: Anthropic has released a beta add-in that places Claude directly inside Microsoft Word, with every AI-generated edit appearing as a native tracked change and legal contract review listed first among the tool’s example applications. The add-in, avail… In short: Anthropic has released a beta add-in that places Claude directly inside Microsoft Word, with every AI-generated edit appearing as a native tracked change and legal contract review listed fi…",
+      "word_count": 84
     },
     "ai_output": {
-      "summary": "A documentary titled \"Elon Musk Unveiled: The Tesla Experiment\" explores how Tesla drivers are used as unpaid beta testers for the company's self-driving cars. The drivers are not being paid to test the cars, which can put their lives at risk. Meanwhile, Elon Musk is focused on his long-term goal of colonizing Mars. He has topped Forbes' Billionaires list for the second year in a row. Musk is on track to become the world's first trillionaire, according to Forbes. His extreme wealth and ambitious goals are the subject of the documentary.",
-      "summary_model": "llama3.1:8b",
+      "summary": "Anthropic has launched a beta add-in integrating its AI, Claude, directly into Microsoft Word, where AI-generated edits appear as native tracked changes. The tool highlights legal contract review as its primary use case among other applications.",
+      "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
   },
   {
     "article_id": "article_0004",
     "source": {
-      "name": "DW (English)",
-      "url": "https://www.dw.com/en/elon-musks-tesla-experiment-unchecked-ambition-costs-lives/a-76307889",
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/04/12/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
       "publisher_type": "news_website"
     },
-    "title": "Elon Musk's Tesla experiment: Unchecked ambition costs lives",
-    "author": "Elizabeth Grenier",
-    "published_at": "2026-03-12T08:27:00Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "title": "From LLMs to hallucinations, here's a simple guide to common AI terms | TechCrunch",
+    "author": "Natasha Lomas",
+    "published_at": "2026-04-12T15:07:45Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "Elon Musk's Tesla experiment: Unchecked ambition costs lives A documentary explores how Tesla drivers serve as unpaid beta testers of the company's self-driving cars while Elon Musk focuses on his long-term goal: colonizing Mars. Elon Musk, who this week topped Forbes' Billionaires list for the second year in a row, is on course to become the world's first trillionaire. On top of his extreme wealth, Musk is bound to remain i…",
-      "word_count": 71
+      "full_text": "From LLMs to hallucinations, here's a simple guide to common AI terms | TechCrunch The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter. Artificial intelligence is a deep and convoluted world. The scientists who work in this field often rely on jargon and lingo to explain what theyre working on. As a result, we frequently have to use …",
+      "word_count": 81
     },
     "ai_output": {
-      "summary": "A documentary critiques Elon Musk's approach to testing Tesla's self-driving cars, calling it an \"unchecked ambition\" that costs lives. Drivers of Tesla vehicles are essentially unpaid beta testers, allowing the company to gather data for its autonomous vehicles. The documentary questions whether the pursuit of innovation is worth the risks to human life. Elon Musk's focus on colonizing Mars is highlighted as an example of his long-term vision. Musk's wealth is noted as a key factor in his ability to pursue such ambitious goals.",
-      "summary_model": "llama3.1:8b",
+      "summary": "The article from TechCrunch offers a simple glossary explaining common terms and slang related to artificial intelligence, such as LLMs and hallucinations. It aims to clarify the complex jargon used by AI researchers to help readers better understand the rapidly evolving AI landscape.",
+      "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
   },
   {
     "article_id": "article_0005",
     "source": {
-      "name": "Business Insider",
-      "url": "https://www.businessinsider.com/social-giants-build-ai-future-creators-less-power-2026-3",
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/databricks-matei-zaharia-acm-prize-agi/",
       "publisher_type": "news_website"
     },
-    "title": "Social media giants have grand plans for AI. Creators fear they'll be left out.",
-    "author": "Sydney Bradley,Dan Whateley",
-    "published_at": "2026-03-12T08:25:01Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "title": "Databricks co-founder Matei Zaharia wins ACM Prize and declares AGI is already here",
+    "author": "Alina Maria Stan",
+    "published_at": "2026-04-10T06:09:33Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "Social media giants have grand plans for AI. Creators fear they'll be left out. Social apps like Instagram and TikTok have their attention set on AI, and it's making some creators feel like an afterthought. Getty Images; Tyler Le/BI <ul><li>Influencers are reckoning with a new boogeyman: artificial intelligence.</li><li>Social apps seem infatuated with AI, and it's making some creators feel like an aft…",
-      "word_count": 62
+      "full_text": "Databricks co-founder Matei Zaharia wins ACM Prize and declares AGI is already here In short: Matei Zaharia, the Berkeley computer science professor and Databricks co-founder who created Apache Spark, has won the 2026 ACM Prize in Computing for his foundational contributions to distributed data systems and AI infrastructure. The $250,000 pri… In short: Matei Zaharia, the Berkeley computer science professor and Databricks co-founder who created Apache Spark, has won the 2026 ACM Prize in Computing for his foundational contributions to dist…",
+      "word_count": 81
     },
     "ai_output": {
-      "summary": "Social media companies such as Instagram and TikTok are investing heavily in AI technology. This has raised concerns among content creators that they will be left behind. Influencers are now worried about the impact of AI on their livelihoods. The increased focus on AI has created a sense of uncertainty among creators who fear they will no longer be needed.",
-      "summary_model": "llama3.1:8b",
+      "summary": "Matei Zaharia, Berkeley professor and Databricks co-founder known for creating Apache Spark, has won the 2026 ACM Prize in Computing. He was recognized for his foundational contributions to distributed data systems and AI infrastructure.",
+      "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
   },
   {
     "article_id": "article_0006",
     "source": {
-      "name": "Lifesciencesworld.com",
-      "url": "https://www.lifesciencesworld.com/do-ferrets-wash-themselves/",
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/anthropic-openclaw-claude-subscription-ban-cost/",
       "publisher_type": "news_website"
     },
-    "title": "Do ferrets wash themselves?",
-    "author": "Ava Reynolds",
-    "published_at": "2026-03-12T08:22:40Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "title": "Anthropic cuts Claude subscribers off from OpenClaw in cost crackdown",
+    "author": "Ana Maria Constantin",
+    "published_at": "2026-04-04T18:53:55Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "Do ferrets wash themselves? Do Ferrets Wash Themselves? Unveiling the Grooming Habits of Fuzzy Noodles While ferrets engage in some self-grooming, they do not completely wash themselves like cats. Therefore, owners must assist with bathing and other hygiene practices. Understanding Ferr… While ferrets engage in some self-grooming, they do not completely wash themselves like cats. Therefore, owners must assist with bathing and other hygiene practices. Understanding Ferret Grooming Ha…",
-      "word_count": 69
+      "full_text": "Anthropic cuts Claude subscribers off from OpenClaw in cost crackdown In short: Anthropic has blocked Claude Pro and Max subscribers from using their flat-rate plans with third-party AI agent frameworks, starting with OpenClaw. The move, which took effect on 4 April 2026, shifts the cost of running autonomous agents onto users … In short: Anthropic has blocked Claude Pro and Max subscribers from using their flat-rate plans with third-party AI agent frameworks, starting with OpenClaw. The move, which took effect on 4 April 20…",
+      "word_count": 84
     },
     "ai_output": {
-      "summary": "Ferrets engage in some self-grooming, but they do not completely wash themselves like cats. They require assistance with bathing and other hygiene practices from their owners. Ferrets do not have the ability to completely clean themselves like some other animals. As a result, owners must take on a role in keeping their ferrets clean. This includes bathing and other hygiene practices.",
-      "summary_model": "llama3.1:8b",
+      "summary": "Anthropic has blocked Claude Pro and Max subscribers from using their flat-rate plans with third-party AI agent frameworks, beginning with OpenClaw. This change, effective from April 4, 2026, transfers the cost of running autonomous agents onto the users.",
+      "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
   },
   {
     "article_id": "article_0007",
     "source": {
-      "name": "Digitimes",
-      "url": "https://www.digitimes.com/news/a20260312PD229/semco-tesla-chips-samsung-production.html",
+      "name": "ZDNet",
+      "url": "https://www.zdnet.com/article/what-googles-turboquant-can-and-cant-do-for-ais-spiraling-cost/",
       "publisher_type": "news_website"
     },
-    "title": "Semco seen supplying ABF substrates for Tesla AI chips via Samsung foundry",
-    "author": "DIGITIMES",
-    "published_at": "2026-03-12T08:20:59Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "title": "What Google's TurboQuant can and can't do for AI's spiraling cost",
+    "author": "Tiernan Ray",
+    "published_at": "2026-03-30T19:59:16Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "Semco seen supplying ABF substrates for Tesla AI chips via Samsung foundry Samsung Electro-Mechanics (Semco) is expected to supply ABF substrates for Tesla's next-generation artificial intelligence chips that Samsung Electronics plans to manufacture at its Taylor, Texas foundry, according to Chosun Biz and other Korean media reports. Save my User ID and Password Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function…",
-      "word_count": 83
+      "full_text": "What Google's TurboQuant can and can't do for AI's spiraling cost Google's real-time quantization could be important for running local AI. Here's why. Orla/iStock / Getty Images Plus via Getty Images Follow ZDNET: Add us as a preferred source on Google. ZDNET's key takeaways <ul><li>Google's TurboQuant can dramatically reduce AI memory usage.</l…",
+      "word_count": 52
     },
     "ai_output": {
-      "summary": "Here is a summary of the article in 4-6 sentences:\n\nSemco is expected to supply ABF substrates for Tesla's next-generation AI chips. Samsung Electronics will manufacture the chips at its foundry in Taylor, Texas. Semco, a Samsung affiliate, will provide the necessary substrates for the chips. This marks a collaboration between Semco and Samsung to support Tesla's AI chip development. The partnership highlights the growing demand for advanced semiconductor components in the AI industry.",
-      "summary_model": "llama3.1:8b",
+      "summary": "Google's TurboQuant technology significantly reduces AI memory usage, which could be crucial for enabling real-time quantization and efficient local AI processing. While it helps address the spiraling costs of AI operations, the details of its limitations were not elaborated in the provided text.",
+      "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
   },
   {
     "article_id": "article_0008",
     "source": {
-      "name": "Onefootball.com",
-      "url": "https://onefootball.com/en/news/headlines-valverdes-performance-something-to-remember-42544488",
+      "name": "VentureBeat",
+      "url": "https://venturebeat.com/technology/new-minimax-m2-7-proprietary-ai-model-is-self-evolving-and-can-perform-30-50",
       "publisher_type": "news_website"
     },
-    "title": "️ Headlines: Valverde’s performance, something to remember",
-    "author": "OneFootball",
-    "published_at": "2026-03-12T08:19:00Z",
-    "collected_at": "2026-03-13T08:38:04Z",
+    "title": "New MiniMax M2.7 proprietary AI model is 'self-evolving' and can perform 30-50% of reinforcement learning research workflow | VentureBeat",
+    "author": "peterkaminski",
+    "published_at": "2026-03-21T05:47:01Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "️ Headlines: Valverde’s performance, something to remember Federico Valverde on one side.Federico Valverde on the other.Federico Valverde delivering balls.Federico Valverde breaking lines.Federico Valverde scoring goals.Federico Valverde acting as a leader.Fe... Federico Valverde on one side. Federico Valverde on the other. Federico Valverde delivering balls. Federico Valverde breaking lines. Federico Valverde scoring goals. Federico Valverde acting as …",
-      "word_count": 57
+      "full_text": "New MiniMax M2.7 proprietary AI model is 'self-evolving' and can perform 30-50% of reinforcement learning research workflow | VentureBeat That makes M2.7 one of the most affordable frontier AI models to run in the world — only xAI's Grok 4.1 Fast is cheaper. In the last few years, Chinese AI startup MiniMax has become one of the most exciting in the crowded global AI marketplace, carving out a reputation for delivering frontier-level large language model…",
+      "word_count": 75
     },
     "ai_output": {
-      "summary": "The article discusses Federico Valverde's impressive performance in a match. He was involved in various aspects of the game, including delivering balls and breaking lines. Valverde also scored goals, showcasing his attacking skills. Additionally, he acted as a leader on the field. His overall performance was notable and something to remember.",
-      "summary_model": "llama3.1:8b",
-      "summary_prompt_version": "v1"
-    }
-  },
-  {
-    "article_id": "article_0009",
-    "source": {
-      "name": "Onefootball.com",
-      "url": "https://onefootball.com/en/news/top-wednesday-champions-league-goals-kvara-named-mvp-42544485",
-      "publisher_type": "news_website"
-    },
-    "title": "☕️ Top Wednesday Champions League goals, Kvara named MVP",
-    "author": "OneFootball",
-    "published_at": "2026-03-12T08:17:00Z",
-    "collected_at": "2026-03-13T08:38:04Z",
-    "language": "en",
-    "region": "Global",
-    "category": [],
-    "keywords": [],
-    "content": {
-      "full_text": "☕️ Top Wednesday Champions League goals, Kvara named MVP Top Goals from Wednesday in the UCL UEFA has compiled the best goals from Wednesday in the Champions League. Two Paris Saint-Germain players were highlighted in this compilation.Kvaratskhelia, Cro... UEFA has compiled the best goals from Wednesday in the Champions League. Two Paris Saint-Germain players were highlighted in this compilation. Coming on at the hour mark, Khvicha Kvaratskhelia made …",
-      "word_count": 69
-    },
-    "ai_output": {
-      "summary": "The UEFA Champions League has compiled the top goals from Wednesday's matches. Two goals from Paris Saint-Germain players were highlighted. Khvicha Kvaratskhelia scored a goal for Paris Saint-Germain, coming on as a substitute. Kvaratskhelia was named the MVP for his performance.",
-      "summary_model": "llama3.1:8b",
-      "summary_prompt_version": "v1"
-    }
-  },
-  {
-    "article_id": "article_0010",
-    "source": {
-      "name": "The Punch",
-      "url": "https://punchng.com/monopoly-fears-rise-as-dangote-controls-n14-4tn-petrol-market/",
-      "publisher_type": "news_website"
-    },
-    "title": "Monopoly fears rise as Dangote controls N14.4tn petrol market",
-    "author": "Punch Newspapers",
-    "published_at": "2026-03-12T08:14:39Z",
-    "collected_at": "2026-03-13T08:38:04Z",
-    "language": "en",
-    "region": "Global",
-    "category": [],
-    "keywords": [],
-    "content": {
-      "full_text": "Monopoly fears rise as Dangote controls N14.4tn petrol market Experts raise alarms over monopoly risks as the Dangote refinery dominates Nigeria’s N14.4tn petrol market, urging price regulation and competition. Read More: https://punchng.com/monopoly-fears-rise-as-dangote-controls-n14-4tn-petrol-market/ Stakeholders, including energy experts, economists, and Nigerian workers, have raised alarm over the suspension of petrol imports by the Federal Government, urging urgent price regulation as Dangote …",
-      "word_count": 60
-    },
-    "ai_output": {
-      "summary": "Nigeria's petrol market, valued at N14.4tn, has raised concerns about monopoly control by Dangote's refinery. Experts are urging the government to regulate prices and promote competition. The suspension of petrol imports by the government has heightened these concerns. Stakeholders, including energy experts and economists, are calling for urgent action. The dominant market position of Dangote's refinery has sparked fears of a monopoly.",
-      "summary_model": "llama3.1:8b",
-      "summary_prompt_version": "v1"
-    }
-  },
-  {
-    "article_id": "article_0011",
-    "source": {
-      "name": "Livemint",
-      "url": "https://www.livemint.com/companies/early-ai-trend-outcome-global-it-firms-hire-more-india-cognizant-epam-capgemini-tcs-infosys-wipro-11773287038664.html",
-      "publisher_type": "news_website"
-    },
-    "title": "Early, contrarian AI trend has global IT firms hiring more in India to deliver growth, improve margins",
-    "author": "Jas Bardia, Varun Sood",
-    "published_at": "2026-03-12T08:12:52Z",
-    "collected_at": "2026-03-13T08:38:04Z",
-    "language": "en",
-    "region": "Global",
-    "category": [],
-    "keywords": [],
-    "content": {
-      "full_text": "Early, contrarian AI trend has global IT firms hiring more in India to deliver growth, improve margins Capgemini, Cognizant, and EPAM are increasing India headcount to leverage local talent as demand for tech workers rises due to AI integration. This trend, driven by a need to protect margins, contrasts with some Indian peers reducing workforce. Read the trend… Analysts see this as the beginning of a new trend as artificial intelligence (AI)-based technologies increasingly become part of IT services workflows and give rise to demand for tech workers to moni…",
-      "word_count": 90
-    },
-    "ai_output": {
-      "summary": "Several global IT firms, including Capgemini, Cognizant, and EPAM, are increasing their headcount in India to take advantage of local talent and growing demand for tech workers. This trend is driven by the integration of artificial intelligence (AI) technologies into IT services workflows. Analysts believe this is a new trend that will continue as AI becomes more prevalent. The move is also aimed at protecting margins as companies adapt to changing market conditions. Some Indian peers are reducing their workforce, but these global firms are bucking this trend.",
-      "summary_model": "llama3.1:8b",
+      "summary": "The new MiniMax M2.7 is a proprietary AI model that is 'self-evolving' and can handle 30-50% of the reinforcement learning research workflow. It is among the most affordable frontier AI models globally, with only xAI's Grok 4.1 Fast being cheaper. Chinese startup MiniMax has gained recognition for delivering advanced large language models in the competitive AI market.",
+      "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
   }

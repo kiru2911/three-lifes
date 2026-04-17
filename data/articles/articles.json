@@ -2,24 +2,24 @@
   {
     "article_id": "article_0001",
     "source": {
-      "name": "Al Jazeera English",
-      "url": "https://www.aljazeera.com/news/2026/3/12/who-bombed-the-iranian-girls-school-killing-more-than-170-what-we-know",
+      "name": "The Verge",
+      "url": "https://www.theverge.com/podcast/910443/can-puck-reinvent-the-news-business-for-the-influencer-age",
       "publisher_type": "news_website"
     },
-    "title": "Who bombed the Iranian girls’ school, killing more than 170? What we know",
-    "author": "Elizabeth Melimopoulos",
-    "published_at": "2026-03-12T02:21:15Z",
-    "collected_at": "2026-03-13T02:25:43Z",
+    "title": "Can Puck reinvent the news business for the influencer age?",
+    "author": "Nilay Patel",
+    "published_at": "2026-04-13T13:08:38Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "Who bombed the Iranian girls’ school, killing more than 170? What we know The attack on Shajareh Tayyebeh Elementary School quickly became a focal point of concern over civilian casualties. As the United States-Israeli war on Iran closes in on two weeks, one specific attack stands out as the bloodiest incident of the conflict so far. On February 28, during the opening hours of the assa…",
-      "word_count": 66
+      "full_text": "Can Puck reinvent the news business for the influencer age? Today, I’m talking with Sarah Personette, CEO of Puck, which is a fancy new media company that’s been around for just about five years now. Puck hires big stars and gives them newsletters that are all mostly part of a subscription bundle. These newsletters ar… <ul><li></li><li></li><li></li></ul> CEO Sarah Personettes big bet on the place where influencers and reporters might meet by Nilay PatelClose Posts from this author will be added to your daily e…",
+      "word_count": 84
     },
     "ai_output": {
-      "summary": "The article discusses the deadly bombing of Shajareh Tayyebeh Elementary School in Iran, which resulted in over 170 deaths, predominantly children. It highlights the attack as the bloodiest incident in the ongoing United States-Israeli conflict with Iran, raising significant concerns about civilian casualties.",
+      "summary": "Puck is a media company founded about five years ago that focuses on hiring prominent figures to create newsletters, primarily offered through a subscription bundle. CEO Sarah Personette aims to blend the worlds of influencers and traditional reporters through this model. The article explores whether Puck can reinvent the news business for the influencer era.",
       "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
@@ -27,24 +27,24 @@
   {
     "article_id": "article_0002",
     "source": {
-      "name": "Digitimes",
-      "url": "https://www.digitimes.com/news/a20260312VL207/meta-chips-data-data-center-infrastructure.html",
+      "name": "The Verge",
+      "url": "https://www.theverge.com/tech/910834/neuralink-bcis-bet",
       "publisher_type": "news_website"
     },
-    "title": "Meta designs four in-house chips to power data centers",
-    "author": "DIGITIMES",
-    "published_at": "2026-03-12T02:08:17Z",
-    "collected_at": "2026-03-13T02:25:43Z",
+    "title": "Did Neuralink make the wrong bet?",
+    "author": "Elissa Welle",
+    "published_at": "2026-04-13T00:25:56Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "Meta designs four in-house chips to power data centers Meta Platforms has unveiled plans for four generations of internally designed artificial intelligence chips as the company expands its data center infrastructure to support growing AI workloads. Save my User ID and Password Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function…",
-      "word_count": 72
+      "full_text": "Did Neuralink make the wrong bet? Elon Musk promised Neuralink would bring superhuman abilities and minds merged with AI. Then he fueled a runaway hype train for his brain implant technology, which ended up with a grisly record for implants in monkeys and some success with human subjects. But… <ul><li></li><li></li></ul> The field of brain-computer interfaces is moving away from mind-controlled computer cursors to restoring speech. by Elissa WelleClose Posts from this author will be ad…",
+      "word_count": 75
     },
     "ai_output": {
-      "summary": "Meta Platforms has announced plans to develop four generations of in-house AI chips to enhance its data center infrastructure. This initiative aims to support the company's increasing artificial intelligence workloads.",
+      "summary": "Elon Musk's Neuralink initially promised superhuman abilities and AI-enhanced minds but has faced criticism for a poor track record with monkey implants despite some human progress. Meanwhile, the brain-computer interface field is shifting focus from mind-controlled cursors toward restoring speech functions.",
       "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
@@ -52,24 +52,24 @@
   {
     "article_id": "article_0003",
     "source": {
-      "name": "Lifesciencesworld.com",
-      "url": "https://www.lifesciencesworld.com/can-a-ferret-eat-blueberries/",
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/dario-amodei-london-united-kingdom/",
       "publisher_type": "news_website"
     },
-    "title": "Can a ferret eat blueberries?",
-    "author": "Ava Reynolds",
-    "published_at": "2026-03-12T01:55:44Z",
-    "collected_at": "2026-03-13T02:25:43Z",
+    "title": "Anthropic brings Claude into Microsoft Word, and legal contract review leads its use cases",
+    "author": "Cristian Dina",
+    "published_at": "2026-04-12T15:35:28Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "Can a ferret eat blueberries? Can Ferrets Enjoy a Blueberry Treat? A Comprehensive Guide Can a ferret eat blueberries? Yes, in moderation, ferrets can enjoy blueberries as an occasional treat. However, due to their obligate carnivore digestive system, blueberries should never be a staple … Can a ferret eat blueberries?Yes, in moderation, ferrets can enjoy blueberries as an occasional treat. However, due to their obligate carnivore digestive system, blueberries should never be a staple …",
-      "word_count": 75
+      "full_text": "Anthropic brings Claude into Microsoft Word, and legal contract review leads its use cases In short: Anthropic has released a beta add-in that places Claude directly inside Microsoft Word, with every AI-generated edit appearing as a native tracked change and legal contract review listed first among the tool’s example applications. The add-in, avail… In short: Anthropic has released a beta add-in that places Claude directly inside Microsoft Word, with every AI-generated edit appearing as a native tracked change and legal contract review listed fi…",
+      "word_count": 84
     },
     "ai_output": {
-      "summary": "Ferrets can eat blueberries in moderation as an occasional treat. However, because ferrets have an obligate carnivore digestive system, blueberries should not be a regular part of their diet.",
+      "summary": "Anthropic has launched a beta add-in integrating its AI, Claude, directly into Microsoft Word, where AI-generated edits appear as native tracked changes. The tool highlights legal contract review as its primary use case among other applications.",
       "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
@@ -77,24 +77,24 @@
   {
     "article_id": "article_0004",
     "source": {
-      "name": "The Times of India",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stock-market-sp-500-dow-end-lower-as-escalating-iran-war-sours-risk-appetite/articleshow/129487714.cms",
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/04/12/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
       "publisher_type": "news_website"
     },
-    "title": "US Stock Market | S&P 500, Dow end lower as escalating Iran war sours risk appetite",
-    "author": "Reuters",
-    "published_at": "2026-03-12T01:54:44Z",
-    "collected_at": "2026-03-13T02:25:43Z",
+    "title": "From LLMs to hallucinations, here's a simple guide to common AI terms | TechCrunch",
+    "author": "Natasha Lomas",
+    "published_at": "2026-04-12T15:07:45Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "US Stock Market | S&P 500, Dow end lower as escalating Iran war sours risk appetite Indian markets reacted to a global downturn. US stocks fell as escalating tensions between the US and Iran overshadowed a calm inflation report. Investors worried about rising oil prices impacting consumer spending. Saudi Arabia increased oil production and t… U.S. stocks closed lower on Wednesday as markets largely looked past a tame inflation report, focusing instead on intensifying hostilities and mounting repercussions related to the U.S.-Israeli war o…",
-      "word_count": 84
+      "full_text": "From LLMs to hallucinations, here's a simple guide to common AI terms | TechCrunch The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter. Artificial intelligence is a deep and convoluted world. The scientists who work in this field often rely on jargon and lingo to explain what theyre working on. As a result, we frequently have to use …",
+      "word_count": 81
     },
     "ai_output": {
-      "summary": "US stocks, including the S&P 500 and Dow, ended lower due to escalating tensions between the US and Iran, which dampened risk appetite despite a calm inflation report. Investors were concerned about rising oil prices affecting consumer spending. Meanwhile, Indian markets also reacted negatively to the global downturn amid geopolitical uncertainties.",
+      "summary": "The article from TechCrunch offers a simple glossary explaining common terms and slang related to artificial intelligence, such as LLMs and hallucinations. It aims to clarify the complex jargon used by AI researchers to help readers better understand the rapidly evolving AI landscape.",
       "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
@@ -102,24 +102,24 @@
   {
     "article_id": "article_0005",
     "source": {
-      "name": "Onefootball.com",
-      "url": "https://onefootball.com/en/news/mexico-national-team-send-message-to-malagon-42543707",
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/databricks-matei-zaharia-acm-prize-agi/",
       "publisher_type": "news_website"
     },
-    "title": "Mexico’s national team send message to Malagón",
-    "author": "OneFootball",
-    "published_at": "2026-03-12T01:54:00Z",
-    "collected_at": "2026-03-13T02:25:43Z",
+    "title": "Databricks co-founder Matei Zaharia wins ACM Prize and declares AGI is already here",
+    "author": "Alina Maria Stan",
+    "published_at": "2026-04-10T06:09:33Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "Mexico’s national team send message to Malagón This afternoon, the severity of Luis Ángel Malagón's injury was confirmed: a ruptured Achilles tendon, which will keep him off the field for at least six months. With the imminent absence of the Am... This afternoon, the severity of Luis Ángel Malagón's injury was confirmed: a ruptured Achilles tendon, which will keep him off the field for at least six months. With the imminent absence of the Ame…",
-      "word_count": 75
+      "full_text": "Databricks co-founder Matei Zaharia wins ACM Prize and declares AGI is already here In short: Matei Zaharia, the Berkeley computer science professor and Databricks co-founder who created Apache Spark, has won the 2026 ACM Prize in Computing for his foundational contributions to distributed data systems and AI infrastructure. The $250,000 pri… In short: Matei Zaharia, the Berkeley computer science professor and Databricks co-founder who created Apache Spark, has won the 2026 ACM Prize in Computing for his foundational contributions to dist…",
+      "word_count": 81
     },
     "ai_output": {
-      "summary": "Luis Ángel Malagón from Mexico’s national team has suffered a ruptured Achilles tendon, confirmed this afternoon. This injury will sideline him for at least six months, impacting his availability for the team.",
+      "summary": "Matei Zaharia, Berkeley professor and Databricks co-founder known for creating Apache Spark, has won the 2026 ACM Prize in Computing. He was recognized for his foundational contributions to distributed data systems and AI infrastructure.",
       "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
@@ -127,24 +127,24 @@
   {
     "article_id": "article_0006",
     "source": {
-      "name": "The Times of India",
-      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/netflix-to-pay-as-much-as-600-million-for-ai-filmmaking-firm-interpositive-bloomberg/articleshow/129487638.cms",
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/anthropic-openclaw-claude-subscription-ban-cost/",
       "publisher_type": "news_website"
     },
-    "title": "Netflix to pay as much as $600 million for AI filmmaking firm InterPositive: Bloomberg",
-    "author": "Reuters",
-    "published_at": "2026-03-12T01:51:00Z",
-    "collected_at": "2026-03-13T02:25:43Z",
+    "title": "Anthropic cuts Claude subscribers off from OpenClaw in cost crackdown",
+    "author": "Ana Maria Constantin",
+    "published_at": "2026-04-04T18:53:55Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "Netflix to pay as much as $600 million for AI filmmaking firm InterPositive: Bloomberg Netflix may pay up to $600 million for Ben Affleck’s AI filmmaking company InterPositive, though the cash price is lower with extra earnings tied to performance targets. The deal suggests Hollywood is warming to AI-created content. Founded in 2022, InterPosit… Streaming giant Netflix will pay as much as $600 million for Ben Affleck's artificial intelligence filmmaking company InterPositive, Bloomberg News reported on Wednesday, citing people familiar with …",
-      "word_count": 82
+      "full_text": "Anthropic cuts Claude subscribers off from OpenClaw in cost crackdown In short: Anthropic has blocked Claude Pro and Max subscribers from using their flat-rate plans with third-party AI agent frameworks, starting with OpenClaw. The move, which took effect on 4 April 2026, shifts the cost of running autonomous agents onto users … In short: Anthropic has blocked Claude Pro and Max subscribers from using their flat-rate plans with third-party AI agent frameworks, starting with OpenClaw. The move, which took effect on 4 April 20…",
+      "word_count": 84
     },
     "ai_output": {
-      "summary": "Netflix may pay up to $600 million to acquire Ben Affleck’s AI filmmaking company InterPositive, with part of the payment tied to performance targets. This potential deal indicates increasing acceptance of AI-generated content in Hollywood. InterPositive was founded in 2022 and focuses on AI-driven film production.",
+      "summary": "Anthropic has blocked Claude Pro and Max subscribers from using their flat-rate plans with third-party AI agent frameworks, beginning with OpenClaw. This change, effective from April 4, 2026, transfers the cost of running autonomous agents onto the users.",
       "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
@@ -152,24 +152,24 @@
   {
     "article_id": "article_0007",
     "source": {
-      "name": "ABC News (AU)",
-      "url": "https://www.abc.net.au/news/2026-03-12/australian-tech-atlassian-cuts-1600-jobs-from-global-workforce/106445334",
+      "name": "ZDNet",
+      "url": "https://www.zdnet.com/article/what-googles-turboquant-can-and-cant-do-for-ais-spiraling-cost/",
       "publisher_type": "news_website"
     },
-    "title": "Atlassian cuts hundreds of Australian jobs as AI slashes labour needs",
-    "author": "Tony Ibrahim",
-    "published_at": "2026-03-12T01:50:49Z",
-    "collected_at": "2026-03-13T02:25:43Z",
+    "title": "What Google's TurboQuant can and can't do for AI's spiraling cost",
+    "author": "Tiernan Ray",
+    "published_at": "2026-03-30T19:59:16Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "Atlassian cuts hundreds of Australian jobs as AI slashes labour needs Atlassian's Australian workforce will account for 30 per cent of the tech giant's global job cuts, with the freed-up funds to be invested in AI and enterprise sales. Homegrown software giant Atlassian is cutting nearly 500 jobs from its Australian workforce as artificial intelligence slashes its labour needs and funds are sought to invest in the nascent technolog…",
-      "word_count": 69
+      "full_text": "What Google's TurboQuant can and can't do for AI's spiraling cost Google's real-time quantization could be important for running local AI. Here's why. Orla/iStock / Getty Images Plus via Getty Images Follow ZDNET: Add us as a preferred source on Google. ZDNET's key takeaways <ul><li>Google's TurboQuant can dramatically reduce AI memory usage.</l…",
+      "word_count": 52
     },
     "ai_output": {
-      "summary": "Atlassian is cutting nearly 500 Australian jobs, representing 30 percent of its global job reductions. The company plans to reallocate funds from these cuts to invest in artificial intelligence and enterprise sales.",
+      "summary": "Google's TurboQuant technology significantly reduces AI memory usage, which could be crucial for enabling real-time quantization and efficient local AI processing. While it helps address the spiraling costs of AI operations, the details of its limitations were not elaborated in the provided text.",
       "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
@@ -177,124 +177,24 @@
   {
     "article_id": "article_0008",
     "source": {
-      "name": "Todayifoundout.com",
-      "url": "http://www.todayifoundout.com/index.php/2026/03/what-causes-spontaneous-human-combustion/",
+      "name": "VentureBeat",
+      "url": "https://venturebeat.com/technology/new-minimax-m2-7-proprietary-ai-model-is-self-evolving-and-can-perform-30-50",
       "publisher_type": "news_website"
     },
-    "title": "What Causes Spontaneous Human Combustion?",
-    "author": "Karl Smallwood",
-    "published_at": "2026-03-12T01:48:43Z",
-    "collected_at": "2026-03-13T02:25:43Z",
+    "title": "New MiniMax M2.7 proprietary AI model is 'self-evolving' and can perform 30-50% of reinforcement learning research workflow | VentureBeat",
+    "author": "peterkaminski",
+    "published_at": "2026-03-21T05:47:01Z",
+    "collected_at": "2026-04-17T06:02:38Z",
     "language": "en",
     "region": "Global",
     "category": [],
     "keywords": [],
     "content": {
-      "full_text": "What Causes Spontaneous Human Combustion? For those of us of the slightly more seasoned vintage growing up in or living in the late 20th century, which was totally only a decade ago and I’ll take no further input on this matter, spontaneous Human Combustion ranks alongside the likes of quicksand, the… For those of us of the slightly more seasoned vintage growing up in or living in the late 20th century, which was totally only a decade ago and Ill take no further input on this matter, spontaneous H…",
-      "word_count": 89
+      "full_text": "New MiniMax M2.7 proprietary AI model is 'self-evolving' and can perform 30-50% of reinforcement learning research workflow | VentureBeat That makes M2.7 one of the most affordable frontier AI models to run in the world — only xAI's Grok 4.1 Fast is cheaper. In the last few years, Chinese AI startup MiniMax has become one of the most exciting in the crowded global AI marketplace, carving out a reputation for delivering frontier-level large language model…",
+      "word_count": 75
     },
     "ai_output": {
-      "summary": "The article discusses the phenomenon of spontaneous human combustion, a topic often regarded with skepticism and fascination, especially among those familiar with late 20th-century mysteries. It hints at the cultural intrigue and myths surrounding the event but does not provide detailed causes or scientific explanations.",
-      "summary_model": "gpt-4.1-mini",
-      "summary_prompt_version": "v1"
-    }
-  },
-  {
-    "article_id": "article_0009",
-    "source": {
-      "name": "The Times of India",
-      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/musk-unveils-joint-tesla-xai-project-macrohard-eyes-software-disruption/articleshow/129487473.cms",
-      "publisher_type": "news_website"
-    },
-    "title": "Musk unveils joint Tesla-xAI project 'Macrohard', eyes software disruption",
-    "author": "Reuters",
-    "published_at": "2026-03-12T01:44:02Z",
-    "collected_at": "2026-03-13T02:25:43Z",
-    "language": "en",
-    "region": "Global",
-    "category": [],
-    "keywords": [],
-    "content": {
-      "full_text": "Musk unveils joint Tesla-xAI project 'Macrohard', eyes software disruption Musk's xAI was previously building Macrohard as ​an AI ​project that would allow developers to simulate software ⁠creations by companies like Microsoft. Musk said the system would run on Tesla's in-house AI4 chip paired with xAI's Nvidia-based server hardware… - Elon Musk on Wednesday unveiled a joint project between Tesla and his artificial intelligence startup xAI, which he called \"Macrohard\" or \"Digital Optimus\" and said that it was a system capable of …",
-      "word_count": 82
-    },
-    "ai_output": {
-      "summary": "Elon Musk unveiled a joint Tesla-xAI project called \"Macrohard\" or \"Digital Optimus,\" designed to simulate software creations like those from Microsoft. The system will operate using Tesla's in-house AI4 chip combined with xAI's Nvidia-based server hardware, aiming to disrupt the software industry.",
-      "summary_model": "gpt-4.1-mini",
-      "summary_prompt_version": "v1"
-    }
-  },
-  {
-    "article_id": "article_0010",
-    "source": {
-      "name": "SiliconANGLE News",
-      "url": "https://siliconangle.com/2026/03/11/grammarly-shuts-expert-review-pushback-real-experts/",
-      "publisher_type": "news_website"
-    },
-    "title": "Grammarly shuts down “Expert Review” after pushback from the real experts",
-    "author": "James Farrell",
-    "published_at": "2026-03-12T01:36:34Z",
-    "collected_at": "2026-03-13T02:25:43Z",
-    "language": "en",
-    "region": "Global",
-    "category": [],
-    "keywords": [],
-    "content": {
-      "full_text": "Grammarly shuts down “Expert Review” after pushback from the real experts After lighting the ire of journalists, academics, and authors this week, Superhuman Platform Inc. this week pulled a feature from Grammarly that impersonated writers. The “Expert Review” let users of Grammarly improve their writing by selecting from a roster … After lighting the ire of journalists, academics, and authors this week, Superhuman Platform Inc. this week pulled a feature from Grammarly that impersonated writers. The Expert Review let users of …",
-      "word_count": 82
-    },
-    "ai_output": {
-      "summary": "Grammarly has shut down its \"Expert Review\" feature following backlash from journalists, academics, and authors. The feature allowed users to improve their writing by selecting from a roster of experts, but was criticized for impersonating writers. Superhuman Platform Inc. decided to remove the feature after the negative response.",
-      "summary_model": "gpt-4.1-mini",
-      "summary_prompt_version": "v1"
-    }
-  },
-  {
-    "article_id": "article_0011",
-    "source": {
-      "name": "The Times of India",
-      "url": "https://economictimes.indiatimes.com/tech/newsletters/morning-dispatch/press-note-3s-slow-thaw-dream-sports-exits/articleshow/129486568.cms",
-      "publisher_type": "news_website"
-    },
-    "title": "Press Note 3’s slow thaw; Dream Sports exits",
-    "author": "ETtech",
-    "published_at": "2026-03-12T01:34:13Z",
-    "collected_at": "2026-03-13T02:25:43Z",
-    "language": "en",
-    "region": "Global",
-    "category": [],
-    "keywords": [],
-    "content": {
-      "full_text": "Press Note 3’s slow thaw; Dream Sports exits Happy Thursday! The startup ecosystem will have to wait for benefits of the relaxed FDI norms. This and more in today’s ETtech Morning Dispatch. Happy Thursday! The startup ecosystem will have to wait for benefits of the relaxed FDI norms. This and more in todays ETtech Morning Dispatch.Also in the letter: Food delivery under pressureResolve …",
-      "word_count": 64
-    },
-    "ai_output": {
-      "summary": "The startup ecosystem will have to wait longer to see the benefits of the relaxed FDI norms, as Press Note 3 remains slow to thaw. Additionally, Dream Sports is exiting, and the food delivery sector is facing increasing pressure, according to the latest ETtech Morning Dispatch.",
-      "summary_model": "gpt-4.1-mini",
-      "summary_prompt_version": "v1"
-    }
-  },
-  {
-    "article_id": "article_0012",
-    "source": {
-      "name": "Lifesciencesworld.com",
-      "url": "https://www.lifesciencesworld.com/why-are-there-birds-chirping-at-3am/",
-      "publisher_type": "news_website"
-    },
-    "title": "Why are there birds chirping at 3am?",
-    "author": "Ava Reynolds",
-    "published_at": "2026-03-12T01:32:41Z",
-    "collected_at": "2026-03-13T02:25:43Z",
-    "language": "en",
-    "region": "Global",
-    "category": [],
-    "keywords": [],
-    "content": {
-      "full_text": "Why are there birds chirping at 3am? Why are there birds chirping at 3am? Unraveling the Dawn Chorus Mystery The sound of birdsong at 3 am might seem unusual, but it’s becoming increasingly common, especially in urban areas. The primary reason why are there birds chirping at 3am? is a combinatio… Why are there birds chirping at 3am? Unraveling the Dawn Chorus Mystery The sound of birdsong at 3 am might seem unusual, but it’s becoming increasingly common, especially in urban areas. The primar…",
-      "word_count": 84
-    },
-    "ai_output": {
-      "summary": "The article explores why birds are chirping at 3 am, noting that this early morning birdsong is becoming more common, particularly in urban areas. It suggests that the phenomenon is due to a combination of factors, though specific reasons are not fully detailed in the provided text.",
+      "summary": "The new MiniMax M2.7 is a proprietary AI model that is 'self-evolving' and can handle 30-50% of the reinforcement learning research workflow. It is among the most affordable frontier AI models globally, with only xAI's Grok 4.1 Fast being cheaper. Chinese startup MiniMax has gained recognition for delivering advanced large language models in the competitive AI market.",
       "summary_model": "gpt-4.1-mini",
       "summary_prompt_version": "v1"
     }
