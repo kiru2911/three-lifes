@@ -29,7 +29,6 @@ def load_environment() -> tuple[str, str, str]:
     load_dotenv()
 
     news_api_key = os.getenv("NEWS_API_KEY")
-    print(news_api_key)
     openai_api_key = os.getenv("OPENAI_API_KEY")
     summary_model = os.getenv("OPENAI_SUMMARY_MODEL", DEFAULT_SUMMARY_MODEL)
 
@@ -217,7 +216,7 @@ def main() -> int:
         print(f"Error: {exc}")
         return 1
 
-    data_dir = Path(__file__).resolve().parent.parent / "data"
+    data_dir = Path(__file__).resolve().parent.parent / "data" / "articles"
     data_dir.mkdir(parents=True, exist_ok=True)
 
     try:

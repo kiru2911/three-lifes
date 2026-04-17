@@ -1,0 +1,25 @@
+```
+You are an AI educator writing micro-learning content for the app Thinkly.
+
+Topic: {topic}
+Category: {category}
+Difficulty: {difficulty}
+Reference text: {reference_text}
+
+Generate educational content in the following JSON format only.
+No extra text, no markdown, just the JSON object.
+
+{{
+  "title": "An engaging title that frames the concept clearly",
+  "summary": "2-3 sentence explanation suited to {difficulty} level learners",
+  "analogy": "A relatable real-world analogy that starts with 'Think of...' or 'Imagine...'",
+  "why_it_matters": "1-2 sentences on practical relevance",
+  "tts_text": "A natural spoken version combining summary and analogy, as if explaining to a friend"
+}}
+
+Rules:
+- Match complexity to difficulty level: {difficulty}
+- The analogy must be accurate and not misleading
+- tts_text should sound natural when read aloud, no bullet points or headers
+- Base your summary on the reference text where possible
+```

@@ -1,0 +1,289 @@
+[
+    {
+      "topic_id": "concept_001",
+      "topic": "What is machine learning?",
+      "category": "foundations",
+      "difficulty": "beginner",
+      "tags": ["machine learning", "AI", "basics"]
+    },
+    {
+      "topic_id": "concept_002",
+      "topic": "What is deep learning?",
+      "category": "foundations",
+      "difficulty": "beginner",
+      "tags": ["deep learning", "neural networks", "AI"]
+    },
+    {
+      "topic_id": "concept_003",
+      "topic": "What is supervised learning?",
+      "category": "foundations",
+      "difficulty": "beginner",
+      "tags": ["supervised learning", "labels", "training"]
+    },
+    {
+      "topic_id": "concept_004",
+      "topic": "What is unsupervised learning?",
+      "category": "foundations",
+      "difficulty": "beginner",
+      "tags": ["unsupervised learning", "clustering", "patterns"]
+    },
+    {
+      "topic_id": "concept_005",
+      "topic": "What is reinforcement learning?",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "tags": ["reinforcement learning", "agent", "reward"]
+    },
+    {
+      "topic_id": "concept_006",
+      "topic": "What is overfitting?",
+      "category": "foundations",
+      "difficulty": "beginner",
+      "tags": ["overfitting", "generalization", "model training"]
+    },
+  
+    {
+      "topic_id": "concept_007",
+      "topic": "What is a neural network?",
+      "category": "neural_networks",
+      "difficulty": "beginner",
+      "tags": ["neural network", "layers", "AI"]
+    },
+    {
+      "topic_id": "concept_008",
+      "topic": "What is backpropagation?",
+      "category": "neural_networks",
+      "difficulty": "intermediate",
+      "tags": ["backpropagation", "training", "gradients"]
+    },
+    {
+      "topic_id": "concept_009",
+      "topic": "What is gradient descent?",
+      "category": "neural_networks",
+      "difficulty": "beginner",
+      "tags": ["gradient descent", "optimization", "loss"]
+    },
+    {
+      "topic_id": "concept_010",
+      "topic": "What is a loss function?",
+      "category": "neural_networks",
+      "difficulty": "beginner",
+      "tags": ["loss function", "training", "optimization"]
+    },
+    {
+      "topic_id": "concept_011",
+      "topic": "What are activation functions?",
+      "category": "neural_networks",
+      "difficulty": "intermediate",
+      "tags": ["activation function", "relu", "sigmoid"]
+    },
+    {
+      "topic_id": "concept_012",
+      "topic": "Why do neural networks need hidden layers?",
+      "category": "neural_networks",
+      "difficulty": "intermediate",
+      "tags": ["hidden layers", "neural network", "representation learning"]
+    },
+  
+    {
+      "topic_id": "concept_013",
+      "topic": "What is a transformer model?",
+      "category": "llms",
+      "difficulty": "beginner",
+      "tags": ["transformer", "LLM", "NLP"]
+    },
+    {
+      "topic_id": "concept_014",
+      "topic": "What is attention in AI?",
+      "category": "llms",
+      "difficulty": "intermediate",
+      "tags": ["attention", "transformer", "context"]
+    },
+    {
+      "topic_id": "concept_015",
+      "topic": "What are tokens in large language models?",
+      "category": "llms",
+      "difficulty": "beginner",
+      "tags": ["tokens", "LLM", "text processing"]
+    },
+    {
+      "topic_id": "concept_016",
+      "topic": "What are embeddings?",
+      "category": "llms",
+      "difficulty": "beginner",
+      "tags": ["embeddings", "vectors", "semantic search"]
+    },
+    {
+      "topic_id": "concept_017",
+      "topic": "What is prompt engineering?",
+      "category": "llms",
+      "difficulty": "beginner",
+      "tags": ["prompt engineering", "LLM", "instructions"]
+    },
+    {
+      "topic_id": "concept_018",
+      "topic": "What is context window in an LLM?",
+      "category": "llms",
+      "difficulty": "intermediate",
+      "tags": ["context window", "LLM", "tokens"]
+    },
+  
+    {
+      "topic_id": "concept_019",
+      "topic": "What is RAG?",
+      "category": "retrieval_and_memory",
+      "difficulty": "beginner",
+      "tags": ["RAG", "retrieval-augmented generation", "LLM"]
+    },
+    {
+      "topic_id": "concept_020",
+      "topic": "RAG vs fine-tuning",
+      "category": "retrieval_and_memory",
+      "difficulty": "intermediate",
+      "tags": ["RAG", "fine-tuning", "LLM"]
+    },
+    {
+      "topic_id": "concept_021",
+      "topic": "What is a vector database?",
+      "category": "retrieval_and_memory",
+      "difficulty": "intermediate",
+      "tags": ["vector database", "retrieval", "embeddings"]
+    },
+    {
+      "topic_id": "concept_022",
+      "topic": "What is semantic search?",
+      "category": "retrieval_and_memory",
+      "difficulty": "beginner",
+      "tags": ["semantic search", "retrieval", "embeddings"]
+    },
+    {
+      "topic_id": "concept_023",
+      "topic": "What is chunking in RAG systems?",
+      "category": "retrieval_and_memory",
+      "difficulty": "intermediate",
+      "tags": ["chunking", "RAG", "retrieval"]
+    },
+    {
+      "topic_id": "concept_024",
+      "topic": "What is memory in an AI assistant?",
+      "category": "retrieval_and_memory",
+      "difficulty": "intermediate",
+      "tags": ["memory", "AI assistant", "context"]
+    },
+  
+    {
+      "topic_id": "concept_025",
+      "topic": "What is fine-tuning?",
+      "category": "training_and_optimization",
+      "difficulty": "beginner",
+      "tags": ["fine-tuning", "training", "LLM"]
+    },
+    {
+      "topic_id": "concept_026",
+      "topic": "What is distillation in AI?",
+      "category": "training_and_optimization",
+      "difficulty": "intermediate",
+      "tags": ["distillation", "model compression", "training"]
+    },
+    {
+      "topic_id": "concept_027",
+      "topic": "What is inference in machine learning?",
+      "category": "training_and_optimization",
+      "difficulty": "beginner",
+      "tags": ["inference", "serving", "ML systems"]
+    },
+    {
+      "topic_id": "concept_028",
+      "topic": "Why is GPU memory important for LLMs?",
+      "category": "training_and_optimization",
+      "difficulty": "intermediate",
+      "tags": ["GPU", "memory", "LLM inference"]
+    },
+    {
+      "topic_id": "concept_029",
+      "topic": "What is quantization?",
+      "category": "training_and_optimization",
+      "difficulty": "intermediate",
+      "tags": ["quantization", "optimization", "model efficiency"]
+    },
+    {
+      "topic_id": "concept_030",
+      "topic": "What is latency in AI systems?",
+      "category": "training_and_optimization",
+      "difficulty": "beginner",
+      "tags": ["latency", "AI systems", "performance"]
+    },
+  
+    {
+      "topic_id": "concept_031",
+      "topic": "What is an AI agent?",
+      "category": "ai_applications",
+      "difficulty": "beginner",
+      "tags": ["AI agent", "automation", "LLM"]
+    },
+    {
+      "topic_id": "concept_032",
+      "topic": "How do chatbots work?",
+      "category": "ai_applications",
+      "difficulty": "beginner",
+      "tags": ["chatbot", "LLM", "conversation"]
+    },
+    {
+      "topic_id": "concept_033",
+      "topic": "What is computer vision?",
+      "category": "ai_applications",
+      "difficulty": "beginner",
+      "tags": ["computer vision", "images", "AI"]
+    },
+    {
+      "topic_id": "concept_034",
+      "topic": "What is speech-to-text?",
+      "category": "ai_applications",
+      "difficulty": "beginner",
+      "tags": ["speech-to-text", "audio", "AI"]
+    },
+    {
+      "topic_id": "concept_035",
+      "topic": "What is text-to-speech?",
+      "category": "ai_applications",
+      "difficulty": "beginner",
+      "tags": ["text-to-speech", "audio", "AI"]
+    },
+    {
+      "topic_id": "concept_036",
+      "topic": "How is AI used in healthcare?",
+      "category": "ai_applications",
+      "difficulty": "beginner",
+      "tags": ["healthcare", "AI applications", "real world AI"]
+    },
+    { "topic_id": "concept_037", 
+    "topic": "What is an AI hallucination?", 
+    "category": "evaluation_and_safety", 
+    "difficulty": "beginner",
+    "tags": ["AI hallucination", "evaluation", "safety"]
+    },
+    { "topic_id": "concept_038", 
+    "topic": "What is bias in AI?", 
+    "category": "evaluation_and_safety", "difficulty": "beginner",
+    "tags": ["bias", "AI", "evaluation"]
+    },
+    { 
+    "topic_id": "concept_039", 
+    "topic": "What is AI alignment?", 
+    "category": "evaluation_and_safety", 
+    "difficulty": "intermediate" 
+    },
+    { 
+     "topic_id": "concept_040",
+    "topic": "What is multimodal AI?", 
+  "category": "ai_applications", 
+  "difficulty": "beginner",
+  "tags": ["multimodal AI", "AI", "applications"]
+  },
+{ "topic_id": "concept_041", 
+    "topic": "What is transfer learning?", 
+  "category": "training_and_optimization", 
+"difficulty": "intermediate",
+"tags": ["transfer learning", "AI", "optimization"]
+ }
+  ]

@@ -62,7 +62,7 @@ Then run the evaluation step:
 python backend/evaluate_summaries.py
 ```
 
-To generate improved v2 summaries from the existing `data/articles.json` file without fetching new articles, run:
+To generate improved v2 summaries from the existing `data/articles/articles.json` file without fetching new articles, run:
 
 ```bash
 python backend/generate_summaries_v2.py
@@ -70,26 +70,26 @@ python backend/generate_summaries_v2.py
 
 ## Output files
 
-After `python backend/fetch_news.py`, the project creates these files inside `data/`:
+After `python backend/fetch_news.py`, the project creates these files inside `data/articles/`:
 
-- `data/articles.json`
-- `data/articles.csv`
+- `data/articles/articles.json`
+- `data/articles/articles.csv`
 
 After `python backend/evaluate_summaries.py`, the project creates:
 
-- `data/evaluation_results.json`
-- `data/evaluation_results.csv`
+- `data/evaluation/evaluation_results.json`
+- `data/evaluation/evaluation_results.csv`
 
 After `python backend/generate_summaries_v2.py`, the project creates:
 
-- `data/articles_with_v2.json`
-- `data/articles_with_v2.csv`
+- `data/articles/articles_with_v2.json`
+- `data/articles/articles_with_v2.csv`
 
 The scripts also create the `data/` folder automatically if it does not already exist.
 
 ## Google Sheets export
 
-`data/evaluation_results.csv` is a flat file designed for Google Sheets import.
+`data/evaluation/evaluation_results.csv` is a flat file designed for Google Sheets import.
 
 It includes:
 
@@ -102,7 +102,7 @@ To review results in Google Sheets:
 
 1. Open Google Sheets.
 2. Create a blank sheet.
-3. Import `data/evaluation_results.csv`.
+3. Import `data/evaluation/evaluation_results.csv`.
 
 This makes it easy to sort, filter, and review summary quality by article and score.
 

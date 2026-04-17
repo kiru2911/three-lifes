@@ -1,0 +1,822 @@
+[
+  {
+    "concept_id": "concept_001",
+    "topic": "What is machine learning?",
+    "category": "foundations",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Machine Learning: How Computers Learn from Data",
+      "summary": "Machine learning is a way for computers to learn from examples instead of being explicitly programmed. It allows computers to recognize patterns and make decisions based on data.",
+      "analogy": "Think of teaching a child to recognize animals by showing many pictures instead of giving a strict list of rules. Over time, the child learns to identify animals on their own.",
+      "why_it_matters": "Machine learning helps power technologies like voice assistants, recommendation systems, and self-driving cars, making everyday tools smarter and more helpful.",
+      "tts_text": "Machine learning is when computers learn from examples instead of following exact instructions. Imagine teaching a child to recognize animals by showing many pictures rather than giving a strict list of rules. Over time, the child gets better at identifying animals on their own, just like computers learn to recognize patterns and make decisions.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_002",
+    "topic": "What is deep learning?",
+    "category": "foundations",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Deep Learning: Teaching Computers to Learn Like Humans",
+      "summary": "Deep learning is a type of artificial intelligence where computers learn to recognize patterns and make decisions by processing data through layers of artificial neurons. It helps machines improve their understanding by learning from examples, similar to how humans learn from experience.",
+      "analogy": "Think of deep learning like teaching a child to recognize animals by showing many pictures; over time, the child learns to identify animals even in new photos.",
+      "why_it_matters": "Deep learning powers many everyday technologies like voice assistants and image recognition, making devices smarter and more helpful.",
+      "tts_text": "Deep learning is a way computers learn by finding patterns in data through layers of artificial neurons, much like how we learn from experience. Imagine teaching a child to recognize animals by showing lots of pictures, so they can identify animals even in new ones—that's how deep learning works.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_003",
+    "topic": "What is supervised learning?",
+    "category": "foundations",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Supervised Learning: Teaching Machines with Examples",
+      "summary": "Supervised learning is a type of machine learning where a model learns from labeled data, meaning each example comes with the correct answer. The model uses these examples to make predictions or decisions on new, unseen data.",
+      "analogy": "Think of supervised learning like a student learning math with a teacher who provides both problems and the correct answers, guiding the student to solve new problems correctly.",
+      "why_it_matters": "Supervised learning is widely used in real life, powering applications like email spam filters and voice recognition systems that improve by learning from examples.",
+      "tts_text": "Supervised learning is when a machine learns from examples that already have the answers, like a student who practices math problems with a teacher giving the solutions. This helps the machine make good predictions on new data, which is useful for things like filtering spam emails or understanding speech.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_004",
+    "topic": "What is unsupervised learning?",
+    "category": "foundations",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Discovering Patterns Without Labels: What is Unsupervised Learning?",
+      "summary": "Unsupervised learning is a type of machine learning where algorithms find patterns or groupings in data without being given labeled examples. Instead of being told what to look for, the system explores the data on its own to uncover hidden structures.",
+      "analogy": "Imagine sorting a box of mixed colored beads without knowing the names of the colors. You group the beads by similarities like color or size without any instructions on how to categorize them.",
+      "why_it_matters": "Unsupervised learning helps us make sense of large amounts of unlabeled data, making it useful for discovering new insights, organizing information, and detecting anomalies.",
+      "tts_text": "Unsupervised learning is when a computer finds patterns in data without any labels or instructions. Imagine sorting a box of mixed colored beads by grouping similar colors or sizes, even though you don’t know the names of the colors. This helps computers discover hidden structures and make sense of data on their own.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_005",
+    "topic": "What is reinforcement learning?",
+    "category": "foundations",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Reinforcement Learning: Learning Through Rewards and Punishments",
+      "summary": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties. Over time, the agent aims to maximize cumulative rewards by choosing actions that lead to the best outcomes.",
+      "analogy": "Think of training a dog by giving it treats when it performs a desired behavior and withholding treats when it doesn't. The dog learns to repeat actions that earn rewards and avoid those that don’t.",
+      "why_it_matters": "Reinforcement learning is essential for developing systems that can adapt and improve in complex, dynamic environments, such as robotics, game playing, and autonomous vehicles.",
+      "tts_text": "Reinforcement learning is a way machines learn by trying different actions and getting rewards or penalties based on what they do, helping them figure out the best choices over time. Imagine training a dog by giving it treats when it does something right and no treats when it doesn't. Just like the dog learns to do the right things to get more treats, machines learn to make better decisions through this trial and error process.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_006",
+    "topic": "What is overfitting?",
+    "category": "foundations",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Overfitting: When a Model Learns Too Much",
+      "summary": "Overfitting happens when a model learns the training data too well, including its noise and mistakes. This makes the model perform poorly on new, unseen data because it can't generalize well.",
+      "analogy": "Think of a student who memorizes all the answers to a practice test instead of understanding the material. They might do great on that test but struggle with different questions on the real exam.",
+      "why_it_matters": "Avoiding overfitting helps create models that work well in real-life situations, not just on the examples they were trained on.",
+      "tts_text": "Overfitting happens when a model learns the training data too well, including its noise and mistakes. Think of a student who memorizes all the answers to a practice test instead of understanding the material. They might do great on that test but struggle with different questions on the real exam. Avoiding overfitting helps create models that work well in real-life situations, not just on the examples they were trained on.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_007",
+    "topic": "What is a neural network?",
+    "category": "neural_networks",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "What is a Neural Network?",
+      "summary": "A neural network is a type of computer system designed to learn and make decisions like a human brain. It consists of layers of connected nodes that process information and recognize patterns.",
+      "analogy": "Think of a neural network like a group of friends passing notes to solve a puzzle together, each adding their own ideas to reach the answer.",
+      "why_it_matters": "Neural networks help power many technologies we use every day, such as voice assistants, image recognition, and recommendation systems.",
+      "tts_text": "A neural network is a computer system that learns and makes decisions similar to the human brain. Think of it like a group of friends passing notes to solve a puzzle together, each adding their own ideas to find the answer. This technology is important because it helps power things like voice assistants, recognizing images, and making recommendations.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_008",
+    "topic": "What is backpropagation?",
+    "category": "neural_networks",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Backpropagation: The Learning Engine of Neural Networks",
+      "summary": "Backpropagation is a key algorithm in training neural networks that adjusts the model’s weights by calculating the error gradient and propagating it backward through the layers. This process helps the network learn from mistakes by minimizing the difference between predicted and actual outputs.",
+      "analogy": "Imagine you’re learning to shoot basketballs into a hoop. Each missed shot teaches you how to adjust your aim and strength. Backpropagation works similarly by sending feedback from the missed shots back to improve the next attempt.",
+      "why_it_matters": "Backpropagation enables neural networks to learn complex patterns efficiently, making it fundamental for tasks like image recognition and natural language processing.",
+      "tts_text": "Backpropagation is an essential method that helps neural networks learn by sending error information backward through the layers to adjust weights and improve accuracy. Imagine you’re practicing basketball and each missed shot helps you adjust your aim and strength for the next try; backpropagation works in much the same way, guiding the network to better predictions over time.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_009",
+    "topic": "What is gradient descent?",
+    "category": "neural_networks",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Gradient Descent: Finding the Best Path",
+      "summary": "Gradient descent is a method used to help computers learn by gradually improving their guesses to find the best solution. It works by slowly adjusting parameters to reduce errors step by step. This process helps models like neural networks become more accurate over time.",
+      "analogy": "Imagine trying to find the bottom of a foggy hill by taking small steps downhill, adjusting your path as you go to avoid getting stuck on a slope.",
+      "why_it_matters": "Gradient descent is essential because it allows machines to learn from data efficiently, making technologies like voice recognition and image detection possible.",
+      "tts_text": "Gradient descent is a way computers learn by slowly improving their guesses to find the best answer. Imagine you're on a foggy hill trying to find the bottom by taking small steps downhill, adjusting your path as you go so you don't get stuck. This method helps machines get better at tasks like recognizing images or understanding speech.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_010",
+    "topic": "What is a loss function?",
+    "category": "neural_networks",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Loss Functions: Measuring Mistakes in Neural Networks",
+      "summary": "A loss function is a way for a neural network to measure how well it's doing at a task by calculating the difference between its predictions and the actual answers. It helps the network learn by showing it how much it needs to improve.",
+      "analogy": "Imagine you're shooting arrows at a target and the loss function is the scorekeeper who tells you how far your arrows are from the bullseye, helping you adjust your aim.",
+      "why_it_matters": "Loss functions guide the learning process, making sure neural networks get better over time and perform tasks accurately.",
+      "tts_text": "A loss function is like a scorekeeper that measures how close a neural network's guesses are to the correct answers. Imagine you're shooting arrows at a target and the loss function tells you how far your arrows are from the bullseye, helping you adjust your aim. This feedback is important because it helps the network improve and make better predictions.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_011",
+    "topic": "What are activation functions?",
+    "category": "neural_networks",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Activation Functions: Unlocking Neural Network Intelligence",
+      "summary": "Activation functions introduce non-linearity into neural networks, allowing them to model complex patterns beyond simple linear relationships. They decide whether a neuron should be activated based on the weighted input it receives, enabling deep learning models to solve intricate problems.",
+      "analogy": "Think of activation functions like decision gates in a factory assembly line, determining which parts move forward for further processing and which are discarded, ensuring only relevant signals influence the final product.",
+      "why_it_matters": "Without activation functions, neural networks would be limited to solving only linear problems, severely restricting their ability to learn from real-world, complex data.",
+      "tts_text": "Activation functions add non-linearity to neural networks, helping them understand complex patterns by deciding which neurons activate based on their inputs. Imagine them as decision gates in a factory line, letting through only the important parts for the final product. This ability is crucial because without activation functions, neural networks could only handle simple, linear tasks.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_012",
+    "topic": "Why do neural networks need hidden layers?",
+    "category": "neural_networks",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Unlocking Complexity: The Role of Hidden Layers in Neural Networks",
+      "summary": "Hidden layers enable neural networks to learn and represent complex patterns by transforming inputs into higher-level features. Without these layers, networks are limited to simple linear relationships and cannot capture the intricacies of real-world data.",
+      "analogy": "Imagine a series of translators interpreting a message between two languages: each translator (hidden layer) refines and reshapes the message, enabling a deeper understanding beyond direct word-for-word translation.",
+      "why_it_matters": "Hidden layers allow neural networks to solve complex problems like image recognition and natural language processing, making them powerful tools in AI applications.",
+      "tts_text": "Hidden layers let neural networks learn complex patterns by transforming inputs into more meaningful features. Imagine a series of translators interpreting a message, where each translator reshapes the message to deepen understanding. This process helps neural networks tackle challenging tasks like recognizing images or understanding language.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_013",
+    "topic": "What is a transformer model?",
+    "category": "llms",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "What Is a Transformer Model? Understanding the Basics",
+      "summary": "A transformer model is a type of artificial intelligence that helps computers understand and generate human language by focusing on important parts of sentences. It uses a method called 'attention' to figure out which words matter most in context. This approach makes tasks like translation and text prediction much more accurate.",
+      "analogy": "Think of a transformer model like a smart reader who highlights key words in a book to understand the story better, instead of reading every word with the same attention.",
+      "why_it_matters": "Transformer models are behind many popular language tools like chatbots and translators, making communication with technology easier and more natural.",
+      "tts_text": "A transformer model is a kind of artificial intelligence that helps computers understand and create human language by focusing on the most important words in a sentence. Imagine it like a smart reader who highlights key words in a book to understand the story better instead of paying equal attention to every word. This approach helps tools like chatbots and translators work more accurately and naturally.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_014",
+    "topic": "What is attention in AI?",
+    "category": "llms",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Attention: The Key to Smarter AI Language Models",
+      "summary": "Attention in AI is a mechanism that allows models to focus on the most relevant parts of input data when generating outputs. It works by assigning different weights to different words or tokens, enabling the model to capture context and relationships more effectively.",
+      "analogy": "Think of attention like a spotlight on a stage that highlights the actors most important to the current scene, helping the audience focus on what matters most.",
+      "why_it_matters": "Attention enables AI models to handle complex language tasks with greater accuracy and fluency, improving everything from translation to text generation.",
+      "tts_text": "Attention in AI helps models focus on the most relevant parts of the input by assigning different weights to words, capturing context better. Imagine it like a spotlight on a stage highlighting the key actors so the audience knows where to look. This ability makes AI much better at understanding and generating language.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_015",
+    "topic": "What are tokens in large language models?",
+    "category": "llms",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Tokens: The Building Blocks of Language Models",
+      "summary": "Tokens are small pieces of text, like words or parts of words, that large language models use to understand and generate language. Instead of reading whole sentences at once, these models break text into tokens to process and learn patterns.",
+      "analogy": "Think of tokens like puzzle pieces that fit together to form a complete picture; each piece on its own is small, but combined, they create meaningful sentences.",
+      "why_it_matters": "Knowing about tokens helps you understand how language models read and generate text, which is key to using these tools effectively.",
+      "tts_text": "Tokens are like small pieces of text, such as words or parts of words, that language models use to understand language. Imagine them as puzzle pieces that fit together to make a full picture; each piece is small by itself, but together they form meaningful sentences.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_016",
+    "topic": "What are embeddings?",
+    "category": "llms",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Embeddings: Making Sense of Data in AI",
+      "summary": "Embeddings are a way for AI systems to convert words, images, or other data into numbers that computers can understand. These numbers capture important meanings and relationships, helping AI find patterns and similarities. This makes it easier for machines to work with complex information.",
+      "analogy": "Imagine organizing a large music library by assigning each song a special code based on its style and mood, so similar songs have similar codes. Embeddings work like those codes for AI, helping it recognize and group related information.",
+      "why_it_matters": "Embeddings allow AI to understand and compare data more effectively, improving tasks like language translation, recommendation systems, and search engines.",
+      "tts_text": "Embeddings are a way for AI to turn words or images into numbers that capture their meaning and relationships. Imagine organizing your music with special codes that show which songs are alike. That’s how embeddings help AI find connections and make sense of complex information.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_017",
+    "topic": "What is prompt engineering?",
+    "category": "llms",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Prompt Engineering: How to Talk to AI",
+      "summary": "Prompt engineering is the skill of writing clear and effective instructions to guide AI language models in generating useful responses. It helps improve the quality of answers by carefully choosing the words and format of your input.",
+      "analogy": "Think of prompt engineering like giving directions to a friend: the clearer and more detailed your directions are, the easier it is for them to reach the right destination.",
+      "why_it_matters": "Good prompt engineering makes AI tools more helpful and reliable, saving time and improving results in tasks like writing, research, and problem-solving.",
+      "tts_text": "Prompt engineering is all about writing clear and effective instructions to help AI give better answers. Imagine it like giving directions to a friend—the clearer your directions, the easier it is for them to find the right place.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_018",
+    "topic": "What is context window in an LLM?",
+    "category": "llms",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding the Context Window in Large Language Models",
+      "summary": "The context window in a large language model (LLM) refers to the maximum amount of text the model can consider at once when generating responses. It limits how much prior conversation or information the model can 'remember' and use to produce coherent and relevant output. This window size affects the model’s ability to maintain context over longer interactions.",
+      "analogy": "Imagine reading a book but only being able to see a few pages at a time. The context window is like the number of pages you can hold open simultaneously to understand the story without flipping back too far.",
+      "why_it_matters": "Knowing about the context window helps you understand the limitations of LLMs in handling long documents or extended conversations. It also guides how to structure inputs for better responses.",
+      "tts_text": "The context window in a large language model is the maximum amount of text it can look at when producing an answer. Think of it like reading a book but only being able to see a few pages at once, which helps you follow the story without flipping back too far. This limit affects how well the model keeps track of long conversations or documents.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_019",
+    "topic": "What is RAG?",
+    "category": "retrieval_and_memory",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding RAG: Retrieval-Augmented Generation Explained",
+      "summary": "RAG stands for Retrieval-Augmented Generation, a method that combines retrieving information from a large database with generating answers using AI. It helps AI provide more accurate and up-to-date responses by looking up relevant facts before answering.",
+      "analogy": "Think of RAG like a student who first checks their textbook before answering a question, instead of relying only on memory.",
+      "why_it_matters": "RAG improves AI's ability to give precise and informed answers, making it useful for tasks like customer support and research.",
+      "tts_text": "RAG, or Retrieval-Augmented Generation, is a way for AI to find information from a big database before creating an answer. Imagine it like a student who looks up their textbook first instead of just relying on memory. This helps AI give more accurate and helpful responses.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_020",
+    "topic": "RAG vs fine-tuning",
+    "category": "retrieval_and_memory",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "RAG vs Fine-Tuning: Enhancing AI with Retrieval or Training",
+      "summary": "Retrieval-Augmented Generation (RAG) combines a large language model with an external knowledge base to fetch relevant information during inference, while fine-tuning adjusts the model's internal parameters by training it on specific data. RAG is flexible and can update knowledge quickly without retraining, whereas fine-tuning offers deeper integration of specialized knowledge but requires more resources and time.",
+      "analogy": "Think of RAG as having a smart assistant who looks up answers in a library whenever you ask a question, while fine-tuning is like teaching that assistant in advance so they already know the answers by heart.",
+      "why_it_matters": "Understanding the difference helps choose the right approach for applications needing up-to-date information or specialized expertise. It balances between quick adaptability and in-depth knowledge integration.",
+      "tts_text": "Retrieval-Augmented Generation, or RAG, works by combining a language model with an external knowledge base that it searches in real time to answer questions. Fine-tuning, on the other hand, involves training the model on specific data so it learns that information internally. Imagine RAG as a smart assistant who looks up answers in a library when you ask, while fine-tuning is like teaching that assistant beforehand so they know the answers by heart. Knowing the difference helps you pick whether you want fast, flexible updates or a deeply specialized model.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_021",
+    "topic": "What is a vector database?",
+    "category": "retrieval_and_memory",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Vector Databases: Efficient Similarity Search for Complex Data",
+      "summary": "A vector database is a specialized system that stores and retrieves data represented as high-dimensional vectors, enabling fast similarity searches. Unlike traditional databases that rely on exact matches, vector databases find items based on how closely their vector representations align, which is essential for AI and machine learning applications.",
+      "analogy": "Imagine a library where instead of organizing books by title or author, books are arranged based on how similar their content is, so you can quickly find stories or topics that closely match what you’re interested in.",
+      "why_it_matters": "Vector databases power many AI-driven applications like image recognition, recommendation systems, and natural language processing by efficiently finding similar data points in massive datasets.",
+      "tts_text": "A vector database is a system that stores data as high-dimensional vectors and allows you to quickly find items that are similar rather than exactly the same. Imagine a library where books aren’t sorted by title or author but by how similar their content is, so you can easily discover stories or topics that closely match your interests.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_022",
+    "topic": "What is semantic search?",
+    "category": "retrieval_and_memory",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Semantic Search: Finding Meaning, Not Just Words",
+      "summary": "Semantic search is a way for computers to understand the meaning behind your search words, not just match exact keywords. It helps find information that is relevant even if the exact words you used aren’t in the text.",
+      "analogy": "Imagine asking a librarian for books about 'healthy eating' and they bring you books on nutrition, dieting, and recipes, even if those exact words weren’t in your question.",
+      "why_it_matters": "Semantic search makes finding useful information faster and easier because it understands what you really mean, not just the words you type.",
+      "tts_text": "Semantic search means a computer tries to understand the meaning behind your search, not just the exact words. Imagine asking a librarian for books about healthy eating, and they bring you books on nutrition, dieting, and recipes, even if those exact words weren’t in your question.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_023",
+    "topic": "What is chunking in RAG systems?",
+    "category": "retrieval_and_memory",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Chunking in Retrieval-Augmented Generation Systems",
+      "summary": "Chunking in RAG systems refers to breaking down large documents into smaller, manageable pieces or 'chunks' to improve information retrieval and generation accuracy. This process helps the system efficiently find relevant data and generate more precise responses by focusing on specific segments rather than entire documents.",
+      "analogy": "Think of chunking like cutting a large book into chapters so you can quickly find the part you need without flipping through every page.",
+      "why_it_matters": "Chunking enhances the speed and relevance of information retrieval, making RAG systems more effective in handling large volumes of text.",
+      "tts_text": "Chunking in RAG systems means dividing big documents into smaller, manageable parts to help the system find the right information more quickly. Imagine it like cutting a large book into chapters so you don't have to flip through every page to find what you need. This approach makes the system faster and more accurate when answering questions.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_024",
+    "topic": "What is memory in an AI assistant?",
+    "category": "retrieval_and_memory",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Memory in AI Assistants",
+      "summary": "Memory in an AI assistant refers to its ability to store and recall information from past interactions to provide more personalized and context-aware responses. This capability enables the assistant to maintain continuity over conversations and improve user experience by remembering preferences and details.",
+      "analogy": "Think of memory in an AI assistant like a notepad that it keeps open during your conversations, jotting down important details so it can refer back to them later and avoid asking the same questions repeatedly.",
+      "why_it_matters": "Memory allows AI assistants to deliver more relevant and efficient help by building on previous interactions, making each conversation feel more natural and tailored to the user.",
+      "tts_text": "Memory in an AI assistant means it can store and recall information from past conversations to give you more personalized and relevant responses. Think of it like a notepad that the assistant keeps open during your chats, writing down important details so it doesn't have to ask the same questions again. This helps the assistant provide smoother and more natural interactions every time you use it.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_025",
+    "topic": "What is fine-tuning?",
+    "category": "training_and_optimization",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "What is Fine-Tuning in AI?",
+      "summary": "Fine-tuning is the process of taking a pre-trained AI model and training it further on a specific task or dataset. This helps the model perform better by adapting its knowledge to new, more focused information.",
+      "analogy": "Think of fine-tuning like adjusting a general recipe to suit your personal taste by adding specific spices or ingredients.",
+      "why_it_matters": "Fine-tuning allows AI models to be customized quickly and efficiently, making them more useful for particular tasks without starting from scratch.",
+      "tts_text": "Fine-tuning is when we take an AI model that already knows a lot and train it a bit more on a specific task so it gets better at that. Imagine it like adjusting a general recipe by adding your favorite spices to make it just right for you.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_026",
+    "topic": "What is distillation in AI?",
+    "category": "training_and_optimization",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Distillation: Compressing AI Knowledge",
+      "summary": "Distillation in AI is a technique where a large, complex model (teacher) transfers its knowledge to a smaller, more efficient model (student). This process helps the smaller model perform nearly as well as the larger one but with less computational cost. It's commonly used to optimize models for deployment on limited-resource devices.",
+      "analogy": "Think of a master chef teaching a home cook a simplified recipe that captures the essence of a complex dish without all the intricate steps.",
+      "why_it_matters": "Distillation enables deploying powerful AI models on devices like smartphones by reducing size and computation while maintaining accuracy.",
+      "tts_text": "Distillation in AI is a way to transfer knowledge from a big, complex model to a smaller, faster one so it can work efficiently without losing much accuracy. Imagine a master chef teaching a home cook a simpler version of a complicated recipe that still tastes great. This technique is important because it lets us use advanced AI on devices with limited resources, like smartphones.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_027",
+    "topic": "What is inference in machine learning?",
+    "category": "training_and_optimization",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Inference: How Machines Make Predictions",
+      "summary": "Inference in machine learning is the process where a trained model uses what it has learned to make predictions or decisions based on new data. It's like applying knowledge to solve real-world problems after training is complete.",
+      "analogy": "Think of inference like using a recipe you’ve mastered to cook a new dish; you follow the steps you learned to create a meal without needing to relearn the recipe each time.",
+      "why_it_matters": "Inference allows machines to provide useful outputs in everyday applications, such as recognizing images, understanding speech, or recommending products.",
+      "tts_text": "Inference in machine learning is when a trained model uses its knowledge to make predictions on new data. Imagine it like using a recipe you’ve already learned to cook a new dish—you follow the steps without relearning them each time. This process helps machines perform tasks like recognizing images or recommending products in real life.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_028",
+    "topic": "Why is GPU memory important for LLMs?",
+    "category": "training_and_optimization",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Why GPU Memory is Crucial for Large Language Models",
+      "summary": "GPU memory stores the data and parameters needed to run large language models efficiently during training and inference. Since LLMs have billions of parameters, having enough GPU memory allows them to process complex computations without slowing down or crashing.",
+      "analogy": "Think of GPU memory like the workspace on a desk: the bigger your desk, the more papers and tools you can spread out and work with at once without constantly shuffling things around.",
+      "why_it_matters": "Sufficient GPU memory enables smoother training and faster responses from LLMs, making AI applications more effective and practical.",
+      "tts_text": "GPU memory holds all the important data and settings that large language models need to work quickly and smoothly. Imagine it like a desk where you do your work—the bigger the desk, the more stuff you can have in front of you without getting cluttered. This means that with enough GPU memory, these models can train faster and give better results.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_029",
+    "topic": "What is quantization?",
+    "category": "training_and_optimization",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Quantization: Simplifying Data for Efficiency",
+      "summary": "Quantization is the process of converting continuous or high-precision data into a limited set of discrete values. This technique is commonly used in machine learning and digital signal processing to reduce model size and speed up computations while maintaining acceptable accuracy.",
+      "analogy": "Imagine turning a detailed color photograph into a simpler image with fewer colors, like reducing a full spectrum into a limited palette to save space but still keep the main picture recognizable.",
+      "why_it_matters": "Quantization helps deploy complex models on devices with limited resources, such as smartphones, by optimizing memory usage and processing speed without heavily sacrificing performance.",
+      "tts_text": "Quantization is like turning detailed data into simpler, limited values to make things faster and smaller. Imagine taking a colorful photo and reducing it to fewer colors to save space but still keep the main image clear. This process is important because it allows complex models to run efficiently on devices like phones without losing too much accuracy.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_030",
+    "topic": "What is latency in AI systems?",
+    "category": "training_and_optimization",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Latency: The Delay in AI Responses",
+      "summary": "Latency in AI systems is the time it takes for the system to process input and deliver an output. It measures the delay between when you ask a question and when the AI provides an answer.",
+      "analogy": "Imagine you're ordering food at a restaurant and waiting for the chef to prepare your meal; the waiting time before your food arrives is like latency in AI.",
+      "why_it_matters": "Lower latency means faster responses, which improves user experience and makes AI systems more efficient in real-world applications.",
+      "tts_text": "Latency in AI systems is the time it takes for the system to process your input and give you an answer. Imagine ordering food at a restaurant and waiting for the chef to prepare your meal; the waiting time before your food arrives is like latency in AI. When latency is low, responses come faster, making the experience smoother and more efficient.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_031",
+    "topic": "What is an AI agent?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "What is an AI Agent?",
+      "summary": "An AI agent is a computer program that can perceive its environment and take actions to achieve specific goals. It works by gathering information, making decisions, and acting automatically without needing constant human help.",
+      "analogy": "Think of an AI agent like a self-driving car that senses the road around it, decides where to go, and drives itself safely to the destination.",
+      "why_it_matters": "AI agents help automate tasks, making technology smarter and more useful in everyday life, from virtual assistants to smart home devices.",
+      "tts_text": "An AI agent is a program that can see what's around it and take actions to reach a goal all on its own. Imagine it like a self-driving car that senses the road, decides where to go, and drives itself safely to get there.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_032",
+    "topic": "How do chatbots work?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "How Chatbots Understand and Respond to You",
+      "summary": "Chatbots are computer programs designed to talk with people by understanding their questions and giving helpful answers. They use patterns in language to figure out what you mean and respond quickly. This makes it easy to get information or support anytime.",
+      "analogy": "Imagine a helpful shop assistant who listens carefully to your questions and guides you to what you need without delay.",
+      "why_it_matters": "Chatbots make it simple and fast to get help or information without waiting for a person, saving time and improving customer experiences.",
+      "tts_text": "Chatbots are computer programs that talk with people by understanding their questions and giving helpful answers. Imagine a helpful shop assistant who listens carefully to your questions and guides you to what you need without delay. This makes it easy to get information or support anytime.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_033",
+    "topic": "What is computer vision?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Computer Vision: How Machines See the World",
+      "summary": "Computer vision is a field of artificial intelligence that teaches computers to interpret and understand images and videos, just like humans do. It allows machines to recognize objects, faces, and scenes to make decisions based on visual data.",
+      "analogy": "Imagine teaching a child to recognize different animals by showing them pictures; computer vision works similarly by helping computers learn to identify what they 'see' in images.",
+      "why_it_matters": "Computer vision is important because it powers technologies like facial recognition, self-driving cars, and medical image analysis, making these systems smarter and more helpful.",
+      "tts_text": "Computer vision is a part of artificial intelligence that helps computers understand images and videos, much like how a child learns to recognize animals by looking at pictures. This technology is key to making things like facial recognition and self-driving cars work effectively.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_034",
+    "topic": "What is speech-to-text?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "What is Speech-to-Text?",
+      "summary": "Speech-to-text is a technology that converts spoken words into written text. It allows computers to understand and transcribe what people say in real time or from recordings.",
+      "analogy": "Think of speech-to-text like a smart assistant that listens to your voice and types out your words for you automatically.",
+      "why_it_matters": "This technology helps people write faster, use voice commands, and improves accessibility for those who have difficulty typing.",
+      "tts_text": "Speech-to-text is a technology that turns spoken words into written text. Think of it like a smart assistant that listens to your voice and types out your words for you automatically. It helps people write faster, use voice commands, and makes technology easier to use for everyone.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_035",
+    "topic": "What is text-to-speech?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "What is Text-to-Speech and How Does It Work?",
+      "summary": "Text-to-speech (TTS) is a technology that converts written text into spoken words using a computer voice. It helps people listen to written content instead of reading it themselves.",
+      "analogy": "Imagine having a helpful friend who reads your favorite book out loud whenever you want, so you can listen instead of reading.",
+      "why_it_matters": "Text-to-speech makes information more accessible to people with reading difficulties or busy schedules, allowing them to absorb content hands-free.",
+      "tts_text": "Text-to-speech is a technology that turns written words into spoken sounds using a computer voice. Think of it like having a helpful friend who reads your favorite book out loud for you, so you can listen instead of reading. This is useful because it helps people who find reading hard or who want to learn while doing other things.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_036",
+    "topic": "How is AI used in healthcare?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "How AI Helps Improve Healthcare",
+      "summary": "AI is used in healthcare to help doctors diagnose diseases, suggest treatments, and manage patient information more efficiently. It can analyze large amounts of medical data quickly, supporting better and faster decisions.",
+      "analogy": "Think of AI as a helpful assistant who can quickly scan through thousands of medical books to find the right answers for a doctor.",
+      "why_it_matters": "This helps doctors provide better care and patients get the right treatment sooner. It can also reduce errors and save time in busy hospitals.",
+      "tts_text": "AI is used in healthcare to help doctors diagnose diseases and suggest treatments by quickly analyzing lots of medical information. Think of AI as a helpful assistant who can scan through thousands of medical books fast to find the right answers for a doctor. This support helps doctors give better care and helps patients get treated faster.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_037",
+    "topic": "What is an AI hallucination?",
+    "category": "evaluation_and_safety",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding AI Hallucinations: When AI Makes Things Up",
+      "summary": "An AI hallucination happens when an artificial intelligence system provides information that sounds real but is actually incorrect or made up. This can happen because AI guesses answers based on patterns, not facts. It's important to recognize these mistakes to use AI safely and effectively.",
+      "analogy": "Think of an AI hallucination like a friend who confidently tells you a story that sounds believable but isn't true because they misunderstood or guessed the details.",
+      "why_it_matters": "Knowing about AI hallucinations helps you double-check AI answers and avoid trusting false information, making your interactions with AI safer and more reliable.",
+      "tts_text": "An AI hallucination happens when an AI gives information that sounds real but is actually wrong or made up. Think of it like a friend who confidently tells you a story that seems believable but isn't true because they guessed or misunderstood. Knowing this helps you be careful when using AI and make sure the information you get is correct.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_038",
+    "topic": "What is bias in AI?",
+    "category": "evaluation_and_safety",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Bias in AI: When Machines Favor Some Over Others",
+      "summary": "Bias in AI happens when a computer system makes unfair decisions because of the data it learned from or how it was programmed. This can lead to certain groups being treated differently or unfairly by the AI.",
+      "analogy": "Think of AI bias like a recipe that only uses certain ingredients; if important flavors are missing, the final dish won’t taste right for everyone.",
+      "why_it_matters": "Recognizing bias in AI is important to ensure technology treats all people fairly and makes safe, accurate decisions.",
+      "tts_text": "Bias in AI happens when a computer system makes unfair decisions because of the data it learned from or how it was programmed. Think of AI bias like a recipe that only uses certain ingredients; if important flavors are missing, the final dish won’t taste right for everyone. Understanding this helps us make sure AI treats everyone fairly and works safely.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_039",
+    "topic": "What is AI alignment?",
+    "category": "evaluation_and_safety",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding AI Alignment: Keeping AI Goals in Check",
+      "summary": "AI alignment refers to the process of ensuring that artificial intelligence systems act according to human values and intentions. It involves designing AI so that its goals and behaviors match what humans actually want, even in complex or unforeseen situations.",
+      "analogy": "Imagine training a dog to fetch a specific toy; AI alignment is like making sure the dog understands exactly which toy you want, not just any object it finds.",
+      "why_it_matters": "Without proper alignment, AI systems might pursue objectives that conflict with human well-being or safety, making alignment crucial for trustworthy and beneficial AI deployment.",
+      "tts_text": "AI alignment is about making sure artificial intelligence systems do what humans really want them to do, even when situations get complicated. Think of it like training a dog to fetch a specific toy—you want the dog to understand exactly which toy to bring back, not just any object it finds. This is important because if AI isn’t properly aligned, it could act in ways that harm people or go against our values.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_040",
+    "topic": "What is multimodal AI?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Understanding Multimodal AI: Combining Senses for Smarter Machines",
+      "summary": "Multimodal AI is a type of artificial intelligence that can understand and process different kinds of information at the same time, such as text, images, and sounds. This helps AI systems better understand the world, just like humans do by using multiple senses together.",
+      "analogy": "Think of a detective who uses clues from fingerprints, photos, and interviews all at once to solve a case. Multimodal AI works similarly by combining different types of data to make smarter decisions.",
+      "why_it_matters": "Multimodal AI allows technology to interact with us more naturally and helps improve things like virtual assistants, medical diagnosis, and self-driving cars by making sense of complex information.",
+      "tts_text": "Multimodal AI is a type of artificial intelligence that can understand and process different kinds of information at the same time, like text, images, and sounds. Think of a detective who uses clues from fingerprints, photos, and interviews all at once to solve a case. Multimodal AI works in a similar way by combining different types of data to make smarter decisions.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "concept_id": "concept_041",
+    "topic": "What is transfer learning?",
+    "category": "training_and_optimization",
+    "difficulty": "intermediate",
+    "source": {
+      "title": "",
+      "url": ""
+    },
+    "reference_text": "",
+    "ai_output": {
+      "title": "Unlocking Knowledge: What is Transfer Learning?",
+      "summary": "Transfer learning is a technique where a model developed for one task is reused as the starting point for a different but related task. Instead of training a model from scratch, it leverages pre-existing knowledge to improve learning efficiency and performance on the new task.",
+      "analogy": "Think of transfer learning like learning to play the piano after mastering the guitar; your musical skills from guitar help you pick up piano faster than starting with no musical background.",
+      "why_it_matters": "Transfer learning saves time and resources by building on existing models, enabling faster development and better results, especially when data for the new task is limited.",
+      "tts_text": "Transfer learning is when a model trained for one task is used to help with a different but related task, so it doesn't have to start from scratch. Imagine you’ve learned to play the guitar and then decide to learn piano; your musical skills from guitar will help you learn piano much faster. This approach saves time and effort, especially when you have limited data for the new task.",
+      "model": "gpt-4.1-mini",
+      "prompt_version": "v1"
+    }
+  }
+]

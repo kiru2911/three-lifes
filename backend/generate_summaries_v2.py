@@ -1,6 +1,6 @@
 """Generate v2 summaries for existing news articles.
 
-This script reads articles from ``data/articles.json``, generates a new
+This script reads articles from ``data/articles/articles.json``, generates a new
 summary for each article using an improved prompt, and saves the results to
 new output files without overwriting the original v1 summary fields.
 """
@@ -175,7 +175,7 @@ def main() -> int:
         return 1
 
     project_root = Path(__file__).resolve().parent.parent
-    data_dir = project_root / "data"
+    data_dir = project_root / "data" / "articles"
     input_path = data_dir / "articles.json"
     output_json_path = data_dir / "articles_with_v2.json"
     output_csv_path = data_dir / "articles_with_v2.csv"

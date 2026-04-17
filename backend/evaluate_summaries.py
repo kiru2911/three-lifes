@@ -1,6 +1,6 @@
 """Evaluate generated news summaries with Ollama.
 
-This script reads article records from ``data/articles.json``, evaluates each
+This script reads article records from ``data/articles/articles_with_v2.json``, evaluates each
 summary against the original article text, and saves the results to JSON and
 CSV files. The CSV output is designed to be easy to import into Google Sheets.
 """
@@ -282,8 +282,8 @@ def build_result_row(article: dict[str, Any], evaluation: dict[str, Any]) -> dic
     return {
         "article_id": clean_text(article.get("article_id")),
         "article_title": clean_text(article.get("title")),
-        "model": clean_text(ai_output.get("summary_model")),
-        "prompt_version": clean_text(ai_output.get("summary_prompt_version")),
+        "model": clean_text(ai_output.get("summary_v2_model")),
+        "prompt_version": clean_text(ai_output.get("summary_v2_prompt_version")),
         "summary": clean_text(ai_output.get(SUMMARY_FIELD)),
         "relevance": evaluation["relevance"],
         "faithfulness": evaluation["faithfulness"],
@@ -322,11 +322,13 @@ def main() -> int:
         return 1
 
     project_root = Path(__file__).resolve().parent.parent
-    data_dir = project_root / "data"
+    articles_dir = project_root / "data" / "articles"
+    evaluation_dir = project_root / "data" / "evaluation"
+    evaluation_dir.mkdir(parents=True, exist_ok=True)
 
-    input_path = data_dir / "articles_with_v2.json"
-    json_output_path = data_dir / "evaluation_results_v2.json"
-    csv_output_path = data_dir / "evaluation_results_v2.csv"
+    input_path = articles_dir / "articles_with_v2.json"
+    json_output_path = evaluation_dir / "evaluation_results_v2.json"
+    csv_output_path = evaluation_dir / "evaluation_results_v2.csv"
 
     if not input_path.exists():
         print(f"Error: dataset not found at {input_path}")
