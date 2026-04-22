@@ -2,15 +2,15 @@
   "dataset_name": "ollama-output-dataset",
   "dataset_version": "1.0.0",
   "dataset_project": "three-lifes/datasets",
-  "dataset_id": "1b55668eb9a345f7a8fadaf45438a841",
+  "dataset_id": "780e7b6459744afeab58c499e30ed3ec",
   "file_count": 3,
-  "total_row_count": 36,
+  "total_row_count": 33,
   "source": "NewsAPI article collection pipeline with Ollama summarisation, terminology extraction with explanations, and evaluation outputs",
   "files": [
     {
       "file_name": "articles.csv",
       "format": "csv",
-      "row_count": 12,
+      "row_count": 11,
       "column_count": 15,
       "fields": [
         "article_id",
@@ -50,7 +50,7 @@
     {
       "file_name": "articles_with_v2.csv",
       "format": "csv",
-      "row_count": 12,
+      "row_count": 11,
       "column_count": 12,
       "fields": [
         "article_id",
@@ -84,7 +84,7 @@
     {
       "file_name": "evaluation_results_v2.csv",
       "format": "csv",
-      "row_count": 12,
+      "row_count": 11,
       "column_count": 18,
       "fields": [
         "article_id",
