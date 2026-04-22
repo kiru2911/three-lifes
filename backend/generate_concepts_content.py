@@ -14,7 +14,6 @@ from typing import Any
 
 from dotenv import load_dotenv
 
-
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
@@ -23,7 +22,8 @@ from utils.llm_client import DEFAULT_SUMMARY_MODEL, generate_concept_content
 from utils.wikipedia_fetch import fetch_wikipedia_summary
 
 # PROMPT_VERSION = "v1"
-PROMPT_VERSION = "v2"
+# PROMPT_VERSION = "v2"
+PROMPT_VERSION = "v3"
 DEFAULT_CATEGORY = "AI/Technology"
 DEFAULT_DIFFICULTY = "beginner"
 USE_WIKIPEDIA = False
@@ -46,8 +46,9 @@ def load_prompt_template() -> str:
     prompt_paths = [
         # PROJECT_ROOT / "backend" / "prompts" / "concept_v1.txt",
         # PROJECT_ROOT / "backend" / "prompts" / "concept_v1.txt ",
-        PROJECT_ROOT / "backend" / "prompts" / "concept_v2.txt",
-        PROJECT_ROOT / "backend" / "prompts" / "concept_v2.txt ",
+        # PROJECT_ROOT / "backend" / "prompts" / "concept_v2.txt",
+        # PROJECT_ROOT / "backend" / "prompts" / "concept_v2.txt ",
+        PROJECT_ROOT / "backend" / "prompts" / "concept_v3.txt",
     ]
 
     for path in prompt_paths:
@@ -57,7 +58,7 @@ def load_prompt_template() -> str:
                 prompt_text = prompt_text.removeprefix("```").removesuffix("```").strip()
             return prompt_text
 
-    raise FileNotFoundError("Could not find backend/prompts/concept_v2.txt")
+    raise FileNotFoundError("Could not find backend/prompts/concept_v3.txt")
 
 
 def load_seeds(path: Path) -> list[dict[str, Any]]:
@@ -199,8 +200,12 @@ def main() -> int:
 
     data_dir = PROJECT_ROOT / "data" / "concepts"
     input_path = data_dir / "concept_seeds.json"
-    output_json_path = data_dir / "concepts_generated_v2.json"
-    output_csv_path = data_dir / "concepts_generated_v2.csv"
+    # output_json_path = data_dir / "concepts_generated_v2.json"
+    # output_csv_path = data_dir / "concepts_generated_v2.csv"
+    # output_json_path = data_dir / "concepts_generated_v3.json"
+    # output_csv_path = data_dir / "concepts_generated_v3.csv"
+    output_json_path = data_dir / "concepts_generated_v4.json"
+    output_csv_path = data_dir / "concepts_generated_v4.csv"
 
     if not input_path.exists():
         print(f"Error: dataset not found at {input_path}")

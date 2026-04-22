@@ -9,7 +9,7 @@ from typing import Any
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ARTICLES_PATH = PROJECT_ROOT / "data" / "articles" / "articles.json"
-CONCEPTS_PATH = PROJECT_ROOT / "data" / "concepts" / "concepts_generated_v2.json"
+CONCEPTS_PATH = PROJECT_ROOT / "data" / "concepts" / "concepts_generated_v4.json"
 FEED_PATH = PROJECT_ROOT / "data" / "feed.json"
 MANIFEST_PATH = PROJECT_ROOT / "data" / "feed_manifest.json"
 
@@ -99,9 +99,10 @@ def map_concept_to_feed_item(concept: dict[str, Any]) -> dict[str, Any]:
         "title": clean_text(ai_output.get("title")) or clean_text(concept.get("topic")),
         "subtitle": " · ".join(subtitle_parts),
         "summary": clean_text(ai_output.get("summary")),
-        "extra_text": clean_text(ai_output.get("why_it_matters")) or clean_text(ai_output.get("analogy")),
+        "extra_text": clean_text(ai_output.get("why_it_matters")),
         "body_text": clean_text(ai_output.get("post_content")),
         "audio_text": clean_text(ai_output.get("tts_text")) or clean_text(ai_output.get("summary")),
+        "analogy": clean_text(ai_output.get("analogy")),
         "image_url": "",
         "category": category,
         "difficulty": difficulty,

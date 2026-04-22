@@ -11,7 +11,8 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 if not openai_api_key:
     raise ValueError("OPENAI_API_KEY is not set")
 
-DEFAULT_SUMMARY_MODEL = "gpt-4.1-mini"
+# DEFAULT_SUMMARY_MODEL = "gpt-4.1-mini"
+DEFAULT_SUMMARY_MODEL = "gpt-4.1"
 PROMPT_TEMPLATE = "prompts/concept_v1.txt"
 
 

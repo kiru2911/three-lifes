@@ -1,0 +1,42 @@
+concept_id,topic,category,difficulty,prompt_version,faithfulness,coherence,conciseness,accuracy,educational_value,analogy_quality,difficulty_appropriateness,average_score
+concept_001,What is machine learning?,foundations,beginner,v3,5,4,3,4,4,5,4,4.14
+concept_002,What is deep learning?,foundations,beginner,v3,4,4,4,3,4,4,5,4.0
+concept_003,What is supervised learning?,foundations,beginner,v3,5,4,3,4,4,4,5,4.14
+concept_004,What is unsupervised learning?,foundations,beginner,v3,5,4,4,4,4,5,5,4.43
+concept_005,What is reinforcement learning?,foundations,intermediate,v3,5,4,3,4,4,4,4,4.0
+concept_006,What is overfitting?,foundations,beginner,v3,5,4,3,4,4,5,4,4.14
+concept_007,What is a neural network?,neural_networks,beginner,v3,4,4,3,4,4,4,4,3.86
+concept_008,What is backpropagation?,neural_networks,intermediate,v3,4,4,3,4,4,4,5,4.0
+concept_009,What is gradient descent?,neural_networks,beginner,v3,5,4,3,4,4,5,4,4.14
+concept_010,What is a loss function?,neural_networks,beginner,v3,5,4,3,4,4,5,4,4.14
+concept_011,What are activation functions?,neural_networks,intermediate,v3,4,4,3,4,4,4,5,4.0
+concept_012,Why do neural networks need hidden layers?,neural_networks,intermediate,v3,5,4,4,4,4,4,5,4.29
+concept_013,What is a transformer model?,llms,beginner,v3,5,4,4,4,4,4,5,4.29
+concept_014,What is attention in AI?,llms,intermediate,v3,5,4,4,4,4,5,4,4.29
+concept_015,What are tokens in large language models?,llms,beginner,v3,5,4,3,4,4,5,4,4.14
+concept_016,What are embeddings?,llms,beginner,v3,5,4,4,4,4,5,4,4.29
+concept_017,What is prompt engineering?,llms,beginner,v3,5,4,3,4,4,4,5,4.14
+concept_018,What is context window in an LLM?,llms,intermediate,v3,5,4,3,4,4,5,4,4.14
+concept_019,What is RAG?,retrieval_and_memory,beginner,v3,5,4,4,4,5,5,4,4.43
+concept_020,RAG vs fine-tuning,retrieval_and_memory,intermediate,v3,4,4,3,4,4,5,4,4.0
+concept_021,What is a vector database?,retrieval_and_memory,intermediate,v3,5,4,4,4,5,4,4,4.29
+concept_022,What is semantic search?,retrieval_and_memory,beginner,v3,5,4,4,4,4,5,4,4.29
+concept_023,What is chunking in RAG systems?,retrieval_and_memory,intermediate,v3,4,4,3,4,4,5,4,4.0
+concept_024,What is memory in an AI assistant?,retrieval_and_memory,intermediate,v3,4,4,3,4,4,5,4,4.0
+concept_025,What is fine-tuning?,training_and_optimization,beginner,v3,5,4,3,4,4,4,5,4.14
+concept_026,What is distillation in AI?,training_and_optimization,intermediate,v3,5,4,3,4,4,4,5,4.14
+concept_027,What is inference in machine learning?,training_and_optimization,beginner,v3,5,4,3,4,4,4,5,4.14
+concept_028,Why is GPU memory important for LLMs?,training_and_optimization,intermediate,v3,5,4,3,4,4,5,4,4.14
+concept_029,What is quantization?,training_and_optimization,intermediate,v3,4,4,3,4,4,5,4,4.0
+concept_030,What is latency in AI systems?,training_and_optimization,beginner,v3,5,4,3,4,4,5,4,4.14
+concept_031,What is an AI agent?,ai_applications,beginner,v3,5,4,4,4,4,5,5,4.43
+concept_032,How do chatbots work?,ai_applications,beginner,v3,4,4,4,4,5,5,4,4.29
+concept_033,What is computer vision?,ai_applications,beginner,v3,5,4,3,4,4,4,5,4.14
+concept_034,What is speech-to-text?,ai_applications,beginner,v3,5,4,3,4,4,4,4,4.0
+concept_035,What is text-to-speech?,ai_applications,beginner,v3,5,4,3,4,4,5,3,4.0
+concept_036,How is AI used in healthcare?,ai_applications,beginner,v3,4,4,3,4,4,4,5,4.0
+concept_037,What is an AI hallucination?,evaluation_and_safety,beginner,v3,5,4,4,4,4,5,5,4.43
+concept_038,What is bias in AI?,evaluation_and_safety,beginner,v3,4,4,3,4,4,4,5,4.0
+concept_039,What is AI alignment?,evaluation_and_safety,intermediate,v3,5,4,3,4,4,4,4,4.0
+concept_040,What is multimodal AI?,ai_applications,beginner,v3,5,4,4,4,4,5,4,4.29
+concept_041,What is transfer learning?,training_and_optimization,intermediate,v3,5,4,3,4,4,4,5,4.14

@@ -1,0 +1,1601 @@
+[
+  {
+    "concept_id": "concept_001",
+    "topic": "What is machine learning?",
+    "category": "foundations",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes machine learning, its mechanisms, and real-world applications without factual errors or hallucinations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from definition to examples and implications, but some repetition between sections slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially with repeated Netflix examples and overlapping points between summary and deep dive."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but the phrase 'computers get better by experience, not instructions' could mislead beginners into thinking no instructions are involved at all."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, providing mechanisms and real-world impact, but could include a clearer distinction between types of ML or limitations."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The analogy of teaching a child with pictures is accurate, relatable, and clarifies the concept without oversimplifying."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and explanations are mostly beginner-friendly, but terms like 'neural networks' and 'decision trees' are introduced without explanation, which may confuse some novices."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_002",
+    "topic": "What is deep learning?",
+    "category": "foundations",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 4,
+        "reason": "The explanation is generally accurate, but slightly overstates the extent to which deep learning 'mimics the human brain' and could clarify that neural networks are only loosely inspired by biological brains."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to examples and applications, but the repetition of examples (GPT, Tesla) in both summary and deep dive slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly concise, but some sentences could be tightened and there is minor redundancy in mentioning applications multiple times."
+      },
+      "accuracy": {
+        "score": 3,
+        "reason": "While the core ideas are correct, the analogy to 'machines teaching themselves' and 'simulating brain activity' could mislead beginners about the actual mechanisms and limitations of deep learning."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition by explaining mechanisms and real-world impact, but could provide a clearer distinction from other machine learning approaches for deeper insight."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The analogy of teaching a child with pictures is relatable and clarifies pattern recognition, but oversimplifies the complexity of feature extraction in deep learning."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The vocabulary and explanations are well-suited for beginners, avoiding jargon and assuming no prior knowledge."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_003",
+    "topic": "What is supervised learning?",
+    "category": "foundations",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes supervised learning, its mechanisms, and real-world applications without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to examples and deeper explanation, though some repetition between sections slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially with the Gmail spam filter example appearing in both the summary and deep dive, and a few sentences could be tightened."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but the analogy and examples could clarify that supervised learning is not always perfect and depends on data quality."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, providing mechanisms and real-world relevance, but could include a bit more about limitations or challenges."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The teacher-student analogy is clear and relatable, but could be improved by noting that not all feedback is immediate or perfect in real-world data."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The language and depth are well-suited for beginners, requiring no prior knowledge and avoiding jargon."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_004",
+    "topic": "What is unsupervised learning?",
+    "category": "foundations",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes unsupervised learning, its mechanisms, and real-world applications without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to examples and deeper explanation, though some repetition of examples (Spotify) slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly tight and focused, but there is minor redundancy in mentioning Spotify and the benefits of unsupervised learning multiple times."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but could briefly mention that unsupervised learning can sometimes produce ambiguous or less interpretable results, which is a common caveat."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, providing mechanisms and real-world relevance, but could offer a bit more on how algorithms actually work for deeper insight."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The puzzle analogy is clear, relatable, and accurately captures the essence of unsupervised learning without oversimplifying."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The vocabulary and explanations are well-suited for beginners, requiring no prior knowledge and avoiding technical jargon."
+      }
+    },
+    "average_score": 4.43
+  },
+  {
+    "concept_id": "concept_005",
+    "topic": "What is reinforcement learning?",
+    "category": "foundations",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes reinforcement learning, its mechanisms, and real-world applications without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to examples and applications, but the deep dive partially repeats earlier points."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially in the deep dive and analogy, which could be trimmed for tighter focus."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct but slightly oversimplifies by equating all RL with trial-and-error and not mentioning the exploration-exploitation tradeoff."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, providing mechanisms and real-world relevance, but could offer more on how RL differs from other learning types."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The dog training analogy is relatable and clarifies the concept, but is somewhat overused and doesn't capture the complexity of RL's decision-making over time."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and depth are suitable for intermediate learners, but the analogy and examples lean slightly toward beginner level."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_006",
+    "topic": "What is overfitting?",
+    "category": "foundations",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes overfitting, its causes, and consequences without factual errors or hallucinations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from definition to examples and implications, though the repetition of the Google example slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "Some sentences are repetitive, especially regarding the Google example and the memorization analogy, which could be trimmed for brevity."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but the repeated analogy and example could oversimplify the nuance of overfitting for some learners."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, providing mechanisms and real-world relevance, but could be more succinct and avoid redundancy for better retention."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The test-memorization analogy is clear, relatable, and accurately captures the essence of overfitting without misleading the learner."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The language and depth are suitable for beginners, though the inclusion of industry examples may slightly raise the complexity."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_007",
+    "topic": "What is a neural network?",
+    "category": "neural_networks",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 4,
+        "reason": "The explanation is generally accurate, but the repeated references to specific products like Tesla's autopilot and OpenAI's GPT could imply all neural networks work identically, which is an oversimplification."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to examples and deeper explanation, but some repetition (e.g., mentioning Tesla and GPT multiple times) slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially in the deep dive and summary sections, and phrases like 'the brains behind AI magic' add unnecessary flair."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The technical details are mostly correct, but the analogy and examples could mislead beginners into thinking all neural networks function like CNNs or are used in the same way."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The explanation goes beyond a definition by providing mechanisms and real-world applications, but could be clearer about the diversity of neural network types."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The detective analogy is relatable and clarifies the concept, but it slightly oversimplifies how information is processed in neural networks."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and explanations are mostly suitable for beginners, but references to specific architectures like CNNs may be confusing without prior context."
+      }
+    },
+    "average_score": 3.86
+  },
+  {
+    "concept_id": "concept_008",
+    "topic": "What is backpropagation?",
+    "category": "neural_networks",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 4,
+        "reason": "The explanation accurately describes backpropagation and its role in neural networks, but slightly overstates its direct impact on application-level reliability (e.g., safety in self-driving cars depends on more than just backpropagation)."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to deep dive, but the transitions between sections could be smoother for optimal clarity."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "Some sentences are wordy or repeat ideas (e.g., multiple references to applications and improvement), which could be tightened for greater focus."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The technical explanation is mostly correct, but equating backpropagation directly with model reliability and safety is an oversimplification."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The explanation goes beyond a definition, offering mechanism and real-world context, but could provide a clearer step-by-step of how backpropagation works for deeper understanding."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The piano tuning analogy is creative and mostly accurate, but may be a bit abstract for some learners and doesn't fully capture the mathematical nature of backpropagation."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The explanation assumes basic ML knowledge and uses appropriate terminology for an intermediate audience."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_009",
+    "topic": "What is gradient descent?",
+    "category": "neural_networks",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes gradient descent and its role in training neural networks, with no factual errors or hallucinations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to applications, but some repetition between sections slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially in repeating the foggy mountain analogy and mentioning similar examples in multiple sections."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but could clarify that gradient descent finds a local minimum, not always the global minimum, to avoid oversimplification."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanism and real-world impact, but could provide a bit more detail on how the 'nudging' works mathematically."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The foggy mountain analogy is clear, relatable, and accurately captures the iterative, local nature of gradient descent."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The language is mostly accessible for beginners, but references to 'parameters' and 'fine-tuning' could be briefly clarified for absolute novices."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_010",
+    "topic": "What is a loss function?",
+    "category": "neural_networks",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes what a loss function is and its role in training neural networks, with no factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to deeper details, but the transitions between sections could be smoother."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "Some phrases like 'secret sauce' and repeated references to specific models add minor verbosity and could be trimmed for tighter focus."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but the phrase 'loss functions aren’t just math—they’re the heartbeat of reliable AI' is slightly hyperbolic and could mislead beginners about their scope."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanism and real-world impact, but could include a simple mathematical example for even greater clarity."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The GPS analogy is accurate, relatable, and clarifies the concept without introducing misconceptions."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and explanations are mostly beginner-friendly, but references to specific models like GPT-4 and ResNet may be unfamiliar to true beginners."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_011",
+    "topic": "What are activation functions?",
+    "category": "neural_networks",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 4,
+        "reason": "The explanation is largely accurate, but slightly overstates the criticality of activation function choice in all real-world applications and could clarify that not all models use GELU."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to deep dive, but the repetition of the 'gatekeeper' analogy in multiple sections slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "Some sentences are wordy or repeat ideas (e.g., 'gatekeepers' and 'bouncers'), and the deep dive reiterates points already made in the summary."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The technical details are correct, but the statement about activation function choice 'making or breaking' safety is somewhat exaggerated for an intermediate audience."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The explanation goes beyond a definition and provides mechanisms and real-world context, but could be more succinct and focused on key takeaways."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The 'bouncer' analogy is relatable and clarifies the concept, but may oversimplify the nuanced role of activation functions in information flow."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The vocabulary and depth are well-suited for an intermediate learner with basic ML knowledge, using relevant examples and terminology."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_012",
+    "topic": "Why do neural networks need hidden layers?",
+    "category": "neural_networks",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes the role of hidden layers in enabling neural networks to learn complex, non-linear patterns, with no factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to examples and deep dive, but some repetition (e.g., AlphaGo example) slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly focused, but there is minor redundancy in mentioning AlphaGo and real-world applications multiple times."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but could briefly mention that not all problems require multiple hidden layers to avoid overgeneralization."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond definitions, providing mechanisms and real-world relevance, but could include a concrete example of a simple vs. multi-layer network for deeper insight."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The translator analogy is clear and helpful, though it could be more tightly tied to the technical process of feature transformation."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The vocabulary and depth are well-suited for an intermediate audience with basic ML familiarity."
+      }
+    },
+    "average_score": 4.29
+  },
+  {
+    "concept_id": "concept_013",
+    "topic": "What is a transformer model?",
+    "category": "llms",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes transformer models, their self-attention mechanism, and their impact on AI without factual errors or hallucinations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to deeper details, but some sections could be more tightly connected for smoother transitions."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly focused, though a few phrases (e.g., 'powers giants like...') could be trimmed for even greater brevity."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but the statement about 'getting transformer models wrong' could be more precise about the nature of errors."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world impact, but could include a bit more about how self-attention works for deeper insight."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The analogy is clear and relatable, but could be improved by explicitly contrasting with traditional sequential reading for sharper clarity."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The vocabulary and explanations are well-suited for beginners, avoiding jargon and assuming no prior knowledge."
+      }
+    },
+    "average_score": 4.29
+  },
+  {
+    "concept_id": "concept_014",
+    "topic": "What is attention in AI?",
+    "category": "llms",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes attention mechanisms in LLMs, their function, and their impact without factual errors or hallucinations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to deep dive, but some transitions between sections could be smoother."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly tight and focused, though a few phrases (e.g., 'That’s why attention isn’t just a feature; it’s the core...') could be trimmed for brevity."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but could briefly mention that attention is not exclusive to language models to avoid a slight oversimplification."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world applications, but could provide a bit more detail on how attention is computed."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The spotlight analogy is clear, relatable, and accurately captures the selective focus of attention mechanisms."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and depth are suitable for an intermediate audience, though a brief mention of 'token' relationships may assume more prior knowledge than strictly necessary."
+      }
+    },
+    "average_score": 4.29
+  },
+  {
+    "concept_id": "concept_015",
+    "topic": "What are tokens in large language models?",
+    "category": "llms",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes what tokens are, how they are used in LLMs, and the relevance of tokenization methods like Byte Pair Encoding without introducing factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from definition to analogy to practical implications, though the 'deep dive' section slightly overlaps with earlier points, making the structure a bit repetitive."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "Some sentences are wordy and repeat similar ideas, especially in the 'deep dive' and 'why it matters' sections, which could be tightened for brevity."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct but could clarify that not all tokens are as small as single characters and that tokenization granularity varies."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition by explaining mechanisms, real-world impact, and practical considerations, though it could provide a concrete example of tokenization for even greater clarity."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The LEGO analogy is apt, relatable, and helps clarify how tokens function as flexible building blocks in language models."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and explanations are mostly beginner-friendly, but terms like 'Byte Pair Encoding' are introduced without definition, which may challenge absolute beginners."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_016",
+    "topic": "What are embeddings?",
+    "category": "llms",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes embeddings, their function, and real-world applications without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to details, but the analogy is repeated in both the analogy and deep dive sections, which slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly tight, but there is some redundancy, especially with the repeated GPS analogy and mentioning CLIP multiple times."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but the phrase 'mastering embeddings' is a bit vague and could mislead beginners about the complexity involved."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world uses, but could provide a bit more on how embeddings are actually created or used in practice."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The GPS coordinates analogy is clear, accurate, and helps beginners grasp the concept of high-dimensional spaces."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and explanations are mostly beginner-friendly, but references to 'high-dimensional space' and 'cross-modal search' could be confusing without further simplification."
+      }
+    },
+    "average_score": 4.29
+  },
+  {
+    "concept_id": "concept_017",
+    "topic": "What is prompt engineering?",
+    "category": "llms",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes prompt engineering and its role in guiding LLM outputs, with no factual errors or hallucinations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to examples and deeper explanation, though some repetition between sections could be streamlined."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially with repeated references to Jasper and similar points in both the summary and deep dive."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct but could clarify that prompt engineering is not always about creativity and sometimes focuses on precision or constraint."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content provides practical examples and mechanisms, but could offer a bit more actionable guidance for beginners."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The musical instrument analogy is clear and relatable, though it may not fully capture the iterative and experimental nature of prompt engineering."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The language and explanations are accessible to beginners with no assumed prior knowledge."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_018",
+    "topic": "What is context window in an LLM?",
+    "category": "llms",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes what a context window is, its typical size, and its implications for LLMs without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from definition to implications and analogy, but the deep dive partially repeats earlier points, slightly disrupting the flow."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "Some sentences are wordy or repeat information (e.g., token limits and their effects are mentioned multiple times), which could be tightened."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but the statement about 'chunking' as a workaround could be more precise, as not all chunking strategies fully mitigate context loss."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world impact, but could provide a more concrete example or practical tip for application."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The train window analogy is clear, relatable, and accurately captures the limitation imposed by context windows without oversimplifying."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and depth are suitable for an intermediate audience, though some references (like 'chunking') could use brief clarification for those less familiar with LLM engineering."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_019",
+    "topic": "What is RAG?",
+    "category": "retrieval_and_memory",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes RAG as a method that combines language models with external retrieval to improve answer quality, with no factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to deep dive, but some sections could be more tightly linked for even smoother transitions."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly focused, but a few phrases (e.g., 'changes the game', 'in short') could be trimmed for even greater brevity."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but slightly overstates RAG's ability to always provide up-to-date information, as retrieval depends on the underlying data sources."
+      },
+      "educational_value": {
+        "score": 5,
+        "reason": "The content goes beyond a definition, explaining mechanisms, real-world applications, and the significance of RAG."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The open-book exam analogy is clear, relatable, and accurately captures how RAG augments AI with external information."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The explanation is accessible for beginners, but some terms like 'pre-trained data' and 'generation' could be briefly clarified for absolute novices."
+      }
+    },
+    "average_score": 4.43
+  },
+  {
+    "concept_id": "concept_020",
+    "topic": "RAG vs fine-tuning",
+    "category": "retrieval_and_memory",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 4,
+        "reason": "The explanation accurately distinguishes RAG and fine-tuning, but slightly overstates company-specific implementations (e.g., Google's LaMDA is not a canonical RAG example)."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to deep dive, but some repetition between sections slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially in repeating the librarian/encyclopedia analogy and restating points across sections."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The technical distinctions are correct, but the implication that fine-tuning always leads to 'model bloat' is an oversimplification."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The explanation goes beyond definitions to discuss tradeoffs and real-world implications, but could provide more concrete examples or limitations."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The librarian vs. encyclopedia analogy is clear, relatable, and accurately captures the core difference without misleading."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and depth are suitable for intermediate learners, though some references (e.g., LaMDA) may assume more background than strictly necessary."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_021",
+    "topic": "What is a vector database?",
+    "category": "retrieval_and_memory",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes vector databases, their use of embeddings, and their role in semantic search without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to deep dive, but the transition between sections could be smoother for optimal clarity."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly focused, though some sentences could be tightened to avoid minor repetition (e.g., reiterating the transformation of data into vectors in multiple sections)."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but mentioning 'embeddings created by models like OpenAI’s GPT-4' could be misleading, as GPT-4 is not primarily an embedding model."
+      },
+      "educational_value": {
+        "score": 5,
+        "reason": "The content goes beyond a definition, explaining mechanisms, real-world applications, and the importance of vector databases."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The library analogy is clear and helpful, though it could be more precise by emphasizing the mathematical aspect of similarity."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and depth are suitable for an intermediate audience, but references to specific models may require slightly more background than assumed."
+      }
+    },
+    "average_score": 4.29
+  },
+  {
+    "concept_id": "concept_022",
+    "topic": "What is semantic search?",
+    "category": "retrieval_and_memory",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes semantic search, its mechanisms, and real-world applications without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to details, but the deep dive slightly overlaps with earlier points, making the structure a bit repetitive."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly tight, but some sentences could be trimmed to avoid minor redundancy, especially in the deep dive."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but mentioning 'embeddings' for beginners could use a brief clarification to avoid confusion."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and applications, but could provide a more concrete beginner-friendly example."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The librarian analogy is clear, relatable, and accurately conveys the shift from keyword to meaning-based search."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary is mostly beginner-friendly, but terms like 'embeddings' and 'BERT' may be unfamiliar without further explanation."
+      }
+    },
+    "average_score": 4.29
+  },
+  {
+    "concept_id": "concept_023",
+    "topic": "What is chunking in RAG systems?",
+    "category": "retrieval_and_memory",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 4,
+        "reason": "The explanation accurately describes chunking in RAG systems and its role in retrieval, but slightly overstates the direct impact on latency and precision without mentioning trade-offs or chunk size considerations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to deep dive, but some repetition and overlap between sections slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially with repeated mentions of Pinecone, Weaviate, and the benefits of chunking, which could be trimmed for tighter focus."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The technical explanation is mostly correct, but it glosses over nuances such as the challenges of optimal chunk size and semantic coherence, which are important for intermediate learners."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition by providing real-world examples and mechanisms, but could offer more actionable guidance or highlight common pitfalls."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The encyclopedia analogy is clear, relatable, and accurately conveys the benefit of chunking without oversimplifying the technical process."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and depth are suitable for an intermediate audience, but the lack of mention of chunk size trade-offs or semantic chunking slightly limits its depth for this level."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_024",
+    "topic": "What is memory in an AI assistant?",
+    "category": "retrieval_and_memory",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 4,
+        "reason": "The explanation accurately describes memory in AI assistants and the use of retrieval-augmented generation, but slightly overstates the ability to 'remember' user preferences without clarifying the limitations of current systems."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to deep dive, but some repetition between sections slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially in repeating the RAG mechanism and the librarian analogy, which could be trimmed for tighter focus."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The technical details are mostly correct, but the explanation could better distinguish between persistent memory and session-based retrieval to avoid minor oversimplification."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world impact, but could provide a clearer distinction between different types of memory in AI."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The librarian analogy is apt, relatable, and clarifies the concept without introducing misconceptions."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The explanation uses intermediate-level terminology and examples, but could include a bit more technical detail for this audience."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_025",
+    "topic": "What is fine-tuning?",
+    "category": "training_and_optimization",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes fine-tuning as adapting pre-trained models to specific tasks using new data, without factual errors or hallucinations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to deep dive, but some repetition between sections slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially with repeated examples and benefits across sections, which could be trimmed for tighter focus."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but could clarify that fine-tuning may require careful data curation and isn't always 'faster' or 'more efficient' in every context."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world applications, but could provide a bit more detail on how fine-tuning differs from other training methods."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The analogy of customizing a novel is relatable and clarifies the concept, though it slightly oversimplifies the technical process."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The language and explanations are accessible to beginners, avoiding jargon and assuming no prior knowledge."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_026",
+    "topic": "What is distillation in AI?",
+    "category": "training_and_optimization",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes model distillation, including the teacher-student paradigm and real-world examples like BERT and TinyBERT, without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to deep dive, but some repetition between sections slightly disrupts the overall structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially with repeated explanations in the summary and deep dive, which could be tightened for greater focus."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but could mention that some accuracy loss is possible and clarify that distillation is not always lossless."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world impact, but could provide a bit more detail on how the student learns from the teacher."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The chef analogy is relatable and clarifies the concept, but could be slightly misleading by implying the student model is always much simpler or faster without caveats."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The explanation uses terminology and depth appropriate for an intermediate audience familiar with basic ML concepts."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_027",
+    "topic": "What is inference in machine learning?",
+    "category": "training_and_optimization",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes inference as the process where a trained model makes predictions on new data, without factual errors or hallucinations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to applications and deep dive, though some repetition slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially in repeating the chef analogy and restating the core idea in multiple sections."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct and avoids misleading oversimplifications, but could clarify that inference does not involve any model updating or learning."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, providing mechanisms and real-world relevance, but could be more succinct to enhance retention."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The chef analogy is relatable and clarifies the distinction between training and inference, though it could be more tightly linked to the technical process."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The vocabulary and explanations are well-suited for beginners, requiring no prior machine learning knowledge."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_028",
+    "topic": "Why is GPU memory important for LLMs?",
+    "category": "training_and_optimization",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes the importance of GPU memory for LLMs, including its impact on batch size, model partitioning, and performance, with no factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to deep dive, but some repetition between sections slightly disrupts the overall structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially with repeated points about GPT-4 and Nvidia A100 GPUs, which could be trimmed for tighter focus."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct but could mention that techniques like model parallelism and offloading can partially mitigate memory limits, which is omitted."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world impact, but could provide a bit more detail on how memory constraints are addressed in practice."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The desk workspace analogy is clear, relatable, and accurately maps to the technical concept without oversimplification."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and depth are suitable for an intermediate audience, but the repeated examples and lack of mention of mitigation strategies slightly limit depth."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_029",
+    "topic": "What is quantization?",
+    "category": "training_and_optimization",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 4,
+        "reason": "The explanation accurately describes quantization and its effects, but slightly overstates the minimal impact on accuracy and could clarify that some accuracy loss is typical."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to deep dive, but the repetition of examples (NVIDIA’s TensorRT) slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "Some sentences are wordy and repeat ideas (e.g., shrinking models and cutting memory/computation are mentioned multiple times), which could be tightened."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The technical details are correct, but the claim that quantization can be done 'without sacrificing much accuracy' is a bit optimistic and could mislead about typical trade-offs."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The explanation goes beyond a definition, providing mechanisms and real-world examples, but could include more about the types of quantization or challenges involved."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The photo compression analogy is clear, relatable, and accurately conveys the trade-off between size and quality."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The explanation uses intermediate-level vocabulary and assumes some ML familiarity, but could introduce a bit more technical detail for this level."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_030",
+    "topic": "What is latency in AI systems?",
+    "category": "training_and_optimization",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes latency in AI systems, its causes, and its impact, with no factual errors or hallucinations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from definition to examples and implications, but the deep dive slightly overlaps with earlier sections, reducing perfect clarity."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "Some sentences are a bit wordy and repeat ideas (e.g., latency's impact on user experience is mentioned multiple times), which could be tightened."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but the repeated mention of GPT models and specific latency numbers could mislead beginners into thinking these are universal benchmarks."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, providing mechanisms and real-world stakes, but could include a bit more on how latency is measured or mitigated."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The video game lag analogy is highly relatable, accurate, and clarifies the concept without oversimplifying."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and explanations are mostly beginner-friendly, but references to 'model optimization' and 'edge computing' could confuse absolute beginners without brief clarification."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_031",
+    "topic": "What is an AI agent?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes AI agents, their autonomy, perception, decision-making, and action capabilities without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from definition to examples and impact, but the deep dive slightly overlaps with earlier sections, reducing perfect clarity."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly tight, but some sentences in the deep dive and summary could be trimmed for brevity."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but mentioning ChatGPT plugins as agents could be misleading since not all plugins confer full agentic behavior."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world impact, but could include a bit more about agent limitations or types for deeper insight."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The personal assistant analogy is clear, relatable, and accurately captures the agent's autonomy and action capabilities."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The vocabulary and explanations are well-suited for beginners, requiring no prior technical knowledge."
+      }
+    },
+    "average_score": 4.43
+  },
+  {
+    "concept_id": "concept_032",
+    "topic": "How do chatbots work?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 4,
+        "reason": "The explanation accurately describes how modern chatbots like GPT-based models work, but it generalizes all chatbots as using this approach, omitting rule-based or retrieval-based systems."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to deeper explanation, but the transition between sections could be smoother."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly focused, though some sentences could be trimmed for brevity, especially in the deep dive."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The mechanism is well described for generative chatbots, but the omission of other chatbot types may mislead beginners into thinking all chatbots work this way."
+      },
+      "educational_value": {
+        "score": 5,
+        "reason": "The content goes beyond a definition, explaining mechanisms, limitations, and real-world implications, offering actionable insight."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The autocomplete analogy is clear, relatable, and accurately conveys the predictive nature of language models."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and explanations are mostly beginner-friendly, but references to 'hallucinate' and 'GPT-4' could use brief clarification for true novices."
+      }
+    },
+    "average_score": 4.29
+  },
+  {
+    "concept_id": "concept_033",
+    "topic": "What is computer vision?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes computer vision, its mechanisms, and real-world applications without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from definition to examples and applications, though some repetition between sections could be streamlined."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially in repeating the core idea in both the summary and deep dive, which could be tightened."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but the analogy slightly oversimplifies the training process, which could mislead absolute beginners about how neural networks learn."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, providing mechanisms and real-world examples, but could include a bit more on limitations or challenges for deeper insight."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The toddler analogy is relatable and clarifies the concept, but it glosses over the complexity of neural network training and data requirements."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The vocabulary and explanations are well-suited for beginners, avoiding jargon and assuming no prior knowledge."
+      }
+    },
+    "average_score": 4.14
+  },
+  {
+    "concept_id": "concept_034",
+    "topic": "What is speech-to-text?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes how speech-to-text works, mentioning relevant technologies and processes without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to details and applications, but the deep dive partially repeats earlier points."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "Some redundancy exists between the summary and deep dive, and a few sentences could be trimmed for brevity."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, though it could clarify that not all systems use the exact same modeling steps."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world uses, but could include a simple example for even more clarity."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The interpreter analogy is clear and helpful, though it slightly oversimplifies the complexity of the technology."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The explanation is mostly accessible for beginners, but terms like 'acoustic modeling' and 'decoding' could be briefly defined or simplified."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_035",
+    "topic": "What is text-to-speech?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes text-to-speech technology, its mechanisms, and real-world applications without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to details, but the deep dive slightly overlaps with earlier sections, making the structure a bit repetitive."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "Some sentences are wordy and repeat information, especially regarding the use of neural networks and company examples."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but mentioning specific models like Tacotron 2 and WaveGlow may be too detailed for beginners and could confuse some readers."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world impact, but could be more succinct and focused for better retention."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The analogy of a skilled actor is clear, relatable, and accurately conveys how TTS adds human-like qualities to speech."
+      },
+      "difficulty_appropriateness": {
+        "score": 3,
+        "reason": "The inclusion of technical terms and model names is somewhat advanced for a beginner audience, which may hinder accessibility."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_036",
+    "topic": "How is AI used in healthcare?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 4,
+        "reason": "The explanation accurately describes AI's use in healthcare, referencing real examples like DeepMind, but slightly overstates AI's superiority over doctors in all cases."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to deeper explanation, though some repetition between sections could be streamlined."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially with repeated points about DeepMind and pattern recognition, which could be condensed."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct but oversimplifies by implying AI is often more accurate than doctors, which is not universally true."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content provides mechanisms, real-world examples, and implications, but could include a broader range of AI applications in healthcare for deeper insight."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The detective analogy is clear and relatable, but slightly anthropomorphizes AI and could be more precise about its limitations."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The language and explanations are well-suited for beginners, avoiding jargon and assuming no prior knowledge."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_037",
+    "topic": "What is an AI hallucination?",
+    "category": "evaluation_and_safety",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes AI hallucinations, their causes, and implications without introducing factual errors or misleading statements."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to deeper explanation, but the transition between sections could be smoother for optimal clarity."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly focused, though some sentences could be tightened to avoid minor repetition (e.g., similar points in summary and deep dive)."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct, but the statement about companies like OpenAI and Google improving safety could be more precise about current limitations."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition by explaining mechanisms and real-world impact, but could include a bit more on how hallucinations are detected or mitigated."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The storyteller analogy is clear, relatable, and accurately captures the mechanism of AI hallucination without oversimplifying."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The language and depth are well-suited for beginners, requiring no prior technical knowledge."
+      }
+    },
+    "average_score": 4.43
+  },
+  {
+    "concept_id": "concept_038",
+    "topic": "What is bias in AI?",
+    "category": "evaluation_and_safety",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 4,
+        "reason": "The explanation accurately describes bias in AI and provides real-world examples, but slightly overstates the direct link between specific companies and error rates without full context."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from definition to examples and implications, but the deep dive partially repeats earlier points, reducing overall smoothness."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "Some sentences are redundant, especially between the summary and deep dive, and could be tightened for brevity."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct but could clarify that bias can also arise from model design, not just data."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition with examples and implications, but could offer more on mitigation strategies for deeper insight."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The storybook analogy is clear and relatable, but slightly oversimplifies how AI learns compared to a child."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The language and depth are well-suited for beginners, avoiding jargon and assuming no prior knowledge."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_039",
+    "topic": "What is AI alignment?",
+    "category": "evaluation_and_safety",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately represents AI alignment, its challenges, and real-world implications without factual errors."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to deep dive, but some sections slightly repeat ideas, which affects overall smoothness."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "There is some redundancy, especially in reiterating the importance and challenges of alignment, which could be trimmed for tighter focus."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct but could mention that alignment is an ongoing research problem with unresolved aspects, which would add nuance."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world stakes, but could provide a more concrete example of misalignment."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The cooking robot analogy is clear and relatable, though it simplifies the complexity of value alignment in AI systems."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and depth are suitable for an intermediate audience, but a bit more technical detail could better match the level."
+      }
+    },
+    "average_score": 4.0
+  },
+  {
+    "concept_id": "concept_040",
+    "topic": "What is multimodal AI?",
+    "category": "ai_applications",
+    "difficulty": "beginner",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes multimodal AI, its mechanisms, and real-world applications without factual errors or hallucinations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from introduction to deeper details, but the transition between sections could be smoother for optimal clarity."
+      },
+      "conciseness": {
+        "score": 4,
+        "reason": "The explanation is mostly focused and avoids unnecessary filler, though some sentences could be tightened further."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct and avoids misleading simplifications, but could clarify that not all multimodal models are as advanced as GPT-4."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world impact, but could include a bit more about limitations or challenges."
+      },
+      "analogy_quality": {
+        "score": 5,
+        "reason": "The analogy to human senses is accurate, relatable, and clarifies the concept without oversimplifying."
+      },
+      "difficulty_appropriateness": {
+        "score": 4,
+        "reason": "The vocabulary and explanations are suitable for beginners, though references to specific models like GPT-4 may assume some prior awareness."
+      }
+    },
+    "average_score": 4.29
+  },
+  {
+    "concept_id": "concept_041",
+    "topic": "What is transfer learning?",
+    "category": "training_and_optimization",
+    "difficulty": "intermediate",
+    "prompt_version": "v3",
+    "model": "gpt-4.1-mini",
+    "scores": {
+      "faithfulness": {
+        "score": 5,
+        "reason": "The explanation accurately describes transfer learning, its mechanisms, and real-world applications without factual errors or hallucinations."
+      },
+      "coherence": {
+        "score": 4,
+        "reason": "The content flows logically from summary to analogy to deep dive, but some repetition between sections slightly disrupts the structure."
+      },
+      "conciseness": {
+        "score": 3,
+        "reason": "While mostly focused, the explanation contains some redundancy and could be tightened, especially in the deep dive and summary sections."
+      },
+      "accuracy": {
+        "score": 4,
+        "reason": "The explanation is technically correct but could clarify that transfer learning is not always drastically reducing data needs, as this depends on task similarity."
+      },
+      "educational_value": {
+        "score": 4,
+        "reason": "The content goes beyond a definition, explaining mechanisms and real-world impact, but could provide a bit more detail on limitations or when transfer learning is less effective."
+      },
+      "analogy_quality": {
+        "score": 4,
+        "reason": "The analogy is relatable and clarifies the concept, but it slightly oversimplifies the differences between tasks in transfer learning."
+      },
+      "difficulty_appropriateness": {
+        "score": 5,
+        "reason": "The vocabulary and depth are well-suited for an intermediate audience with basic ML familiarity."
+      }
+    },
+    "average_score": 4.14
+  }
+]
