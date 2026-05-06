@@ -1,6 +1,8 @@
+import { useMemo } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, type ViewStyle } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { Colors } from '@/constants/colors';
+import { useColors } from '@/constants/theme';
+import type { ThemeColors } from '@/constants/colors';
 import type { ConceptItem } from '@/types/feed';
 
 interface Props {
@@ -9,6 +11,9 @@ interface Props {
 }
 
 export function ConceptCard({ item, style }: Props) {
+  const colors = useColors();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+
   const categoryLabel = item.category
     ? `CONCEPT · ${item.category.toUpperCase()}`
     : 'CONCEPT';
@@ -51,10 +56,10 @@ export function ConceptCard({ item, style }: Props) {
           </TouchableOpacity>
           <View style={styles.actions}>
             <TouchableOpacity hitSlop={8}>
-              <Ionicons name="volume-medium-outline" size={20} color={Colors.textSecondary} />
+              <Ionicons name="volume-medium-outline" size={20} color={colors.textSecondary} />
             </TouchableOpacity>
             <TouchableOpacity hitSlop={8}>
-              <Ionicons name="heart-outline" size={20} color={Colors.textSecondary} />
+              <Ionicons name="heart-outline" size={20} color={colors.textSecondary} />
             </TouchableOpacity>
           </View>
         </View>
@@ -63,92 +68,93 @@ export function ConceptCard({ item, style }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: Colors.surface,
-    borderRadius: 16,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.08,
-    shadowRadius: 8,
-    elevation: 3,
-    overflow: 'hidden',
-  },
-  header: {
-    backgroundColor: Colors.primaryLight,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingHorizontal: 18,
-    paddingVertical: 14,
-  },
-  categoryLabel: {
-    fontSize: 11,
-    fontWeight: '700',
-    color: Colors.primary,
-    letterSpacing: 0.8,
-  },
-  difficultyBadge: {
-    backgroundColor: Colors.primary,
-    borderRadius: 20,
-    paddingHorizontal: 12,
-    paddingVertical: 5,
-  },
-  difficultyText: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: '#FFFFFF',
-  },
-  body: {
-    flex: 1,
-    padding: 18,
-  },
-  title: {
-    fontSize: 18,
-    fontWeight: '700',
-    color: Colors.textPrimary,
-    lineHeight: 25,
-    marginBottom: 10,
-  },
-  summary: {
-    fontSize: 14,
-    color: Colors.textSecondary,
-    lineHeight: 21,
-  },
-  tags: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 6,
-    marginTop: 14,
-  },
-  tag: {
-    backgroundColor: Colors.tagBg,
-    borderRadius: 20,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-  },
-  tagText: {
-    fontSize: 12,
-    color: Colors.tagText,
-  },
-  spacer: {
-    flex: 1,
-  },
-  footer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingTop: 14,
-    borderTopWidth: 1,
-    borderTopColor: Colors.border,
-  },
-  readMore: {
-    fontSize: 13,
-    fontWeight: '600',
-    color: Colors.primary,
-  },
-  actions: {
-    flexDirection: 'row',
-    gap: 16,
-  },
-});
+const createStyles = (c: ThemeColors) =>
+  StyleSheet.create({
+    card: {
+      backgroundColor: c.card,
+      borderRadius: 16,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.08,
+      shadowRadius: 8,
+      elevation: 3,
+      overflow: 'hidden',
+    },
+    header: {
+      backgroundColor: c.primaryLight,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      paddingHorizontal: 18,
+      paddingVertical: 14,
+    },
+    categoryLabel: {
+      fontSize: 11,
+      fontWeight: '700',
+      color: c.primary,
+      letterSpacing: 0.8,
+    },
+    difficultyBadge: {
+      backgroundColor: c.primary,
+      borderRadius: 20,
+      paddingHorizontal: 12,
+      paddingVertical: 5,
+    },
+    difficultyText: {
+      fontSize: 12,
+      fontWeight: '600',
+      color: '#FFFFFF',
+    },
+    body: {
+      flex: 1,
+      padding: 18,
+    },
+    title: {
+      fontSize: 18,
+      fontWeight: '700',
+      color: c.textPrimary,
+      lineHeight: 25,
+      marginBottom: 10,
+    },
+    summary: {
+      fontSize: 14,
+      color: c.textSecondary,
+      lineHeight: 21,
+    },
+    tags: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      gap: 6,
+      marginTop: 14,
+    },
+    tag: {
+      backgroundColor: c.tagBg,
+      borderRadius: 20,
+      paddingHorizontal: 10,
+      paddingVertical: 4,
+    },
+    tagText: {
+      fontSize: 12,
+      color: c.tagText,
+    },
+    spacer: {
+      flex: 1,
+    },
+    footer: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      paddingTop: 14,
+      borderTopWidth: 1,
+      borderTopColor: c.border,
+    },
+    readMore: {
+      fontSize: 13,
+      fontWeight: '600',
+      color: c.primary,
+    },
+    actions: {
+      flexDirection: 'row',
+      gap: 16,
+    },
+  });

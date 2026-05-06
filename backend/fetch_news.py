@@ -41,7 +41,11 @@ def load_environment() -> tuple[str, str, str]:
     return news_api_key, openai_api_key, summary_model
 
 # FETCH NEWS FROM NEWSAPI
-def fetch_news(news_api_key: str, page_size: int = DEFAULT_ARTICLE_LIMIT) -> list[dict[str, Any]]:
+def fetch_news(
+    news_api_key: str,
+    page_size: int = DEFAULT_ARTICLE_LIMIT,
+    from_date: str | None = None,
+) -> list[dict[str, Any]]:
     params = {
         "q": QUERY,
         "language": "en",
@@ -50,9 +54,16 @@ def fetch_news(news_api_key: str, page_size: int = DEFAULT_ARTICLE_LIMIT) -> lis
         "apiKey": news_api_key,
         "domains": (
             "techcrunch.com,theverge.com,wired.com,arstechnica.com,"
-            "venturebeat.com,thenextweb.com,zdnet.com,engadget.com"
-        )
+            "venturebeat.com,thenextweb.com,zdnet.com,engadget.com,"
+            "siliconangle.com,reuters.com,bloomberg.com,cnbc.com,"
+            "techradar.com,axios.com,theinformation.com"
+        ),
+        "excludeDomains": (
+            "pypi.org,globenewswire.com,prnewswire.com,businesswire.com"
+        ),
     }
+    if from_date:
+        params["from"] = from_date
 
     response = requests.get(NEWS_API_URL, params=params, timeout=30)
     response.raise_for_status()
@@ -129,6 +140,33 @@ def summarise_article(
         return "Summary unavailable due to summarisation error."
 
 
+def load_existing_articles(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    try:
+        with path.open("r", encoding="utf-8") as file:
+            data = json.load(file)
+        return data if isinstance(data, list) else []
+    except (json.JSONDecodeError, OSError) as exc:
+        print(f"Warning: could not read existing articles at {path}: {exc}")
+        return []
+
+
+def next_article_index(existing: list[dict[str, Any]]) -> int:
+    max_index = 0
+    for article in existing:
+        article_id = article.get("article_id", "")
+        match = re.search(r"(\d+)$", article_id)
+        if match:
+            max_index = max(max_index, int(match.group(1)))
+    return max_index + 1
+
+
+def latest_published_at(existing: list[dict[str, Any]]) -> str | None:
+    timestamps = [a.get("published_at") for a in existing if a.get("published_at")]
+    return max(timestamps) if timestamps else None
+
+
 def normalise_article(
     raw_article: dict[str, Any],
     index: int,
@@ -146,6 +184,7 @@ def normalise_article(
         },
         "title": clean_text(raw_article.get("title")) or "Untitled article",
         "author": clean_text(raw_article.get("author")) or "unknown",
+        "image_url": raw_article.get("urlToImage", "") or "",
         "published_at": clean_text(raw_article.get("publishedAt")),
         "collected_at": collected_at,
         "language": "en",
@@ -224,8 +263,16 @@ def main() -> int:
     data_dir = Path(__file__).resolve().parent.parent / "data" / "articles"
     data_dir.mkdir(parents=True, exist_ok=True)
 
+    json_path = data_dir / "articles.json"
+    sample_json_path = data_dir / "articles_sample.json"
+    csv_path = data_dir / "articles.csv"
+
+    existing_articles = load_existing_articles(json_path)
+    seen_urls = {a.get("source", {}).get("url") for a in existing_articles if a.get("source", {}).get("url")}
+    from_date = latest_published_at(existing_articles)
+
     try:
-        raw_articles = fetch_news(news_api_key)
+        raw_articles = fetch_news(news_api_key, from_date=from_date)
     except requests.RequestException as exc:
         print(f"Error: failed to fetch articles from NewsAPI: {exc}")
         return 1
@@ -237,25 +284,33 @@ def main() -> int:
         print("No articles were returned by NewsAPI.")
         return 0
 
+    new_raw = [a for a in raw_articles if clean_text(a.get("url")) and clean_text(a.get("url")) not in seen_urls]
+
+    print(f"Fetched {len(raw_articles)} from NewsAPI; {len(new_raw)} are new after dedupe.")
+
+    if not new_raw:
+        print("No new articles to add.")
+        return 0
+
     collected_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     client = OpenAI(api_key=openai_api_key)
-    articles: list[dict[str, Any]] = []
+    start_index = next_article_index(existing_articles)
+    new_articles: list[dict[str, Any]] = []
 
-    for index, raw_article in enumerate(raw_articles, start=1):
-        article = normalise_article(raw_article, index, collected_at, summary_model)
+    for offset, raw_article in enumerate(new_raw):
+        article = normalise_article(raw_article, start_index + offset, collected_at, summary_model)
         article["ai_output"]["summary"] = summarise_article(
             client, raw_article, article, summary_model
         )
-        articles.append(article) 
+        new_articles.append(article)
 
-    json_path = data_dir / "articles.json"
-    sample_json_path = data_dir / "articles_sample.json"
-    csv_path = data_dir / "articles.csv"
+    articles = existing_articles + new_articles
+
     save_json(json_path, articles)
     save_json(sample_json_path, articles)
     save_csv(csv_path, articles)
 
-    print(f"Saved {len(articles)} articles to {json_path} and {csv_path}.")
+    print(f"Added {len(new_articles)} new articles (total {len(articles)}) to {json_path} and {csv_path}.")
     return 0
 
 

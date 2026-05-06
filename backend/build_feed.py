@@ -12,6 +12,7 @@ ARTICLES_PATH = PROJECT_ROOT / "data" / "articles" / "articles.json"
 CONCEPTS_PATH = PROJECT_ROOT / "data" / "concepts" / "concepts_generated_v4.json"
 FEED_PATH = PROJECT_ROOT / "data" / "feed.json"
 MANIFEST_PATH = PROJECT_ROOT / "data" / "feed_manifest.json"
+FRONTEND_FEED_PATH = PROJECT_ROOT / "frontend" / "assets" / "feed.json"
 
 
 def load_json(path: str) -> list[dict[str, Any]]:
@@ -68,7 +69,7 @@ def map_article_to_feed_item(article: dict[str, Any]) -> dict[str, Any]:
         "extra_text": "",
         "body_text": clean_text(article.get("content", {}).get("full_text")),
         "audio_text": summary,
-        "image_url": clean_text(source.get("image_url")),
+        "image_url": clean_text(article.get("image_url")),
         "category": categories[0] if categories else "news",
         "difficulty": "",
         "tags": [],
@@ -205,12 +206,15 @@ def main() -> int:
     try:
         save_json(feed_items, str(FEED_PATH))
         save_json(manifest, str(MANIFEST_PATH))
+        FRONTEND_FEED_PATH.parent.mkdir(parents=True, exist_ok=True)
+        save_json(feed_items, str(FRONTEND_FEED_PATH))
     except OSError as exc:
         print(f"Error: failed to save feed outputs: {exc}")
         return 1
 
     print(f"Saved {len(feed_items)} feed items to {FEED_PATH}")
     print(f"Saved feed manifest to {MANIFEST_PATH}")
+    print(f"Mirrored feed to {FRONTEND_FEED_PATH}")
     return 0
 
 

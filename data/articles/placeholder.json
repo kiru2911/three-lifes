@@ -1,0 +1,132 @@
+[
+    {
+      "article_id": "article_0001",
+      "source": {
+        "name": "The Verge",
+        "url": "https://www.theverge.com/podcast/910443/can-puck-reinvent-the-news-business-for-the-influencer-age",
+        "publisher_type": "news_website"
+      },
+      "title": "Can Puck reinvent the news business for the influencer age?",
+      "author": "Nilay Patel",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/DCD_Personette_Puck.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-04-13T13:08:38Z",
+      "collected_at": "2026-05-06T13:18:32Z",
+      "language": "en",
+      "region": "Global",
+      "category": [],
+      "keywords": [],
+      "content": {
+        "full_text": "Can Puck reinvent the news business for the influencer age? Today, I’m talking with Sarah Personette, CEO of Puck, which is a fancy new media company that’s been around for just about five years now. Puck hires big stars and gives them newsletters that are all mostly part of a subscription bundle. These newsletters ar… <ul><li></li><li></li><li></li></ul> CEO Sarah Personettes big bet on the place where influencers and reporters might meet by Nilay PatelClose Posts from this author will be added to your daily e…",
+        "word_count": 84
+      },
+      "ai_output": {
+        "summary": "Puck is a new media company led by CEO Sarah Personette that aims to reinvent the news business in the influencer age by hiring prominent figures to create subscription-based newsletters. The company focuses on blending influencer appeal with journalistic content to attract subscribers.",
+        "summary_model": "gpt-4.1-mini",
+        "summary_prompt_version": "v1"
+      }
+    },
+    {
+      "article_id": "article_0002",
+      "source": {
+        "name": "The Verge",
+        "url": "https://www.theverge.com/tech/910834/neuralink-bcis-bet",
+        "publisher_type": "news_website"
+      },
+      "title": "Did Neuralink make the wrong bet?",
+      "author": "Elissa Welle",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/258176_Did_Neuralink_make_the_wrong_bet__CVirginia.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-04-13T00:25:56Z",
+      "collected_at": "2026-05-06T13:18:32Z",
+      "language": "en",
+      "region": "Global",
+      "category": [],
+      "keywords": [],
+      "content": {
+        "full_text": "Did Neuralink make the wrong bet? Elon Musk promised Neuralink would bring superhuman abilities and minds merged with AI. Then he fueled a runaway hype train for his brain implant technology, which ended up with a grisly record for implants in monkeys and some success with human subjects. But… <ul><li></li><li></li></ul> The field of brain-computer interfaces is moving away from mind-controlled computer cursors to restoring speech. by Elissa WelleClose Posts from this author will be ad…",
+        "word_count": 75
+      },
+      "ai_output": {
+        "summary": "Elon Musk's Neuralink promised superhuman abilities and AI integration through brain implants, generating significant hype. However, the technology has faced ethical and practical challenges, including problematic results in monkey implants and limited success with humans. Meanwhile, the brain-computer interface field is shifting its focus from mind-controlled cursors to restoring speech.",
+        "summary_model": "gpt-4.1-mini",
+        "summary_prompt_version": "v1"
+      }
+    },
+    {
+      "article_id": "article_0003",
+      "source": {
+        "name": "The Next Web",
+        "url": "https://thenextweb.com/news/dario-amodei-london-united-kingdom/",
+        "publisher_type": "news_website"
+      },
+      "title": "Anthropic brings Claude into Microsoft Word, and legal contract review leads its use cases",
+      "author": "Cristian Dina",
+      "image_url": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2026/04/anthropic-claude-word-lawyers-legal-ai.png",
+      "published_at": "2026-04-12T15:35:28Z",
+      "collected_at": "2026-05-06T13:18:32Z",
+      "language": "en",
+      "region": "Global",
+      "category": [],
+      "keywords": [],
+      "content": {
+        "full_text": "Anthropic brings Claude into Microsoft Word, and legal contract review leads its use cases In short: Anthropic has released a beta add-in that places Claude directly inside Microsoft Word, with every AI-generated edit appearing as a native tracked change and legal contract review listed first among the tool’s example applications. The add-in, avail… In short: Anthropic has released a beta add-in that places Claude directly inside Microsoft Word, with every AI-generated edit appearing as a native tracked change and legal contract review listed fi…",
+        "word_count": 84
+      },
+      "ai_output": {
+        "summary": "Anthropic has launched a beta add-in integrating its AI, Claude, directly into Microsoft Word. This tool allows AI-generated edits to appear as native tracked changes, with a primary focus on legal contract review among its example use cases.",
+        "summary_model": "gpt-4.1-mini",
+        "summary_prompt_version": "v1"
+      }
+    },
+    {
+      "article_id": "article_0004",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/04/12/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+        "publisher_type": "news_website"
+      },
+      "title": "From LLMs to hallucinations, here's a simple guide to common AI terms | TechCrunch",
+      "author": "Natasha Lomas",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-ai-generated-eb728837-4a65-4ce4-b814-abd0c140d20c.jpg?w=1024",
+      "published_at": "2026-04-12T15:07:45Z",
+      "collected_at": "2026-05-06T13:18:32Z",
+      "language": "en",
+      "region": "Global",
+      "category": [],
+      "keywords": [],
+      "content": {
+        "full_text": "From LLMs to hallucinations, here's a simple guide to common AI terms | TechCrunch The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter. Artificial intelligence is a deep and convoluted world. The scientists who work in this field often rely on jargon and lingo to explain what theyre working on. As a result, we frequently have to use …",
+        "word_count": 81
+      },
+      "ai_output": {
+        "summary": "The article from TechCrunch provides a glossary explaining common AI terms and slang that have emerged with the rise of artificial intelligence. It aims to clarify the often complex jargon used by AI researchers and practitioners.",
+        "summary_model": "gpt-4.1-mini",
+        "summary_prompt_version": "v1"
+      }
+    },
+    {
+      "article_id": "article_0005",
+      "source": {
+        "name": "The Next Web",
+        "url": "https://thenextweb.com/news/databricks-matei-zaharia-acm-prize-agi/",
+        "publisher_type": "news_website"
+      },
+      "title": "Databricks co-founder Matei Zaharia wins ACM Prize and declares AGI is already here",
+      "author": "Alina Maria Stan",
+      "image_url": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2026/04/databricks-matei-zaharia-acm-prize-agi.png",
+      "published_at": "2026-04-10T06:09:33Z",
+      "collected_at": "2026-05-06T13:18:32Z",
+      "language": "en",
+      "region": "Global",
+      "category": [],
+      "keywords": [],
+      "content": {
+        "full_text": "Databricks co-founder Matei Zaharia wins ACM Prize and declares AGI is already here In short: Matei Zaharia, the Berkeley computer science professor and Databricks co-founder who created Apache Spark, has won the 2026 ACM Prize in Computing for his foundational contributions to distributed data systems and AI infrastructure. The $250,000 pri… In short: Matei Zaharia, the Berkeley computer science professor and Databricks co-founder who created Apache Spark, has won the 2026 ACM Prize in Computing for his foundational contributions to dist…",
+        "word_count": 81
+      },
+      "ai_output": {
+        "summary": "Matei Zaharia, Berkeley computer science professor and Databricks co-founder who created Apache Spark, has won the 2026 ACM Prize in Computing. He received the $250,000 award for his foundational contributions to distributed data systems and AI infrastructure.",
+        "summary_model": "gpt-4.1-mini",
+        "summary_prompt_version": "v1"
+      }
+    }
+  ]

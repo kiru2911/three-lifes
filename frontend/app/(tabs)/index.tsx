@@ -7,11 +7,14 @@ import {
   View,
   type ViewToken,
 } from 'react-native';
-import { useRef, useState, useEffect, useCallback } from 'react';
-import { Colors } from '@/constants/colors';
+import { Ionicons } from '@expo/vector-icons';
+import { useRef, useState, useEffect, useCallback, useMemo } from 'react';
+import { useTheme } from '@/constants/theme';
+import type { ThemeColors } from '@/constants/colors';
 import { useFeed, type FeedFilter } from '@/hooks/useFeed';
 import { NewsCard } from '@/components/NewsCard';
 import { ConceptCard } from '@/components/ConceptCard';
+import { FilterModal } from '@/components/FilterModal';
 import type { FeedItem } from '@/types/feed';
 
 // How much of the next card peeks below the current one
@@ -29,15 +32,21 @@ const FILTERS: { label: string; value: FeedFilter }[] = [
 ];
 
 export default function FeedScreen() {
-  const { items, filter, setFilter } = useFeed();
+  const { mode, colors, toggleMode } = useTheme();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+
+  const { items, filter, setFilter, selectedSources, setSelectedSources, sources } = useFeed();
   const [pageHeight, setPageHeight] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [filterModalVisible, setFilterModalVisible] = useState(false);
   const listRef = useRef<FlatList<FeedItem>>(null);
+
+  const filterActive = selectedSources.length > 0;
 
   useEffect(() => {
     setCurrentIndex(0);
     listRef.current?.scrollToOffset({ offset: 0, animated: false });
-  }, [filter]);
+  }, [filter, selectedSources]);
 
   const viewabilityConfig = useRef({ itemVisiblePercentThreshold: 60 });
   const onViewableItemsChanged = useRef(
@@ -75,12 +84,27 @@ export default function FeedScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.appName}>Thinkly</Text>
-        {items.length > 0 && (
-          <Text style={styles.progress}>
-            {currentIndex + 1}/{items.length}
-          </Text>
-        )}
+        <View style={styles.logo}>
+          <Text style={styles.appName}>Th</Text>
+          <Ionicons name="bulb" size={20} color={colors.primary} style={styles.logoI} />
+          <Text style={styles.appName}>nkly</Text>
+        </View>
+        <View style={styles.headerRight}>
+          <TouchableOpacity
+            onPress={toggleMode}
+            hitSlop={10}
+            style={styles.themeBtn}
+            accessibilityLabel={
+              mode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+            }
+          >
+            <Ionicons
+              name={mode === 'dark' ? 'sunny-outline' : 'moon-outline'}
+              size={20}
+              color={colors.textPrimary}
+            />
+          </TouchableOpacity>
+        </View>
       </View>
 
       <View style={styles.pills}>
@@ -99,7 +123,30 @@ export default function FeedScreen() {
             </TouchableOpacity>
           );
         })}
+
+        <TouchableOpacity
+          style={[styles.pill, styles.filterPill, filterActive && styles.filterPillActive]}
+          onPress={() => setFilterModalVisible(true)}
+          activeOpacity={0.7}
+        >
+          <Ionicons
+            name="options-outline"
+            size={16}
+            color={filterActive ? '#FFFFFF' : colors.textSecondary}
+          />
+          <Text style={[styles.pillText, filterActive && styles.pillTextActive]}>
+            Filter{filterActive ? ` (${selectedSources.length})` : ''}
+          </Text>
+        </TouchableOpacity>
       </View>
+
+      <FilterModal
+        visible={filterModalVisible}
+        onClose={() => setFilterModalVisible(false)}
+        sources={sources}
+        selectedSources={selectedSources}
+        onChangeSelectedSources={setSelectedSources}
+      />
 
       <View
         style={styles.feedContainer}
@@ -134,63 +181,88 @@ export default function FeedScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.background,
-  },
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingHorizontal: 20,
-    paddingVertical: 14,
-    borderBottomWidth: 1,
-    borderBottomColor: Colors.border,
-    backgroundColor: Colors.surface,
-  },
-  appName: {
-    fontSize: 22,
-    fontWeight: '700',
-    color: Colors.textPrimary,
-    letterSpacing: -0.5,
-  },
-  progress: {
-    fontSize: 13,
-    fontWeight: '600',
-    color: Colors.textSecondary,
-  },
-  pills: {
-    flexDirection: 'row',
-    gap: 8,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    backgroundColor: Colors.surface,
-    borderBottomWidth: 1,
-    borderBottomColor: Colors.border,
-  },
-  pill: {
-    borderRadius: 20,
-    paddingHorizontal: 18,
-    paddingVertical: 7,
-    borderWidth: 1,
-    borderColor: Colors.border,
-    backgroundColor: Colors.surface,
-  },
-  pillActive: {
-    backgroundColor: Colors.primary,
-    borderColor: Colors.primary,
-  },
-  pillText: {
-    fontSize: 14,
-    fontWeight: '500',
-    color: Colors.textSecondary,
-  },
-  pillTextActive: {
-    color: '#FFFFFF',
-    fontWeight: '600',
-  },
-  feedContainer: {
-    flex: 1,
-  },
-});
+const createStyles = (c: ThemeColors) =>
+  StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: c.background,
+    },
+    header: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      paddingHorizontal: 20,
+      paddingVertical: 14,
+      backgroundColor: c.card,
+    },
+    headerRight: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 14,
+    },
+    logo: {
+      flexDirection: 'row',
+      alignItems: 'flex-end',
+    },
+    logoI: {
+      marginHorizontal: -1,
+      marginBottom: 4,
+    },
+    appName: {
+      fontSize: 22,
+      fontWeight: '700',
+      color: c.textPrimary,
+      letterSpacing: -0.7,
+    },
+    progress: {
+      fontSize: 13,
+      fontWeight: '600',
+      color: c.textSecondary,
+    },
+    themeBtn: {
+      padding: 2,
+    },
+    pills: {
+      flexDirection: 'row',
+      gap: 8,
+      paddingHorizontal: 16,
+      paddingVertical: 12,
+      backgroundColor: c.card,
+      borderBottomWidth: 1,
+      borderBottomColor: c.border,
+    },
+    pill: {
+      borderRadius: 20,
+      paddingHorizontal: 18,
+      paddingVertical: 7,
+      borderWidth: 1,
+      borderColor: c.border,
+      backgroundColor: c.card,
+    },
+    pillActive: {
+      backgroundColor: c.primary,
+      borderColor: c.primary,
+    },
+    pillText: {
+      fontSize: 14,
+      fontWeight: '500',
+      color: c.textSecondary,
+    },
+    pillTextActive: {
+      color: '#FFFFFF',
+      fontWeight: '600',
+    },
+    filterPill: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 6,
+      marginLeft: 'auto',
+    },
+    filterPillActive: {
+      backgroundColor: c.primary,
+      borderColor: c.primary,
+    },
+    feedContainer: {
+      flex: 1,
+    },
+  });

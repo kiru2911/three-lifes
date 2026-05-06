@@ -4,13 +4,13 @@ import {
   Text,
   TouchableOpacity,
   View,
-  useWindowDimensions,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
-import { useState, useEffect } from 'react';
-import { Colors } from '@/constants/colors';
+import { useState, useEffect, useMemo } from 'react';
+import { useColors } from '@/constants/theme';
+import type { ThemeColors } from '@/constants/colors';
 import { getCategoryMeta } from '@/constants/categories';
 import { getConceptById, getConceptsByCategory } from '@/hooks/useConcepts';
 
@@ -30,17 +30,19 @@ function cap(s: string): string {
 // ─── Progress bar ──────────────────────────────────────────────────────────────
 
 function ProgressBar({ step }: { step: number }) {
+  const colors = useColors();
+  const styles = useMemo(() => createPbStyles(colors), [colors]);
   const progress = step >= TOTAL_STEPS ? 1 : step / CONTENT_STEPS;
   const showCounter = step < TOTAL_STEPS;
 
   return (
-    <View style={pb.row}>
-      <View style={pb.track}>
-        <View style={[pb.fill, { flex: progress }]} />
+    <View style={styles.row}>
+      <View style={styles.track}>
+        <View style={[styles.fill, { flex: progress }]} />
         <View style={{ flex: 1 - progress }} />
       </View>
       {showCounter && (
-        <Text style={pb.counter}>
+        <Text style={styles.counter}>
           {step} / {CONTENT_STEPS}
         </Text>
       )}
@@ -48,46 +50,63 @@ function ProgressBar({ step }: { step: number }) {
   );
 }
 
-const pb = StyleSheet.create({
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingTop: 8,
-    paddingBottom: 6,
-    gap: 10,
-  },
-  track: {
-    flex: 1,
-    height: 4,
-    borderRadius: 2,
-    backgroundColor: Colors.border,
-    flexDirection: 'row',
-    overflow: 'hidden',
-  },
-  fill: {
-    height: 4,
-    backgroundColor: Colors.primary,
-    borderRadius: 2,
-  },
-  counter: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: Colors.textSecondary,
-    minWidth: 36,
-    textAlign: 'right',
-  },
-});
+const createPbStyles = (c: ThemeColors) =>
+  StyleSheet.create({
+    row: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      paddingHorizontal: 16,
+      paddingTop: 8,
+      paddingBottom: 6,
+      gap: 10,
+    },
+    track: {
+      flex: 1,
+      height: 4,
+      borderRadius: 2,
+      backgroundColor: c.border,
+      flexDirection: 'row',
+      overflow: 'hidden',
+    },
+    fill: {
+      height: 4,
+      backgroundColor: c.primary,
+      borderRadius: 2,
+    },
+    counter: {
+      fontSize: 12,
+      fontWeight: '600',
+      color: c.textSecondary,
+      minWidth: 36,
+      textAlign: 'right',
+    },
+  });
 
 // ─── Step label ────────────────────────────────────────────────────────────────
 
 function StepLabel({ text }: { text: string }) {
-  return <Text style={s.stepLabel}>{text}</Text>;
+  const colors = useColors();
+  return (
+    <Text
+      style={{
+        fontSize: 11,
+        fontWeight: '700',
+        color: colors.primary,
+        letterSpacing: 1,
+        marginBottom: 20,
+      }}
+    >
+      {text}
+    </Text>
+  );
 }
 
 // ─── Main screen ───────────────────────────────────────────────────────────────
 
 export default function ConceptDetailScreen() {
+  const colors = useColors();
+  const s = useMemo(() => createStyles(colors), [colors]);
+
   const { id, category: categoryParam } = useLocalSearchParams<{
     id: string;
     category?: string;
@@ -141,7 +160,7 @@ export default function ConceptDetailScreen() {
       {/* Back arrow row */}
       <View style={s.headerRow}>
         <TouchableOpacity onPress={goBack} hitSlop={10} style={s.backBtn}>
-          <Ionicons name="arrow-back" size={22} color={Colors.textPrimary} />
+          <Ionicons name="arrow-back" size={22} color={colors.textPrimary} />
         </TouchableOpacity>
       </View>
 
@@ -172,6 +191,8 @@ function StepHook({
   meta: ReturnType<typeof getCategoryMeta>;
   onNext: () => void;
 }) {
+  const colors = useColors();
+  const s = useMemo(() => createStyles(colors), [colors]);
   return (
     <View style={s.stepFull}>
       <View style={s.hookContent}>
@@ -206,6 +227,8 @@ function StepCore({
   concept: NonNullable<ReturnType<typeof getConceptById>>;
   onNext: () => void;
 }) {
+  const colors = useColors();
+  const s = useMemo(() => createStyles(colors), [colors]);
   return (
     <View style={[s.stepFull, s.whiteStep]}>
       <ScrollView
@@ -234,6 +257,8 @@ function StepAnalogy({
   concept: NonNullable<ReturnType<typeof getConceptById>>;
   onNext: () => void;
 }) {
+  const colors = useColors();
+  const s = useMemo(() => createStyles(colors), [colors]);
   return (
     <View style={[s.stepFull, s.analogyStep]}>
       <ScrollView
@@ -265,6 +290,8 @@ function StepWhyMatters({
   concept: NonNullable<ReturnType<typeof getConceptById>>;
   onNext: () => void;
 }) {
+  const colors = useColors();
+  const s = useMemo(() => createStyles(colors), [colors]);
   return (
     <View style={[s.stepFull, s.whiteStep]}>
       <ScrollView
@@ -293,6 +320,8 @@ function StepDeepDive({
   concept: NonNullable<ReturnType<typeof getConceptById>>;
   onNext: () => void;
 }) {
+  const colors = useColors();
+  const s = useMemo(() => createStyles(colors), [colors]);
   const tags = concept.tags?.length ? concept.tags : concept.keywords?.slice(0, 5) ?? [];
 
   return (
@@ -334,6 +363,8 @@ function StepCompletion({
   onBackToLearn: () => void;
   onNextConcept: () => void;
 }) {
+  const colors = useColors();
+  const s = useMemo(() => createStyles(colors), [colors]);
   return (
     <View style={s.stepFull}>
       <View style={s.completionContent}>
@@ -368,237 +399,229 @@ function StepCompletion({
 
 // ─── Styles ────────────────────────────────────────────────────────────────────
 
-const s = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.background,
-  },
-  centeredFull: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: 16,
-    padding: 24,
-  },
-  errorText: {
-    fontSize: 16,
-    color: Colors.textSecondary,
-  },
-  headerRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingBottom: 4,
-  },
-  backBtn: {
-    padding: 4,
-  },
+const createStyles = (c: ThemeColors) =>
+  StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: c.background,
+    },
+    centeredFull: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: 16,
+      padding: 24,
+    },
+    errorText: {
+      fontSize: 16,
+      color: c.textSecondary,
+    },
+    headerRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      paddingHorizontal: 16,
+      paddingBottom: 4,
+    },
+    backBtn: {
+      padding: 4,
+    },
 
-  // Step containers
-  stepFull: {
-    flex: 1,
-  },
-  whiteStep: {
-    backgroundColor: Colors.surface,
-  },
-  analogyStep: {
-    backgroundColor: Colors.primaryLight,
-  },
+    // Step containers
+    stepFull: {
+      flex: 1,
+    },
+    whiteStep: {
+      backgroundColor: c.card,
+    },
+    analogyStep: {
+      backgroundColor: c.primaryLight,
+    },
 
-  // Scrollable content area
-  scrollArea: {
-    flex: 1,
-  },
-  scrollContent: {
-    padding: 24,
-    paddingBottom: 12,
-  },
-  analogyScrollContent: {
-    padding: 24,
-    paddingBottom: 12,
-    alignItems: 'center',
-  },
+    // Scrollable content area
+    scrollArea: {
+      flex: 1,
+    },
+    scrollContent: {
+      padding: 24,
+      paddingBottom: 12,
+    },
+    analogyScrollContent: {
+      padding: 24,
+      paddingBottom: 12,
+      alignItems: 'center',
+    },
 
-  // Step label
-  stepLabel: {
-    fontSize: 11,
-    fontWeight: '700',
-    color: Colors.primary,
-    letterSpacing: 1,
-    marginBottom: 20,
-  },
+    // Step 1 — Hook
+    hookContent: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      paddingHorizontal: 28,
+      gap: 20,
+    },
+    hookTitle: {
+      fontSize: 24,
+      fontWeight: '700',
+      color: c.textPrimary,
+      textAlign: 'center',
+      lineHeight: 32,
+    },
+    hookFirstSentence: {
+      fontSize: 16,
+      color: c.textSecondary,
+      textAlign: 'center',
+      lineHeight: 24,
+    },
+    hookBadges: {
+      flexDirection: 'row',
+      gap: 8,
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      marginTop: 4,
+    },
+    badge: {
+      borderRadius: 20,
+      paddingHorizontal: 14,
+      paddingVertical: 6,
+    },
+    badgeText: {
+      fontSize: 12,
+      fontWeight: '600',
+      color: '#fff',
+    },
+    badgeOutline: {
+      borderRadius: 20,
+      paddingHorizontal: 14,
+      paddingVertical: 6,
+      borderWidth: 1.5,
+      borderColor: c.primary,
+    },
+    badgeOutlineText: {
+      fontSize: 12,
+      fontWeight: '600',
+      color: c.primary,
+    },
 
-  // Step 1 — Hook
-  hookContent: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingHorizontal: 28,
-    gap: 20,
-  },
-  hookTitle: {
-    fontSize: 24,
-    fontWeight: '700',
-    color: Colors.textPrimary,
-    textAlign: 'center',
-    lineHeight: 32,
-  },
-  hookFirstSentence: {
-    fontSize: 16,
-    color: Colors.textSecondary,
-    textAlign: 'center',
-    lineHeight: 24,
-  },
-  hookBadges: {
-    flexDirection: 'row',
-    gap: 8,
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    marginTop: 4,
-  },
-  badge: {
-    borderRadius: 20,
-    paddingHorizontal: 14,
-    paddingVertical: 6,
-  },
-  badgeText: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: '#fff',
-  },
-  badgeOutline: {
-    borderRadius: 20,
-    paddingHorizontal: 14,
-    paddingVertical: 6,
-    borderWidth: 1.5,
-    borderColor: Colors.primary,
-  },
-  badgeOutlineText: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: Colors.primary,
-  },
+    // Step 2 — Core concept
+    bodyLarge: {
+      fontSize: 18,
+      color: c.textPrimary,
+      lineHeight: 32,
+    },
 
-  // Step 2 — Core concept
-  bodyLarge: {
-    fontSize: 18,
-    color: Colors.textPrimary,
-    lineHeight: 32,
-  },
+    // Step 3 — Analogy
+    quoteDecor: {
+      fontSize: 80,
+      color: c.primary,
+      opacity: 0.2,
+      lineHeight: 72,
+      marginBottom: 4,
+      fontWeight: '700',
+    },
+    analogyText: {
+      fontSize: 18,
+      fontStyle: 'italic',
+      color: c.textPrimary,
+      lineHeight: 30,
+      textAlign: 'center',
+      paddingHorizontal: 8,
+    },
 
-  // Step 3 — Analogy
-  quoteDecor: {
-    fontSize: 80,
-    color: Colors.primary,
-    opacity: 0.2,
-    lineHeight: 72,
-    marginBottom: 4,
-    fontWeight: '700',
-  },
-  analogyText: {
-    fontSize: 18,
-    fontStyle: 'italic',
-    color: Colors.textPrimary,
-    lineHeight: 30,
-    textAlign: 'center',
-    paddingHorizontal: 8,
-  },
+    // Step 4 — Why it matters
+    bodyMedium: {
+      fontSize: 17,
+      color: c.textPrimary,
+      lineHeight: 28,
+    },
 
-  // Step 4 — Why it matters
-  bodyMedium: {
-    fontSize: 17,
-    color: Colors.textPrimary,
-    lineHeight: 28,
-  },
+    // Step 5 — Deep dive
+    bodySmall: {
+      fontSize: 16,
+      color: c.textPrimary,
+      lineHeight: 26,
+      marginBottom: 20,
+    },
+    tags: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      gap: 8,
+      marginTop: 4,
+    },
+    tag: {
+      backgroundColor: c.tagBg,
+      borderRadius: 20,
+      paddingHorizontal: 12,
+      paddingVertical: 5,
+    },
+    tagText: {
+      fontSize: 12,
+      color: c.tagText,
+    },
 
-  // Step 5 — Deep dive
-  bodySmall: {
-    fontSize: 16,
-    color: Colors.textPrimary,
-    lineHeight: 26,
-    marginBottom: 20,
-  },
-  tags: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 8,
-    marginTop: 4,
-  },
-  tag: {
-    backgroundColor: Colors.tagBg,
-    borderRadius: 20,
-    paddingHorizontal: 12,
-    paddingVertical: 5,
-  },
-  tagText: {
-    fontSize: 12,
-    color: Colors.tagText,
-  },
+    // Step 6 — Completion
+    completionContent: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: 16,
+      paddingHorizontal: 32,
+    },
+    checkCircle: {
+      width: 72,
+      height: 72,
+      borderRadius: 36,
+      backgroundColor: c.primary,
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginBottom: 4,
+    },
+    completionTitle: {
+      fontSize: 24,
+      fontWeight: '700',
+      color: c.textPrimary,
+    },
+    completionSub: {
+      fontSize: 16,
+      color: c.textSecondary,
+      textAlign: 'center',
+      lineHeight: 24,
+    },
+    completionConceptName: {
+      color: c.textPrimary,
+      fontWeight: '600',
+    },
+    completionButtons: {
+      padding: 24,
+      gap: 12,
+    },
 
-  // Step 6 — Completion
-  completionContent: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: 16,
-    paddingHorizontal: 32,
-  },
-  checkCircle: {
-    width: 72,
-    height: 72,
-    borderRadius: 36,
-    backgroundColor: Colors.primary,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 4,
-  },
-  completionTitle: {
-    fontSize: 24,
-    fontWeight: '700',
-    color: Colors.textPrimary,
-  },
-  completionSub: {
-    fontSize: 16,
-    color: Colors.textSecondary,
-    textAlign: 'center',
-    lineHeight: 24,
-  },
-  completionConceptName: {
-    color: Colors.textPrimary,
-    fontWeight: '600',
-  },
-  completionButtons: {
-    padding: 24,
-    gap: 12,
-  },
-
-  // Shared buttons
-  footer: {
-    padding: 24,
-    paddingTop: 16,
-  },
-  primaryBtn: {
-    backgroundColor: Colors.primary,
-    borderRadius: 14,
-    paddingVertical: 16,
-    alignItems: 'center',
-  },
-  primaryBtnText: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#fff',
-  },
-  outlineBtn: {
-    borderRadius: 14,
-    paddingVertical: 16,
-    alignItems: 'center',
-    borderWidth: 1.5,
-    borderColor: Colors.primary,
-    backgroundColor: Colors.surface,
-  },
-  outlineBtnText: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: Colors.primary,
-  },
-});
+    // Shared buttons
+    footer: {
+      padding: 24,
+      paddingTop: 16,
+    },
+    primaryBtn: {
+      backgroundColor: c.primary,
+      borderRadius: 14,
+      paddingVertical: 16,
+      alignItems: 'center',
+    },
+    primaryBtnText: {
+      fontSize: 16,
+      fontWeight: '600',
+      color: '#fff',
+    },
+    outlineBtn: {
+      borderRadius: 14,
+      paddingVertical: 16,
+      alignItems: 'center',
+      borderWidth: 1.5,
+      borderColor: c.primary,
+      backgroundColor: c.card,
+    },
+    outlineBtnText: {
+      fontSize: 16,
+      fontWeight: '600',
+      color: c.primary,
+    },
+  });
