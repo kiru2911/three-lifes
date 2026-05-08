@@ -193,6 +193,12 @@ function StepHook({
 }) {
   const colors = useColors();
   const s = useMemo(() => createStyles(colors), [colors]);
+  const hasAudio = !!concept.audio_text?.trim();
+
+  function goListen() {
+    router.push(`/concept/listen/${concept.id}`);
+  }
+
   return (
     <View style={s.stepFull}>
       <View style={s.hookContent}>
@@ -213,6 +219,16 @@ function StepHook({
         <TouchableOpacity style={s.primaryBtn} onPress={onNext} activeOpacity={0.8}>
           <Text style={s.primaryBtnText}>Start learning →</Text>
         </TouchableOpacity>
+        {hasAudio && (
+          <TouchableOpacity
+            style={[s.outlineBtn, s.listenBtn]}
+            onPress={goListen}
+            activeOpacity={0.8}
+          >
+            <Ionicons name="headset-outline" size={18} color={colors.primary} />
+            <Text style={s.outlineBtnText}>Listen</Text>
+          </TouchableOpacity>
+        )}
       </View>
     </View>
   );
@@ -599,6 +615,13 @@ const createStyles = (c: ThemeColors) =>
     footer: {
       padding: 24,
       paddingTop: 16,
+      gap: 12,
+    },
+    listenBtn: {
+      flexDirection: 'row',
+      gap: 8,
+      justifyContent: 'center',
+      alignItems: 'center',
     },
     primaryBtn: {
       backgroundColor: c.primary,

@@ -1,5 +1,14 @@
 import { useMemo, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Linking, Image, type ViewStyle } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Linking,
+  Image,
+  ActivityIndicator,
+  type ViewStyle,
+} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useColors } from '@/constants/theme';
 import type { ThemeColors } from '@/constants/colors';
@@ -9,9 +18,12 @@ import type { NewsItem } from '@/types/feed';
 interface Props {
   item: NewsItem;
   style?: ViewStyle;
+  audioPlaying?: boolean;
+  audioLoading?: boolean;
+  onToggleAudio?: () => void;
 }
 
-export function NewsCard({ item, style }: Props) {
+export function NewsCard({ item, style, audioPlaying, audioLoading, onToggleAudio }: Props) {
   const colors = useColors();
   const styles = useMemo(() => createStyles(colors), [colors]);
   const [imageFailed, setImageFailed] = useState(false);
@@ -72,8 +84,21 @@ export function NewsCard({ item, style }: Props) {
         <View style={styles.footer}>
           <Text style={styles.source}>{item.source_name}</Text>
           <View style={styles.actions}>
-            <TouchableOpacity hitSlop={8}>
-              <Ionicons name="volume-medium-outline" size={20} color={colors.textSecondary} />
+            <TouchableOpacity
+              hitSlop={8}
+              onPress={onToggleAudio}
+              disabled={!onToggleAudio || audioLoading}
+              accessibilityLabel={audioPlaying ? 'Stop audio' : 'Play audio'}
+            >
+              {audioLoading ? (
+                <ActivityIndicator size="small" color={colors.textSecondary} />
+              ) : (
+                <Ionicons
+                  name={audioPlaying ? 'stop-circle' : 'volume-medium-outline'}
+                  size={20}
+                  color={audioPlaying ? colors.news : colors.textSecondary}
+                />
+              )}
             </TouchableOpacity>
             <TouchableOpacity hitSlop={8}>
               <Ionicons name="heart-outline" size={20} color={colors.textSecondary} />
@@ -88,14 +113,16 @@ export function NewsCard({ item, style }: Props) {
 const createStyles = (c: ThemeColors) =>
   StyleSheet.create({
     card: {
-      backgroundColor: c.card,
+      backgroundColor: c.cardElevated,
       borderRadius: 16,
+      borderWidth: StyleSheet.hairlineWidth,
+      borderColor: c.cardElevatedBorder,
       flexDirection: 'row',
       shadowColor: '#000',
-      shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 0.08,
-      shadowRadius: 8,
-      elevation: 3,
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.1,
+      shadowRadius: 12,
+      elevation: 4,
       overflow: 'hidden',
     },
     accentBar: {

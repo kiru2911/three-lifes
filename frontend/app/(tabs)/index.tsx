@@ -12,6 +12,7 @@ import { useRef, useState, useEffect, useCallback, useMemo } from 'react';
 import { useTheme } from '@/constants/theme';
 import type { ThemeColors } from '@/constants/colors';
 import { useFeed, type FeedFilter } from '@/hooks/useFeed';
+import { useTTSPlayer } from '@/hooks/useTTSPlayer';
 import { NewsCard } from '@/components/NewsCard';
 import { ConceptCard } from '@/components/ConceptCard';
 import { FilterModal } from '@/components/FilterModal';
@@ -36,6 +37,7 @@ export default function FeedScreen() {
   const styles = useMemo(() => createStyles(colors), [colors]);
 
   const { items, filter, setFilter, selectedSources, setSelectedSources, sources } = useFeed();
+  const tts = useTTSPlayer();
   const [pageHeight, setPageHeight] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [filterModalVisible, setFilterModalVisible] = useState(false);
@@ -47,6 +49,13 @@ export default function FeedScreen() {
     setCurrentIndex(0);
     listRef.current?.scrollToOffset({ offset: 0, animated: false });
   }, [filter, selectedSources]);
+
+  // Stop audio whenever the visible card changes (scroll or filter reset).
+  useEffect(() => {
+    tts.stop();
+    // tts.stop is stable; depend only on the index so we don't re-fire on every render
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentIndex]);
 
   const viewabilityConfig = useRef({ itemVisiblePercentThreshold: 60 });
   const onViewableItemsChanged = useRef(
@@ -70,15 +79,32 @@ export default function FeedScreen() {
         marginTop: CARD_GAP,
         marginHorizontal: 16,
       };
+      const audioPlaying = tts.activeId === item.id;
+      const audioLoading = tts.loadingId === item.id;
+      const onToggleAudio = () => tts.toggle(item.id, item.audio_text);
       return (
         <View style={{ height: itemHeight }}>
-          {item.content_type === 'news'
-            ? <NewsCard item={item} style={cardStyle} />
-            : <ConceptCard item={item} style={cardStyle} />}
+          {item.content_type === 'news' ? (
+            <NewsCard
+              item={item}
+              style={cardStyle}
+              audioPlaying={audioPlaying}
+              audioLoading={audioLoading}
+              onToggleAudio={onToggleAudio}
+            />
+          ) : (
+            <ConceptCard
+              item={item}
+              style={cardStyle}
+              audioPlaying={audioPlaying}
+              audioLoading={audioLoading}
+              onToggleAudio={onToggleAudio}
+            />
+          )}
         </View>
       );
     },
-    [itemHeight]
+    [itemHeight, tts.activeId, tts.loadingId, tts.toggle]
   );
 
   return (

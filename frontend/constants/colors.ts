@@ -4,6 +4,8 @@ export interface ThemeColors {
   background: string;
   surface: string;
   card: string;
+  cardElevated: string;
+  cardElevatedBorder: string;
   textPrimary: string;
   textSecondary: string;
   textMuted: string;
@@ -22,6 +24,8 @@ const lightColors: ThemeColors = {
   background: '#FFFFFF',
   surface: '#F8F8F8',
   card: '#FFFFFF',
+  cardElevated: '#F2F3F7',
+  cardElevatedBorder: '#E4E6EC',
   textPrimary: '#111111',
   textSecondary: '#666666',
   textMuted: '#999999',
@@ -39,6 +43,8 @@ const darkColors: ThemeColors = {
   background: '#0F0F0F',
   surface: '#1A1A1A',
   card: '#222222',
+  cardElevated: '#1B1C22',
+  cardElevatedBorder: '#2A2B33',
   textPrimary: '#F1F1F1',
   textSecondary: '#AAAAAA',
   textMuted: '#666666',

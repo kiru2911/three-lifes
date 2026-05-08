@@ -1,5 +1,12 @@
 import { useMemo } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, type ViewStyle } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  ActivityIndicator,
+  type ViewStyle,
+} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useColors } from '@/constants/theme';
 import type { ThemeColors } from '@/constants/colors';
@@ -8,9 +15,12 @@ import type { ConceptItem } from '@/types/feed';
 interface Props {
   item: ConceptItem;
   style?: ViewStyle;
+  audioPlaying?: boolean;
+  audioLoading?: boolean;
+  onToggleAudio?: () => void;
 }
 
-export function ConceptCard({ item, style }: Props) {
+export function ConceptCard({ item, style, audioPlaying, audioLoading, onToggleAudio }: Props) {
   const colors = useColors();
   const styles = useMemo(() => createStyles(colors), [colors]);
 
@@ -55,8 +65,21 @@ export function ConceptCard({ item, style }: Props) {
             <Text style={styles.readMore}>Read more →</Text>
           </TouchableOpacity>
           <View style={styles.actions}>
-            <TouchableOpacity hitSlop={8}>
-              <Ionicons name="volume-medium-outline" size={20} color={colors.textSecondary} />
+            <TouchableOpacity
+              hitSlop={8}
+              onPress={onToggleAudio}
+              disabled={!onToggleAudio || audioLoading}
+              accessibilityLabel={audioPlaying ? 'Stop audio' : 'Play audio'}
+            >
+              {audioLoading ? (
+                <ActivityIndicator size="small" color={colors.textSecondary} />
+              ) : (
+                <Ionicons
+                  name={audioPlaying ? 'stop-circle' : 'volume-medium-outline'}
+                  size={20}
+                  color={audioPlaying ? colors.primary : colors.textSecondary}
+                />
+              )}
             </TouchableOpacity>
             <TouchableOpacity hitSlop={8}>
               <Ionicons name="heart-outline" size={20} color={colors.textSecondary} />
@@ -71,13 +94,15 @@ export function ConceptCard({ item, style }: Props) {
 const createStyles = (c: ThemeColors) =>
   StyleSheet.create({
     card: {
-      backgroundColor: c.card,
+      backgroundColor: c.cardElevated,
       borderRadius: 16,
+      borderWidth: StyleSheet.hairlineWidth,
+      borderColor: c.cardElevatedBorder,
       shadowColor: '#000',
-      shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 0.08,
-      shadowRadius: 8,
-      elevation: 3,
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.1,
+      shadowRadius: 12,
+      elevation: 4,
       overflow: 'hidden',
     },
     header: {
