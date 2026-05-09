@@ -48,9 +48,35 @@ def clean_list(values: Any) -> list[str]:
 
 
 def clean_keyword_objects(values: Any) -> list[dict[str, str]]:
-    """Return Concept keyword objects in a frontend-friendly shape."""
+    """Return up to three complex Concept keyword objects for the frontend."""
     if not isinstance(values, list):
         return []
+
+    common_terms = {
+        "ai",
+        "artificial intelligence",
+        "ml",
+        "machine learning",
+        "gpu",
+        "cpu",
+        "ram",
+        "api",
+        "app",
+        "data",
+        "model",
+        "algorithm",
+        "computer",
+        "internet",
+        "cloud",
+        "software",
+        "hardware",
+        "python",
+        "javascript",
+        "openai",
+        "google",
+        "microsoft",
+        "netflix",
+    }
 
     cleaned_keywords: list[dict[str, str]] = []
     seen: set[str] = set()
@@ -68,11 +94,14 @@ def clean_keyword_objects(values: Any) -> list[dict[str, str]]:
             continue
 
         key = term.casefold()
-        if not term or key in seen:
+        if not term or key in common_terms or key in seen:
             continue
 
         cleaned_keywords.append({"term": term, "explanation": explanation})
         seen.add(key)
+
+        if len(cleaned_keywords) >= 3:
+            break
 
     return cleaned_keywords
 

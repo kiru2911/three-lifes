@@ -342,7 +342,7 @@ function StepDeepDive({
 
   const keywordTerms = keywordExplanations.length
     ? keywordExplanations.map((keyword) => keyword.term)
-    : concept.keywords?.slice(0, 5) ?? [];
+    : concept.keywords?.slice(0, 3) ?? [];
 
   const tags = concept.tags?.length ? concept.tags : keywordTerms;
 
@@ -372,7 +372,7 @@ function StepDeepDive({
 
         {keywordExplanations.length === 0 && tags.length > 0 && (
           <View style={s.tags}>
-            {tags.map((tag) => (
+            {tags.slice(0, 3).map((tag) => (
               <View key={tag} style={s.tag}>
                 <Text style={s.tagText}>{tag}</Text>
               </View>

@@ -151,7 +151,7 @@ def normalise_keywords(value: Any) -> list[dict[str, str]]:
         cleaned.append({"term": term, "explanation": explanation})
         seen.add(key)
 
-        if len(cleaned) >= 5:
+        if len(cleaned) >= 3:
             break
 
     return cleaned

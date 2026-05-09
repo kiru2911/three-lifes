@@ -30,7 +30,7 @@ export function ConceptCard({ item, style, audioPlaying, audioLoading, onToggleA
   const difficulty = item.difficulty || item.subtitle?.split(' · ')[1] || '';
   const keywords = item.keyword_explanations?.length
     ? item.keyword_explanations.map((keyword) => keyword.term)
-    : item.keywords?.slice(0, 4) ?? [];
+    : item.keywords?.slice(0, 3) ?? [];
 
   const tags = item.tags?.length ? item.tags : keywords;
 
@@ -53,7 +53,7 @@ export function ConceptCard({ item, style, audioPlaying, audioLoading, onToggleA
 
         {tags.length > 0 && (
           <View style={styles.tags}>
-            {tags.slice(0, 5).map((tag) => (
+            {tags.slice(0, 3).map((tag) => (
               <View key={tag} style={styles.tag}>
                 <Text style={styles.tagText}>{tag}</Text>
               </View>
