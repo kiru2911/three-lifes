@@ -47,6 +47,36 @@ def clean_list(values: Any) -> list[str]:
     return cleaned_values
 
 
+def clean_keyword_objects(values: Any) -> list[dict[str, str]]:
+    """Return Concept keyword objects in a frontend-friendly shape."""
+    if not isinstance(values, list):
+        return []
+
+    cleaned_keywords: list[dict[str, str]] = []
+    seen: set[str] = set()
+
+    for value in values:
+        if isinstance(value, str):
+            term = clean_text(value)
+            explanation = ""
+        elif isinstance(value, dict):
+            term = clean_text(value.get("term") or value.get("keyword") or value.get("name"))
+            explanation = clean_text(
+                value.get("explanation") or value.get("definition") or value.get("meaning")
+            )
+        else:
+            continue
+
+        key = term.casefold()
+        if not term or key in seen:
+            continue
+
+        cleaned_keywords.append({"term": term, "explanation": explanation})
+        seen.add(key)
+
+    return cleaned_keywords
+
+
 def map_article_to_feed_item(article: dict[str, Any]) -> dict[str, Any]:
     """Map one news article into the shared feed schema."""
     source = article.get("source", {})
@@ -90,7 +120,9 @@ def map_concept_to_feed_item(concept: dict[str, Any]) -> dict[str, Any]:
     category = clean_text(concept.get("category"))
     difficulty = clean_text(concept.get("difficulty"))
     tags = clean_list(concept.get("tags"))
-    keywords = clean_list(concept.get("keywords")) or tags
+    keyword_objects = clean_keyword_objects(concept.get("keywords"))
+    keyword_terms = [keyword["term"] for keyword in keyword_objects]
+    keywords = keyword_terms or tags
 
     subtitle_parts = [part for part in [category, difficulty] if part]
 
@@ -109,6 +141,7 @@ def map_concept_to_feed_item(concept: dict[str, Any]) -> dict[str, Any]:
         "difficulty": difficulty,
         "tags": tags,
         "keywords": keywords,
+        "keyword_explanations": keyword_objects,
         "source_name": clean_text(source.get("title")),
         "source_url": clean_text(source.get("url")),
         "published_at": "",

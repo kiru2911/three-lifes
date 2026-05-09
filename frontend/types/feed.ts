@@ -1,5 +1,10 @@
 export type ContentType = 'news' | 'concept';
 
+export interface ConceptKeyword {
+  term: string;
+  explanation: string;
+}
+
 interface FeedItemBase {
   id: string;
   content_type: ContentType;
@@ -29,6 +34,7 @@ export interface NewsItem extends FeedItemBase {
 
 export interface ConceptItem extends FeedItemBase {
   content_type: 'concept';
+  keyword_explanations?: ConceptKeyword[];
   source_name: string;
   source_url: string;
   published_at: string;

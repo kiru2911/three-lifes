@@ -23,7 +23,8 @@ from utils.wikipedia_fetch import fetch_wikipedia_summary
 
 # PROMPT_VERSION = "v1"
 # PROMPT_VERSION = "v2"
-PROMPT_VERSION = "v3"
+# PROMPT_VERSION = "v3"
+PROMPT_VERSION = "v4"
 DEFAULT_CATEGORY = "AI/Technology"
 DEFAULT_DIFFICULTY = "beginner"
 USE_WIKIPEDIA = False
@@ -48,7 +49,7 @@ def load_prompt_template() -> str:
         # PROJECT_ROOT / "backend" / "prompts" / "concept_v1.txt ",
         # PROJECT_ROOT / "backend" / "prompts" / "concept_v2.txt",
         # PROJECT_ROOT / "backend" / "prompts" / "concept_v2.txt ",
-        PROJECT_ROOT / "backend" / "prompts" / "concept_v3.txt",
+        PROJECT_ROOT / "backend" / "prompts" / "concept_v4.txt",
     ]
 
     for path in prompt_paths:
@@ -58,7 +59,7 @@ def load_prompt_template() -> str:
                 prompt_text = prompt_text.removeprefix("```").removesuffix("```").strip()
             return prompt_text
 
-    raise FileNotFoundError("Could not find backend/prompts/concept_v3.txt")
+    raise FileNotFoundError("Could not find backend/prompts/concept_v4.txt")
 
 
 def load_seeds(path: Path) -> list[dict[str, Any]]:
@@ -93,6 +94,69 @@ def normalise_seed(seed: dict[str, Any], index: int) -> dict[str, str]:
     }
 
 
+def normalise_keywords(value: Any) -> list[dict[str, str]]:
+    """Return cleaned Concept-only keyword objects.
+
+    This intentionally stays in the Concept generation pipeline so Article/Source
+    summaries keep their existing keyword behaviour.
+    """
+    if not isinstance(value, list):
+        return []
+
+    common_terms = {
+        "ai",
+        "artificial intelligence",
+        "ml",
+        "machine learning",
+        "gpu",
+        "cpu",
+        "ram",
+        "api",
+        "app",
+        "data",
+        "model",
+        "algorithm",
+        "computer",
+        "internet",
+        "cloud",
+        "software",
+        "hardware",
+        "python",
+        "javascript",
+        "openai",
+        "google",
+        "microsoft",
+        "netflix",
+    }
+
+    cleaned: list[dict[str, str]] = []
+    seen: set[str] = set()
+
+    for item in value:
+        if isinstance(item, str):
+            term = clean_text(item)
+            explanation = ""
+        elif isinstance(item, dict):
+            term = clean_text(item.get("term") or item.get("keyword") or item.get("name"))
+            explanation = clean_text(
+                item.get("explanation") or item.get("definition") or item.get("meaning")
+            )
+        else:
+            continue
+
+        key = term.casefold()
+        if not term or key in common_terms or key in seen:
+            continue
+
+        cleaned.append({"term": term, "explanation": explanation})
+        seen.add(key)
+
+        if len(cleaned) >= 5:
+            break
+
+    return cleaned
+
+
 def build_output_record(
     seed: dict[str, str],
     source_data: dict[str, str],
@@ -110,6 +174,7 @@ def build_output_record(
             "url": clean_text(source_data.get("source_url")),
         },
         "reference_text": clean_text(source_data.get("reference_text")),
+        "keywords": normalise_keywords(generated_content.get("keywords")),
         "ai_output": {
             "title": clean_text(generated_content.get("title")),
             "post_content": clean_text(generated_content.get("post_content")),
@@ -157,6 +222,7 @@ def save_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "analogy",
         "why_it_matters",
         "tts_text",
+        "keywords_json",
         "model",
         "prompt_version",
     ]
@@ -183,6 +249,7 @@ def save_csv(path: Path, rows: list[dict[str, Any]]) -> None:
                     "analogy": ai_output.get("analogy", ""),
                     "why_it_matters": ai_output.get("why_it_matters", ""),
                     "tts_text": ai_output.get("tts_text", ""),
+                    "keywords_json": json.dumps(row.get("keywords", []), ensure_ascii=False),
                     "model": ai_output.get("model", ""),
                     "prompt_version": ai_output.get("prompt_version", ""),
                 }

@@ -338,7 +338,13 @@ function StepDeepDive({
 }) {
   const colors = useColors();
   const s = useMemo(() => createStyles(colors), [colors]);
-  const tags = concept.tags?.length ? concept.tags : concept.keywords?.slice(0, 5) ?? [];
+  const keywordExplanations = concept.keyword_explanations ?? [];
+
+  const keywordTerms = keywordExplanations.length
+    ? keywordExplanations.map((keyword) => keyword.term)
+    : concept.keywords?.slice(0, 5) ?? [];
+
+  const tags = concept.tags?.length ? concept.tags : keywordTerms;
 
   return (
     <View style={[s.stepFull, s.whiteStep]}>
@@ -349,7 +355,22 @@ function StepDeepDive({
       >
         <StepLabel text="DEEP DIVE" />
         <Text style={s.bodySmall}>{concept.body_text}</Text>
-        {tags.length > 0 && (
+
+        {keywordExplanations.length > 0 && (
+          <View style={s.keywordSection}>
+            <StepLabel text="KEY TERMS" />
+            {keywordExplanations.map((keyword) => (
+              <View key={keyword.term} style={s.keywordCard}>
+                <Text style={s.keywordTerm}>{keyword.term}</Text>
+                {keyword.explanation ? (
+                  <Text style={s.keywordExplanation}>{keyword.explanation}</Text>
+                ) : null}
+              </View>
+            ))}
+          </View>
+        )}
+
+        {keywordExplanations.length === 0 && tags.length > 0 && (
           <View style={s.tags}>
             {tags.map((tag) => (
               <View key={tag} style={s.tag}>
@@ -556,6 +577,26 @@ const createStyles = (c: ThemeColors) =>
       color: c.textPrimary,
       lineHeight: 26,
       marginBottom: 20,
+    },
+    keywordSection: {
+      marginTop: 8,
+      gap: 10,
+    },
+    keywordCard: {
+      backgroundColor: c.tagBg,
+      borderRadius: 14,
+      padding: 12,
+      gap: 4,
+    },
+    keywordTerm: {
+      fontSize: 14,
+      fontWeight: '700',
+      color: c.textPrimary,
+    },
+    keywordExplanation: {
+      fontSize: 13,
+      color: c.textSecondary,
+      lineHeight: 19,
     },
     tags: {
       flexDirection: 'row',

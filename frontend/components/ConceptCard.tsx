@@ -28,7 +28,11 @@ export function ConceptCard({ item, style, audioPlaying, audioLoading, onToggleA
     ? `CONCEPT · ${item.category.toUpperCase()}`
     : 'CONCEPT';
   const difficulty = item.difficulty || item.subtitle?.split(' · ')[1] || '';
-  const tags = item.tags?.length ? item.tags : item.keywords?.slice(0, 4) ?? [];
+  const keywords = item.keyword_explanations?.length
+    ? item.keyword_explanations.map((keyword) => keyword.term)
+    : item.keywords?.slice(0, 4) ?? [];
+
+  const tags = item.tags?.length ? item.tags : keywords;
 
   return (
     <View style={[styles.card, style]}>
