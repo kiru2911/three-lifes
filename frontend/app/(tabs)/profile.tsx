@@ -1,139 +1,172 @@
-import { useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import {
-  View,
-  Text,
+  Linking,
+  ScrollView,
   StyleSheet,
-  SafeAreaView,
-  TouchableOpacity,
+  Text,
+  View,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { router } from 'expo-router';
 import { useTheme } from '@/constants/theme';
 import type { ThemeColors } from '@/constants/colors';
+import { useProfile } from '@/hooks/useProfile';
+import { ProfileHeader } from '@/components/profile/ProfileHeader';
+import { StatCard } from '@/components/profile/StatCard';
+import { InterestPills } from '@/components/profile/InterestPills';
+import { SavedContentCard } from '@/components/profile/SavedContentCard';
+import { EmptyState } from '@/components/profile/EmptyState';
+import { FutureFeaturesCard } from '@/components/profile/FutureFeaturesCard';
+import type { FeedItem } from '@/types/feed';
 
 export default function ProfileScreen() {
   const { mode, colors, toggleMode } = useTheme();
   const styles = useMemo(() => createStyles(colors), [colors]);
   const isDark = mode === 'dark';
 
+  const {
+    savedItems,
+    savedCount,
+    selectedInterests,
+    conceptsViewedCount,
+    newsViewedCount,
+  } = useProfile();
+
+  const openItem = useCallback((item: FeedItem) => {
+    if (item.content_type === 'concept') {
+      router.push(`/concept/${item.id}?category=${item.category}`);
+    } else if (item.source_url) {
+      Linking.openURL(item.source_url);
+    }
+  }, []);
+
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Profile</Text>
-      </View>
-
-      <View style={styles.section}>
-        <Text style={styles.sectionLabel}>APPEARANCE</Text>
-        <TouchableOpacity
-          style={styles.row}
-          activeOpacity={0.7}
-          onPress={toggleMode}
-          accessibilityLabel={
-            isDark ? 'Switch to light mode' : 'Switch to dark mode'
-          }
+    <SafeAreaView style={styles.safe} edges={['top']}>
+      <View style={styles.frame}>
+        <ScrollView
+          contentContainerStyle={styles.scrollContent}
+          showsVerticalScrollIndicator={false}
         >
-          <View style={styles.rowLeft}>
-            <Ionicons
-              name={isDark ? 'moon' : 'sunny'}
-              size={20}
-              color={colors.primary}
-            />
-            <Text style={styles.rowLabel}>
-              {isDark ? 'Dark mode' : 'Light mode'}
-            </Text>
-          </View>
-          <View style={[styles.toggle, isDark && styles.toggleOn]}>
-            <View
-              style={[styles.toggleKnob, isDark && styles.toggleKnobOn]}
-            />
-          </View>
-        </TouchableOpacity>
-      </View>
+          <ProfileHeader
+            name="Thinkly Learner"
+            subtitle="Learning AI one scroll at a time"
+            settingsIcon={isDark ? 'sunny-outline' : 'moon-outline'}
+            settingsLabel={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+            onSettingsPress={toggleMode}
+          />
 
-      <View style={styles.placeholder}>
-        <Text style={styles.placeholderTitle}>More coming soon</Text>
+          <View style={styles.statsRow}>
+            <StatCard
+              icon="bookmark-outline"
+              value={savedCount}
+              label="Saved"
+              tint="primary"
+            />
+            <StatCard
+              icon="bulb-outline"
+              value={conceptsViewedCount}
+              label="Concepts"
+              tint="primary"
+            />
+            <StatCard
+              icon="newspaper-outline"
+              value={newsViewedCount}
+              label="News"
+              tint="news"
+            />
+          </View>
+
+          <Section title="Your Interests">
+            <InterestPills interestIds={selectedInterests} />
+          </Section>
+
+          <Section title="Saved Content">
+            {savedItems.length === 0 ? (
+              <EmptyState
+                icon="bookmark-outline"
+                message="No saved content yet"
+              />
+            ) : (
+              <View style={styles.savedList}>
+                {savedItems.map((item) => (
+                  <SavedContentCard
+                    key={item.id}
+                    item={item}
+                    onPress={() => openItem(item)}
+                  />
+                ))}
+              </View>
+            )}
+          </Section>
+
+          <Section>
+            <FutureFeaturesCard />
+          </Section>
+
+          <View style={styles.footerSpacer} />
+        </ScrollView>
       </View>
     </SafeAreaView>
   );
 }
 
+function Section({
+  title,
+  children,
+}: {
+  title?: string;
+  children: React.ReactNode;
+}) {
+  const { colors } = useTheme();
+  const styles = useMemo(() => sectionStyles(colors), [colors]);
+
+  return (
+    <View style={styles.section}>
+      {title ? <Text style={styles.title}>{title}</Text> : null}
+      {children}
+    </View>
+  );
+}
+
 const createStyles = (c: ThemeColors) =>
   StyleSheet.create({
-    container: {
+    safe: {
       flex: 1,
       backgroundColor: c.background,
+      alignItems: 'center',
     },
-    header: {
+    frame: {
+      flex: 1,
+      width: '100%',
+      maxWidth: 390,
+    },
+    scrollContent: {
       paddingHorizontal: 20,
-      paddingVertical: 16,
-      borderBottomWidth: 1,
-      borderBottomColor: c.border,
-      backgroundColor: c.card,
+      paddingBottom: 24,
+    },
+    statsRow: {
+      flexDirection: 'row',
+      gap: 10,
+      marginTop: 18,
+    },
+    savedList: {
+      gap: 10,
+    },
+    footerSpacer: {
+      height: 8,
+    },
+  });
+
+const sectionStyles = (c: ThemeColors) =>
+  StyleSheet.create({
+    section: {
+      marginTop: 26,
     },
     title: {
-      fontSize: 22,
-      fontWeight: '700',
-      color: c.textPrimary,
-      letterSpacing: -0.5,
-    },
-    section: {
-      paddingHorizontal: 20,
-      paddingTop: 24,
-    },
-    sectionLabel: {
-      fontSize: 11,
-      fontWeight: '700',
-      color: c.textMuted,
-      letterSpacing: 1,
-      marginBottom: 10,
-    },
-    row: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      backgroundColor: c.card,
-      borderRadius: 12,
-      paddingHorizontal: 16,
-      paddingVertical: 14,
-      borderWidth: 1,
-      borderColor: c.border,
-    },
-    rowLeft: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      gap: 12,
-    },
-    rowLabel: {
       fontSize: 15,
-      fontWeight: '500',
+      fontWeight: '700',
       color: c.textPrimary,
-    },
-    toggle: {
-      width: 44,
-      height: 26,
-      borderRadius: 13,
-      backgroundColor: c.border,
-      padding: 3,
-      justifyContent: 'center',
-    },
-    toggleOn: {
-      backgroundColor: c.primary,
-    },
-    toggleKnob: {
-      width: 20,
-      height: 20,
-      borderRadius: 10,
-      backgroundColor: '#FFFFFF',
-    },
-    toggleKnobOn: {
-      transform: [{ translateX: 18 }],
-    },
-    placeholder: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    placeholderTitle: {
-      fontSize: 14,
-      color: c.textMuted,
+      letterSpacing: -0.2,
+      marginBottom: 12,
     },
   });

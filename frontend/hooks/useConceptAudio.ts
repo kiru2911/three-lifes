@@ -49,7 +49,7 @@ async function ensureAudioFile(conceptId: string, text: string): Promise<string>
     },
     body: JSON.stringify({
       model: 'tts-1',
-      voice: 'alloy',
+      voice: 'nova',
       input: text,
       response_format: 'mp3',
     }),

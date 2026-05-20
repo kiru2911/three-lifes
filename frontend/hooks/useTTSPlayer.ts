@@ -14,7 +14,7 @@ async function fetchSpeechDataUri(text: string, signal: AbortSignal): Promise<st
     },
     body: JSON.stringify({
       model: 'tts-1',
-      voice: 'alloy',
+      voice: 'nova',
       input: text,
       response_format: 'mp3',
     }),
